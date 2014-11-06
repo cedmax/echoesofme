@@ -1,0 +1,85 @@
+GET /v1/search?q=Lived%20A%20Lie%20You%20Me%20At%20Six&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:08 GMT
+content-type: application/json; charset=utf-8
+content-length: 2345
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Lived+A+Lie+You+Me+At+Six&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "GB", "IE" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/77LP2xBDvsu2qDGLf6RK3C"
+        },
+        "href" : "https://api.spotify.com/v1/albums/77LP2xBDvsu2qDGLf6RK3C",
+        "id" : "77LP2xBDvsu2qDGLf6RK3C",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/97be70988353bd4b1a25b8821ee302c4d4bdbdf3",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/2a22ea1a9675373b184266ce93e5e8d415361dd5",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/7b6c62ad5bae163579f8e4eef90b353e093b5223",
+          "width" : 64
+        } ],
+        "name" : "Cavalier Youth",
+        "type" : "album",
+        "uri" : "spotify:album:77LP2xBDvsu2qDGLf6RK3C"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1kNQXvepPjaPgUfeDAF2h6"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1kNQXvepPjaPgUfeDAF2h6",
+        "id" : "1kNQXvepPjaPgUfeDAF2h6",
+        "name" : "You Me At Six",
+        "type" : "artist",
+        "uri" : "spotify:artist:1kNQXvepPjaPgUfeDAF2h6"
+      } ],
+      "available_markets" : [ "GB", "IE" ],
+      "disc_number" : 1,
+      "duration_ms" : 203247,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GB5KW1301125"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3iiRq0MVNFsCxZjjgJStiY"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3iiRq0MVNFsCxZjjgJStiY",
+      "id" : "3iiRq0MVNFsCxZjjgJStiY",
+      "name" : "Lived A Lie",
+      "popularity" : 53,
+      "preview_url" : "https://p.scdn.co/mp3-preview/af1add2a61f949539bf7527648bdc974f20710c4",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:3iiRq0MVNFsCxZjjgJStiY"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Lived+A+Lie+You+Me+At+Six&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 50
+  }
+}

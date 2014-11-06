@@ -1,0 +1,85 @@
+GET /v1/search?q=The%20Luck%20You%20Got%20The%20High%20Strung&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:22 GMT
+content-type: application/json; charset=utf-8
+content-length: 3071
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=The+Luck+You+Got+The+High+Strung&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/1XqLBj2SEVqY1jWyUroBQv"
+        },
+        "href" : "https://api.spotify.com/v1/albums/1XqLBj2SEVqY1jWyUroBQv",
+        "id" : "1XqLBj2SEVqY1jWyUroBQv",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab0dfd4b3de4484baaa09ad0697f479d8af20dc5",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/47cb94e33c677b9e0ac031d53836b73fc7fb6a6a",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/584f677662ee239c794a7aaf6ba26db159903e32",
+          "width" : 64
+        } ],
+        "name" : "¿Posible O' Imposible?",
+        "type" : "album",
+        "uri" : "spotify:album:1XqLBj2SEVqY1jWyUroBQv"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0nlXYsUANsIcOQHExAL18d"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0nlXYsUANsIcOQHExAL18d",
+        "id" : "0nlXYsUANsIcOQHExAL18d",
+        "name" : "The High Strung",
+        "type" : "artist",
+        "uri" : "spotify:artist:0nlXYsUANsIcOQHExAL18d"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 168213,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USY271100020"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1x8D2YdP5pQrXX2cZmrWr8"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1x8D2YdP5pQrXX2cZmrWr8",
+      "id" : "1x8D2YdP5pQrXX2cZmrWr8",
+      "name" : "The Luck You Got",
+      "popularity" : 44,
+      "preview_url" : "https://p.scdn.co/mp3-preview/61ab0727e7286f4cca9c466b1b3071d9171b0991",
+      "track_number" : 14,
+      "type" : "track",
+      "uri" : "spotify:track:1x8D2YdP5pQrXX2cZmrWr8"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=The+Luck+You+Got+The+High+Strung&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 2
+  }
+}

@@ -1,0 +1,85 @@
+GET /v1/search?q=Roman%20Holiday%20Nicki%20Minaj&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:23 GMT
+content-type: application/json; charset=utf-8
+content-length: 3026
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Roman+Holiday+Nicki+Minaj&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/22F5ZYY1sxoJjk6HzZfmC1"
+        },
+        "href" : "https://api.spotify.com/v1/albums/22F5ZYY1sxoJjk6HzZfmC1",
+        "id" : "22F5ZYY1sxoJjk6HzZfmC1",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/9c41e37a6dac546164f412abebd0cae383b84a0f",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/58a0f0da8da72ad5b0a2187e791be248ee5f2a32",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/86e47a1b263ba7dc3631078d172cb91447564b2e",
+          "width" : 64
+        } ],
+        "name" : "Pink Friday: Roman Reloaded The Re-Up",
+        "type" : "album",
+        "uri" : "spotify:album:22F5ZYY1sxoJjk6HzZfmC1"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0hCNtLu0JehylgoiP8L4Gh"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0hCNtLu0JehylgoiP8L4Gh",
+        "id" : "0hCNtLu0JehylgoiP8L4Gh",
+        "name" : "Nicki Minaj",
+        "type" : "artist",
+        "uri" : "spotify:artist:0hCNtLu0JehylgoiP8L4Gh"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 2,
+      "duration_ms" : 245693,
+      "explicit" : true,
+      "external_ids" : {
+        "isrc" : "USCM51200093"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2G6YX2y6jI8lgU4GmysthT"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2G6YX2y6jI8lgU4GmysthT",
+      "id" : "2G6YX2y6jI8lgU4GmysthT",
+      "name" : "Roman Holiday",
+      "popularity" : 48,
+      "preview_url" : "https://p.scdn.co/mp3-preview/43230a009eae4a42312be906bb0c8333011c9073",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:2G6YX2y6jI8lgU4GmysthT"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Roman+Holiday+Nicki+Minaj&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 9
+  }
+}

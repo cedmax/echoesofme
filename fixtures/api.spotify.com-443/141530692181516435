@@ -1,0 +1,85 @@
+GET /v1/search?q=Shine%20A%20Light%20Wolf%20Parade&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:40 GMT
+content-type: application/json; charset=utf-8
+content-length: 2369
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Shine+A+Light+Wolf+Parade&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "FR", "GB", "IE" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/1x2qyyJMHKaFnoSmNWqOPi"
+        },
+        "href" : "https://api.spotify.com/v1/albums/1x2qyyJMHKaFnoSmNWqOPi",
+        "id" : "1x2qyyJMHKaFnoSmNWqOPi",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c96aabe211fe0bc26b323d4ef70e7ebda738f4d0",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/7bdc203470df7e8bb4876ed65ce76d36961fcee8",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/4e6f2fc1150f7779bec9e071f121cc512da6d3bc",
+          "width" : 64
+        } ],
+        "name" : "Apologies To The Queen Mary",
+        "type" : "album",
+        "uri" : "spotify:album:1x2qyyJMHKaFnoSmNWqOPi"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0XSqX2PB3C5dTMv7SZaxSm"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0XSqX2PB3C5dTMv7SZaxSm",
+        "id" : "0XSqX2PB3C5dTMv7SZaxSm",
+        "name" : "Wolf Parade",
+        "type" : "artist",
+        "uri" : "spotify:artist:0XSqX2PB3C5dTMv7SZaxSm"
+      } ],
+      "available_markets" : [ "FR", "GB", "IE" ],
+      "disc_number" : 1,
+      "duration_ms" : 227360,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USSUB0565507"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6phEis9wesXP7HiPEC9SB1"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6phEis9wesXP7HiPEC9SB1",
+      "id" : "6phEis9wesXP7HiPEC9SB1",
+      "name" : "Shine A Light",
+      "popularity" : 25,
+      "preview_url" : "https://p.scdn.co/mp3-preview/4c85e5ddcc57a852cec99fe341a8492df6dbd743",
+      "track_number" : 7,
+      "type" : "track",
+      "uri" : "spotify:track:6phEis9wesXP7HiPEC9SB1"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Shine+A+Light+Wolf+Parade&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 4
+  }
+}

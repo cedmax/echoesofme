@@ -1,0 +1,85 @@
+GET /v1/search?q=Such%20Great%20Heights%20Iron%20And%20Wine&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:19 GMT
+content-type: application/json; charset=utf-8
+content-length: 2377
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Such+Great+Heights+Iron+And+Wine&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "FR", "GB", "IE" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4lB2DbjmXzWD98FbtJm1LK"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4lB2DbjmXzWD98FbtJm1LK",
+        "id" : "4lB2DbjmXzWD98FbtJm1LK",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/1154f7c5c154e934eb50029e35cec33934c202d5",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/8756778419597360aa8c8619af555457a77224b0",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c8b94a97c587cad8f5c16f0e075dd34a4ddd5b9b",
+          "width" : 64
+        } ],
+        "name" : "Around The Well",
+        "type" : "album",
+        "uri" : "spotify:album:4lB2DbjmXzWD98FbtJm1LK"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4M5nCE77Qaxayuhp3fVn4V"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4M5nCE77Qaxayuhp3fVn4V",
+        "id" : "4M5nCE77Qaxayuhp3fVn4V",
+        "name" : "Iron & Wine",
+        "type" : "artist",
+        "uri" : "spotify:artist:4M5nCE77Qaxayuhp3fVn4V"
+      } ],
+      "available_markets" : [ "FR", "GB", "IE" ],
+      "disc_number" : 1,
+      "duration_ms" : 251280,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USSUB0400034"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2HWFPzS2hwtpBv3GbTxyn8"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2HWFPzS2hwtpBv3GbTxyn8",
+      "id" : "2HWFPzS2hwtpBv3GbTxyn8",
+      "name" : "Such Great Heights",
+      "popularity" : 50,
+      "preview_url" : "https://p.scdn.co/mp3-preview/033982cb8bc68ac927d83b18b49f366ec7d2548a",
+      "track_number" : 11,
+      "type" : "track",
+      "uri" : "spotify:track:2HWFPzS2hwtpBv3GbTxyn8"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Such+Great+Heights+Iron+And+Wine&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 4
+  }
+}

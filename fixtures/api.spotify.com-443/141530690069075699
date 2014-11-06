@@ -1,0 +1,85 @@
+GET /v1/search?q=Skinny%20Love%20Bon%20Iver&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:19 GMT
+content-type: application/json; charset=utf-8
+content-length: 2709
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Skinny+Love+Bon+Iver&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AT", "BE", "BG", "CH", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "NL", "NO", "PL", "PT", "RO", "SE", "SI", "SK", "TR" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2wBGb1zLSWrmiOdinWE831"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2wBGb1zLSWrmiOdinWE831",
+        "id" : "2wBGb1zLSWrmiOdinWE831",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/49cccdddc0fed3032303482cbc95d5e6778ec765",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/3390be041318684acdc17518babf10ee18752c75",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c58f0a58c750c144348bd93930272f27f9ff8929",
+          "width" : 64
+        } ],
+        "name" : "For Emma, Forever Ago",
+        "type" : "album",
+        "uri" : "spotify:album:2wBGb1zLSWrmiOdinWE831"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4LEiUm1SRbFMgfqnQTwUbQ"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4LEiUm1SRbFMgfqnQTwUbQ",
+        "id" : "4LEiUm1SRbFMgfqnQTwUbQ",
+        "name" : "Bon Iver",
+        "type" : "artist",
+        "uri" : "spotify:artist:4LEiUm1SRbFMgfqnQTwUbQ"
+      } ],
+      "available_markets" : [ "AD", "AT", "BE", "BG", "CH", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "NL", "NO", "PL", "PT", "RO", "SE", "SI", "SK", "TR" ],
+      "disc_number" : 1,
+      "duration_ms" : 238520,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "US38Y0811503"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/7fXyuQqEBwpKtCa8PomO7B"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/7fXyuQqEBwpKtCa8PomO7B",
+      "id" : "7fXyuQqEBwpKtCa8PomO7B",
+      "name" : "Skinny Love",
+      "popularity" : 75,
+      "preview_url" : "https://p.scdn.co/mp3-preview/7f45b1f948947495702cd8585a48f14edb6699bb",
+      "track_number" : 3,
+      "type" : "track",
+      "uri" : "spotify:track:7fXyuQqEBwpKtCa8PomO7B"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Skinny+Love+Bon+Iver&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 16
+  }
+}

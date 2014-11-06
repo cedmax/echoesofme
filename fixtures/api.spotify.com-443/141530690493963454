@@ -1,0 +1,85 @@
+GET /v1/search?q=Flash%20Joan%20As%20Police%20Woman&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:23 GMT
+content-type: application/json; charset=utf-8
+content-length: 2821
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Flash+Joan+As+Police+Woman&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CY", "CZ", "DE", "DK", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "HK", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NL", "NO", "NZ", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/25ah6JPCqGO4zotYWt2YFA"
+        },
+        "href" : "https://api.spotify.com/v1/albums/25ah6JPCqGO4zotYWt2YFA",
+        "id" : "25ah6JPCqGO4zotYWt2YFA",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/f4235b34f4c9c9310d5202d6a54e5471c1a7f73c",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/dc523936e9ee7cd49dd0225da965a459a6652014",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/7595fcc6d4573465808c3501f52e962f33537a8e",
+          "width" : 64
+        } ],
+        "name" : "The Deep Field",
+        "type" : "album",
+        "uri" : "spotify:album:25ah6JPCqGO4zotYWt2YFA"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6PBv8t9YTLggA9ZMwpeoqj"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6PBv8t9YTLggA9ZMwpeoqj",
+        "id" : "6PBv8t9YTLggA9ZMwpeoqj",
+        "name" : "Joan As Police Woman",
+        "type" : "artist",
+        "uri" : "spotify:artist:6PBv8t9YTLggA9ZMwpeoqj"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CY", "CZ", "DE", "DK", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "HK", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NL", "NO", "NZ", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 471653,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "BEP011000166"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3Hv3W8LL9jBrI79xVTN81q"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3Hv3W8LL9jBrI79xVTN81q",
+      "id" : "3Hv3W8LL9jBrI79xVTN81q",
+      "name" : "Flash",
+      "popularity" : 37,
+      "preview_url" : "https://p.scdn.co/mp3-preview/6b9c4bf22f0a5368f6c48bcbc82f1687fe8896f6",
+      "track_number" : 4,
+      "type" : "track",
+      "uri" : "spotify:track:3Hv3W8LL9jBrI79xVTN81q"
+    } ],
+    "limit" : 1,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 1
+  }
+}

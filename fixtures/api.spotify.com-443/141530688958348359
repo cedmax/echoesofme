@@ -1,0 +1,85 @@
+GET /v1/search?q=How%20It%20Ends%20DeVotchKa&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:08 GMT
+content-type: application/json; charset=utf-8
+content-length: 2714
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=How+It+Ends+DeVotchKa&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AT", "BE", "BG", "CH", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "NL", "NO", "PL", "PT", "RO", "SE", "SI", "SK", "TR" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/5xSOlPjrpThbP3W9GH9gBR"
+        },
+        "href" : "https://api.spotify.com/v1/albums/5xSOlPjrpThbP3W9GH9gBR",
+        "id" : "5xSOlPjrpThbP3W9GH9gBR",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/aa5292b19df57ccbd6126cb4c33cecfc3dba3890",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/b5c5485a12b7f6e998ffcc46e850850f1aa02b0b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/a7ffa746eb8dd3499d501d9a86c7631837c1fbd8",
+          "width" : 64
+        } ],
+        "name" : "How It Ends",
+        "type" : "album",
+        "uri" : "spotify:album:5xSOlPjrpThbP3W9GH9gBR"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0hk8VgR64voU5ueK96W2DI"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0hk8VgR64voU5ueK96W2DI",
+        "id" : "0hk8VgR64voU5ueK96W2DI",
+        "name" : "Devotchka",
+        "type" : "artist",
+        "uri" : "spotify:artist:0hk8VgR64voU5ueK96W2DI"
+      } ],
+      "available_markets" : [ "AD", "AT", "BE", "BG", "CH", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "NL", "NO", "PL", "PT", "RO", "SE", "SI", "SK", "TR" ],
+      "disc_number" : 1,
+      "duration_ms" : 419680,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USA2B0499605"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/5NZIVFs7R8xdrajdyetLoR"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/5NZIVFs7R8xdrajdyetLoR",
+      "id" : "5NZIVFs7R8xdrajdyetLoR",
+      "name" : "How It Ends",
+      "popularity" : 50,
+      "preview_url" : "https://p.scdn.co/mp3-preview/062fc0a48aee2b22214b71b88c4c65dbb0dd5c4a",
+      "track_number" : 5,
+      "type" : "track",
+      "uri" : "spotify:track:5NZIVFs7R8xdrajdyetLoR"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=How+It+Ends+DeVotchKa&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 20
+  }
+}

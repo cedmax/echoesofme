@@ -1,0 +1,85 @@
+GET /v1/search?q=I%20Will%20Wait%20Mumford%20&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:32 GMT
+content-type: application/json; charset=utf-8
+content-length: 2340
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=I+Will+Wait+Mumford+&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "FR", "GB", "IE" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0wQOzO44QldOoDo2nIty0X"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0wQOzO44QldOoDo2nIty0X",
+        "id" : "0wQOzO44QldOoDo2nIty0X",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/1cc1dba4bb7b36d26faed8f48e0db5139b21d02d",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/c96fa2680cfa6ade7cfba10a0a81b90c44acaf32",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/6749129742311b233b63963a68458f1436630bdd",
+          "width" : 64
+        } ],
+        "name" : "Babel",
+        "type" : "album",
+        "uri" : "spotify:album:0wQOzO44QldOoDo2nIty0X"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3gd8FJtBJtkRxdfbTu19U2"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3gd8FJtBJtkRxdfbTu19U2",
+        "id" : "3gd8FJtBJtkRxdfbTu19U2",
+        "name" : "Mumford & Sons",
+        "type" : "artist",
+        "uri" : "spotify:artist:3gd8FJtBJtkRxdfbTu19U2"
+      } ],
+      "available_markets" : [ "FR", "GB", "IE" ],
+      "disc_number" : 1,
+      "duration_ms" : 276720,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBUM71204769"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/7AwvxYLlFmdoz0hQgyKtNU"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/7AwvxYLlFmdoz0hQgyKtNU",
+      "id" : "7AwvxYLlFmdoz0hQgyKtNU",
+      "name" : "I Will Wait",
+      "popularity" : 64,
+      "preview_url" : "https://p.scdn.co/mp3-preview/579971800ed4eafe83029ff9eebf175fda45fe3d",
+      "track_number" : 3,
+      "type" : "track",
+      "uri" : "spotify:track:7AwvxYLlFmdoz0hQgyKtNU"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=I+Will+Wait+Mumford+&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 129
+  }
+}

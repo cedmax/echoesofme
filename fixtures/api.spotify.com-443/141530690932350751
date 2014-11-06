@@ -1,0 +1,85 @@
+GET /v1/search?q=Off%20Glory%20Soldout&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:28 GMT
+content-type: application/json; charset=utf-8
+content-length: 3012
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Off+Glory+Soldout&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "single",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/7x30kTIv8U1aO4rMS8ygbP"
+        },
+        "href" : "https://api.spotify.com/v1/albums/7x30kTIv8U1aO4rMS8ygbP",
+        "id" : "7x30kTIv8U1aO4rMS8ygbP",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/358fbb9c8b25202fd4eb11105c076e3df33428f7",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/b45efcbbe57e86c14c46932c0878f7f0c3a9bba7",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab5131959bc17a2b8b68761fb8bddf07e3534462",
+          "width" : 64
+        } ],
+        "name" : "Off Glory",
+        "type" : "album",
+        "uri" : "spotify:album:7x30kTIv8U1aO4rMS8ygbP"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5g40eoVT3f0lZbIa1mGbzs"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5g40eoVT3f0lZbIa1mGbzs",
+        "id" : "5g40eoVT3f0lZbIa1mGbzs",
+        "name" : "Soldout",
+        "type" : "artist",
+        "uri" : "spotify:artist:5g40eoVT3f0lZbIa1mGbzs"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 184132,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "BEN281200002"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3R0NVy0OOb2abQzmWrxdlF"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3R0NVy0OOb2abQzmWrxdlF",
+      "id" : "3R0NVy0OOb2abQzmWrxdlF",
+      "name" : "Off Glory",
+      "popularity" : 11,
+      "preview_url" : "https://p.scdn.co/mp3-preview/40979ed01490a828165ba197eb6ad65cfd3d5217",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:3R0NVy0OOb2abQzmWrxdlF"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Off+Glory+Soldout&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 2
+  }
+}

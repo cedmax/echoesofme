@@ -1,0 +1,85 @@
+GET /v1/search?q=On%20A%20Neck%2C%20On%20A%20Spit%20Grizzly%20Bear&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:16 GMT
+content-type: application/json; charset=utf-8
+content-length: 3066
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=On+A+Neck%2C+On+A+Spit+Grizzly+Bear&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6rVRNvNpzh0O2nSxFG7Ziz"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6rVRNvNpzh0O2nSxFG7Ziz",
+        "id" : "6rVRNvNpzh0O2nSxFG7Ziz",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/df4c9b0efdb776a959420dce3b2b537df4fb9b2d",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/1b8335e34041baae7ed2c1ce6ed5e0a6d8ea36b8",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/504be9f95da66d91492b4a1eefac5dc7ff58876b",
+          "width" : 64
+        } ],
+        "name" : "Yellow House",
+        "type" : "album",
+        "uri" : "spotify:album:6rVRNvNpzh0O2nSxFG7Ziz"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2Jv5eshHtLycR6R8KQCdc4"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2Jv5eshHtLycR6R8KQCdc4",
+        "id" : "2Jv5eshHtLycR6R8KQCdc4",
+        "name" : "Grizzly Bear",
+        "type" : "artist",
+        "uri" : "spotify:artist:2Jv5eshHtLycR6R8KQCdc4"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 346853,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBBPW0600046"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/18wtixhJzC2Shhk1A3F8eB"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/18wtixhJzC2Shhk1A3F8eB",
+      "id" : "18wtixhJzC2Shhk1A3F8eB",
+      "name" : "On a Neck, On a Spit",
+      "popularity" : 43,
+      "preview_url" : "https://p.scdn.co/mp3-preview/8da7839bd1ee2770fc3b450ff889501c0ea37e2d",
+      "track_number" : 8,
+      "type" : "track",
+      "uri" : "spotify:track:18wtixhJzC2Shhk1A3F8eB"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=On+A+Neck%2C+On+A+Spit+Grizzly+Bear&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 2
+  }
+}

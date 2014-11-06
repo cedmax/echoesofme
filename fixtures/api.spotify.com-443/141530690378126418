@@ -1,0 +1,85 @@
+GET /v1/search?q=Holding%20Out%20For%20A%20Hero%20Frou%20Frou&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:22 GMT
+content-type: application/json; charset=utf-8
+content-length: 2724
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Holding+Out+For+A+Hero+Frou+Frou&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/33uUYGGvdWXvBkQMQq9d9N"
+        },
+        "href" : "https://api.spotify.com/v1/albums/33uUYGGvdWXvBkQMQq9d9N",
+        "id" : "33uUYGGvdWXvBkQMQq9d9N",
+        "images" : [ {
+          "height" : 637,
+          "url" : "https://i.scdn.co/image/15ae12af38e4b1223a700f891db78eac40ef52cd",
+          "width" : 640
+        }, {
+          "height" : 299,
+          "url" : "https://i.scdn.co/image/41cad988b6b5b76ba857d7b68166280d8d12f36f",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c49c78f72c35b3882e29bac2598a680a6a03556c",
+          "width" : 64
+        } ],
+        "name" : "Shrek 2",
+        "type" : "album",
+        "uri" : "spotify:album:33uUYGGvdWXvBkQMQq9d9N"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6MUyqmIQ35inLjch0YzIEG"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6MUyqmIQ35inLjch0YzIEG",
+        "id" : "6MUyqmIQ35inLjch0YzIEG",
+        "name" : "Frou Frou",
+        "type" : "artist",
+        "uri" : "spotify:artist:6MUyqmIQ35inLjch0YzIEG"
+      } ],
+      "available_markets" : [ "AU", "BE", "CH", "DE", "FR", "GB", "IT", "NL", "NZ" ],
+      "disc_number" : 1,
+      "duration_ms" : 201466,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USUG10400144"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6Ow43CAv1LeAg8ouEvB8pb"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6Ow43CAv1LeAg8ouEvB8pb",
+      "id" : "6Ow43CAv1LeAg8ouEvB8pb",
+      "name" : "Holding Out For A Hero",
+      "popularity" : 39,
+      "preview_url" : "https://p.scdn.co/mp3-preview/5cd3166add07aa37f4fb45ee88a812250c358ee3",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:6Ow43CAv1LeAg8ouEvB8pb"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Holding+Out+For+A+Hero+Frou+Frou&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 2
+  }
+}

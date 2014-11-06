@@ -1,0 +1,85 @@
+GET /v1/search?q=Liar%20Liar%20Cris%20Cab&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:04 GMT
+content-type: application/json; charset=utf-8
+content-length: 2920
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Liar+Liar+Cris+Cab&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "single",
+        "available_markets" : [ "AD", "AR", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DO", "EC", "EE", "ES", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4DIda33cBKKhkhGD5Tic9J"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4DIda33cBKKhkhGD5Tic9J",
+        "id" : "4DIda33cBKKhkhGD5Tic9J",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/73ce7ad97180499d54d861796f077b05f8ba0a1a",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/3e4239f33255f9001110bb65d12fb41afc23a6e4",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/691fc9673e42be4a77b163b4c5dffc45d4e6b196",
+          "width" : 64
+        } ],
+        "name" : "Liar Liar",
+        "type" : "album",
+        "uri" : "spotify:album:4DIda33cBKKhkhGD5Tic9J"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/7vWBZm3sQ8yQvfV4nXxHXK"
+        },
+        "href" : "https://api.spotify.com/v1/artists/7vWBZm3sQ8yQvfV4nXxHXK",
+        "id" : "7vWBZm3sQ8yQvfV4nXxHXK",
+        "name" : "Cris Cab",
+        "type" : "artist",
+        "uri" : "spotify:artist:7vWBZm3sQ8yQvfV4nXxHXK"
+      } ],
+      "available_markets" : [ "AD", "AR", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DO", "EC", "EE", "ES", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 213853,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USUM71311524"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2Wyqnc6LHeEZxDS41DcAJn"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2Wyqnc6LHeEZxDS41DcAJn",
+      "id" : "2Wyqnc6LHeEZxDS41DcAJn",
+      "name" : "Liar Liar",
+      "popularity" : 69,
+      "preview_url" : "https://p.scdn.co/mp3-preview/5938ea00a770f592969e51ab9a48224838cabe31",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:2Wyqnc6LHeEZxDS41DcAJn"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Liar+Liar+Cris+Cab&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 33
+  }
+}

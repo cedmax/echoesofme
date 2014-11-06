@@ -1,0 +1,94 @@
+GET /v1/search?q=D%27estate%20La%20Differenza%20Feat.%20Catalin%20Josan&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:36 GMT
+content-type: application/json; charset=utf-8
+content-length: 3312
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=D%27estate+La+Differenza+Feat.+Catalin+Josan&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "single",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3DQ95R0ILtfvkkifVEcNYL"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3DQ95R0ILtfvkkifVEcNYL",
+        "id" : "3DQ95R0ILtfvkkifVEcNYL",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/9cb68bccc23d17ef55f29e3129756bbcd5b80d43",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/0ece163f249632b8819741bbb31e195b6fa32659",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/80c9287c989d68a21633fabb6f2241709bd73d03",
+          "width" : 64
+        } ],
+        "name" : "D'estate (feat. Catalin Josan)",
+        "type" : "album",
+        "uri" : "spotify:album:3DQ95R0ILtfvkkifVEcNYL"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2L0bKtUV2OKksHkjLzz3A1"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2L0bKtUV2OKksHkjLzz3A1",
+        "id" : "2L0bKtUV2OKksHkjLzz3A1",
+        "name" : "La Differenza",
+        "type" : "artist",
+        "uri" : "spotify:artist:2L0bKtUV2OKksHkjLzz3A1"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2HgAvmFuJvLChOQdWBiHL3"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2HgAvmFuJvLChOQdWBiHL3",
+        "id" : "2HgAvmFuJvLChOQdWBiHL3",
+        "name" : "Catalin Josan",
+        "type" : "artist",
+        "uri" : "spotify:artist:2HgAvmFuJvLChOQdWBiHL3"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 193500,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "ITF081200055"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1gid1kJ96lDkWKOeP6BJmt"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1gid1kJ96lDkWKOeP6BJmt",
+      "id" : "1gid1kJ96lDkWKOeP6BJmt",
+      "name" : "D'estate",
+      "popularity" : 8,
+      "preview_url" : "https://p.scdn.co/mp3-preview/17bf86ef1749fc73394ddff4bb9a452704f8a3ef",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:1gid1kJ96lDkWKOeP6BJmt"
+    } ],
+    "limit" : 1,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 1
+  }
+}

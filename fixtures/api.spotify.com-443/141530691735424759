@@ -1,0 +1,85 @@
+GET /v1/search?q=Oh%20Love%20Green%20Day&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:36 GMT
+content-type: application/json; charset=utf-8
+content-length: 2998
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Oh+Love+Green+Day&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6AFJIZmd1zWQDBBwHyeo9w"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6AFJIZmd1zWQDBBwHyeo9w",
+        "id" : "6AFJIZmd1zWQDBBwHyeo9w",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/692219cc13005e70794bc66fa0cd5c9fce04a159",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/54df5991e435c17cffaa1025c19cbfa328572290",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/b300b0eeb7200a8d5cccb350c4c6e152327db2b3",
+          "width" : 64
+        } ],
+        "name" : "¡UNO!",
+        "type" : "album",
+        "uri" : "spotify:album:6AFJIZmd1zWQDBBwHyeo9w"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/7oPftvlwr6VrsViSDV7fJY"
+        },
+        "href" : "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY",
+        "id" : "7oPftvlwr6VrsViSDV7fJY",
+        "name" : "Green Day",
+        "type" : "artist",
+        "uri" : "spotify:artist:7oPftvlwr6VrsViSDV7fJY"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 303293,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USRE11200227"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1qIgyDoc2rwtq8w49jeWL8"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1qIgyDoc2rwtq8w49jeWL8",
+      "id" : "1qIgyDoc2rwtq8w49jeWL8",
+      "name" : "Oh Love",
+      "popularity" : 56,
+      "preview_url" : "https://p.scdn.co/mp3-preview/1b09461324028cec42305ec74fe80a72842edb3e",
+      "track_number" : 12,
+      "type" : "track",
+      "uri" : "spotify:track:1qIgyDoc2rwtq8w49jeWL8"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Oh+Love+Green+Day&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 55
+  }
+}

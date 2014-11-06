@@ -1,0 +1,85 @@
+GET /v1/search?q=I%20Know%20What%20I%20Am%20Band%20Of%20Skulls&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:01 GMT
+content-type: application/json; charset=utf-8
+content-length: 3048
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=I+Know+What+I+Am+Band+Of+Skulls&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/324BTvXR9NMitN9KndHLKA"
+        },
+        "href" : "https://api.spotify.com/v1/albums/324BTvXR9NMitN9KndHLKA",
+        "id" : "324BTvXR9NMitN9KndHLKA",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/8f90708b8fa415b2451ed041e9d4dbf46c4106e2",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ef8d5a852f091667058b6f03359d0b7bedb663b2",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ad101076ef838b93374d8937e5e9a0a86e281347",
+          "width" : 64
+        } ],
+        "name" : "Baby Darling Doll Face Honey",
+        "type" : "album",
+        "uri" : "spotify:album:324BTvXR9NMitN9KndHLKA"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4ddt8PPvmWrI9mJQy1VrIG"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4ddt8PPvmWrI9mJQy1VrIG",
+        "id" : "4ddt8PPvmWrI9mJQy1VrIG",
+        "name" : "Band Of Skulls",
+        "type" : "artist",
+        "uri" : "spotify:artist:4ddt8PPvmWrI9mJQy1VrIG"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 198000,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USM880890141"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2emjgVnrbTxBpdP6Ww0aJo"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2emjgVnrbTxBpdP6Ww0aJo",
+      "id" : "2emjgVnrbTxBpdP6Ww0aJo",
+      "name" : "I Know What I Am",
+      "popularity" : 57,
+      "preview_url" : "https://p.scdn.co/mp3-preview/fff27f9968cc6d4f277625889196ea092998dfeb",
+      "track_number" : 3,
+      "type" : "track",
+      "uri" : "spotify:track:2emjgVnrbTxBpdP6Ww0aJo"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=I+Know+What+I+Am+Band+Of+Skulls&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 5
+  }
+}

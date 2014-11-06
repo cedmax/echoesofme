@@ -1,0 +1,85 @@
+GET /v1/search?q=Breathe%20Me%20SIA&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:24 GMT
+content-type: application/json; charset=utf-8
+content-length: 2714
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Breathe+Me+SIA&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AR", "AT", "AU", "BE", "BG", "BR", "CH", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "HK", "HU", "IE", "IS", "IT", "LT", "LU", "LV", "NL", "NO", "NZ", "PL", "PT", "RO", "SE", "SG", "SK", "TR", "TW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/5HRQFmLEuzQP8e12o8DzB5"
+        },
+        "href" : "https://api.spotify.com/v1/albums/5HRQFmLEuzQP8e12o8DzB5",
+        "id" : "5HRQFmLEuzQP8e12o8DzB5",
+        "images" : [ {
+          "height" : 634,
+          "url" : "https://i.scdn.co/image/9124e0f485d628f502f203b0ca73b25e21295193",
+          "width" : 640
+        }, {
+          "height" : 297,
+          "url" : "https://i.scdn.co/image/272ce01dd03f129ed17b3f7eca6ca101784448d2",
+          "width" : 300
+        }, {
+          "height" : 63,
+          "url" : "https://i.scdn.co/image/b321564fb2108a4fcb6b39b171be741ac778373a",
+          "width" : 64
+        } ],
+        "name" : "Colour The Small One",
+        "type" : "album",
+        "uri" : "spotify:album:5HRQFmLEuzQP8e12o8DzB5"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5WUlDfRSoLAfcVSX1WnrxN"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5WUlDfRSoLAfcVSX1WnrxN",
+        "id" : "5WUlDfRSoLAfcVSX1WnrxN",
+        "name" : "Sia",
+        "type" : "artist",
+        "uri" : "spotify:artist:5WUlDfRSoLAfcVSX1WnrxN"
+      } ],
+      "available_markets" : [ "AR", "AT", "AU", "BE", "BG", "BR", "CH", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "HK", "HU", "IE", "IS", "IT", "LT", "LU", "LV", "NL", "NO", "NZ", "PL", "PT", "RO", "SE", "SG", "SK", "TR", "TW" ],
+      "disc_number" : 1,
+      "duration_ms" : 272800,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAAN0300590"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/7jqzZyJJLrpkRFYGpkqSK6"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/7jqzZyJJLrpkRFYGpkqSK6",
+      "id" : "7jqzZyJJLrpkRFYGpkqSK6",
+      "name" : "Breathe Me",
+      "popularity" : 72,
+      "preview_url" : "https://p.scdn.co/mp3-preview/22b8a3a38f9c4def2efbb0b1c27b355509c65b01",
+      "track_number" : 3,
+      "type" : "track",
+      "uri" : "spotify:track:7jqzZyJJLrpkRFYGpkqSK6"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Breathe+Me+SIA&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 21
+  }
+}

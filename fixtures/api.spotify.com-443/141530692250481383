@@ -1,0 +1,60 @@
+POST /v1/users/cedmax/playlists
+authorization: Bearer BQAvZu1pqp-2_zk2qNBL_etBroUuCrIOX7lrhoHdQA5w0bBzww8TTUC4_YLF3YuUOY8xs2xNgSStIxtq6pCTkM1ht1YZ5FjRpC4QJniAY6NTzNr-ZP1YRLnHM0Hjd0SovvfxIWZjcKy_Xdq5MtDnQdMOISCqKm4R9dWeblBP6ivruzgj82ixq487MDUDDQcSKAM1RS7xVz54obkfN5e37NzZdNUFZcdMJByuhGUG7nxWXg
+host: api.spotify.com
+accept: application/json
+content-type: application/json
+body: {\"name\":\"Shazam\",\"public\":false}
+
+201 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:41 GMT
+content-type: application/json; charset=utf-8
+content-length: 1047
+connection: keep-alive
+keep-alive: timeout=600
+cache-control: private, max-age=0
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "collaborative" : false,
+  "description" : null,
+  "external_urls" : {
+    "spotify" : "http://open.spotify.com/user/cedmax/playlist/7tRPWgbD5OGmM7mBz0ODAY"
+  },
+  "followers" : {
+    "href" : null,
+    "total" : 0
+  },
+  "href" : "https://api.spotify.com/v1/users/cedmax/playlists/7tRPWgbD5OGmM7mBz0ODAY",
+  "id" : "7tRPWgbD5OGmM7mBz0ODAY",
+  "images" : [ ],
+  "name" : "Shazam",
+  "owner" : {
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/cedmax"
+    },
+    "href" : "https://api.spotify.com/v1/users/cedmax",
+    "id" : "cedmax",
+    "type" : "user",
+    "uri" : "spotify:user:cedmax"
+  },
+  "public" : false,
+  "snapshot_id" : "fR3VKwa3W0DYIfink/2j9c1135c1qbrTgz/FNqXK1AVDSxSG3MJf3yQRCWhamVKm",
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/users/cedmax/playlists/7tRPWgbD5OGmM7mBz0ODAY/tracks",
+    "items" : [ ],
+    "limit" : 100,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 0
+  },
+  "type" : "playlist",
+  "uri" : "spotify:user:cedmax:playlist:7tRPWgbD5OGmM7mBz0ODAY"
+}

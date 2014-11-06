@@ -1,0 +1,85 @@
+GET /v1/search?q=Rosso%20Relativo%20Tiziano%20Ferro&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:36 GMT
+content-type: application/json; charset=utf-8
+content-length: 3051
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Rosso+Relativo+Tiziano+Ferro&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0KwioRBoCJgFkneQJ17BKW"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0KwioRBoCJgFkneQJ17BKW",
+        "id" : "0KwioRBoCJgFkneQJ17BKW",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/9f0f7cbb1e884bab834a8715da0992333252653e",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/6d7e38187bebc9e89b0cb32a60188953b2f9bc40",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/6d2ddb8873480c2295ab83defed621c4f9544a08",
+          "width" : 64
+        } ],
+        "name" : "Rosso Relativo",
+        "type" : "album",
+        "uri" : "spotify:album:0KwioRBoCJgFkneQJ17BKW"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/11TplWqOPQBTmg2eiSLt1m"
+        },
+        "href" : "https://api.spotify.com/v1/artists/11TplWqOPQBTmg2eiSLt1m",
+        "id" : "11TplWqOPQBTmg2eiSLt1m",
+        "name" : "Tiziano Ferro",
+        "type" : "artist",
+        "uri" : "spotify:artist:11TplWqOPQBTmg2eiSLt1m"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 241106,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "ITB920100002"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0m8DirbbsCAGqIWsQv7DHO"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0m8DirbbsCAGqIWsQv7DHO",
+      "id" : "0m8DirbbsCAGqIWsQv7DHO",
+      "name" : "Xdono (Perdono)",
+      "popularity" : 52,
+      "preview_url" : "https://p.scdn.co/mp3-preview/f3aa5b75ef2f2d5f19bebd7d1c2b3c396d2bbaf5",
+      "track_number" : 3,
+      "type" : "track",
+      "uri" : "spotify:track:0m8DirbbsCAGqIWsQv7DHO"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Rosso+Relativo+Tiziano+Ferro&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 38
+  }
+}

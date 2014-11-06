@@ -1,0 +1,85 @@
+GET /v1/search?q=Bloodbuzz%20Ohio%20Julia%20Stone&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:27 GMT
+content-type: application/json; charset=utf-8
+content-length: 2345
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Bloodbuzz+Ohio+Julia+Stone&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "GB", "IE" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6P6NtBAjm5WTLLe7cwo0rw"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6P6NtBAjm5WTLLe7cwo0rw",
+        "id" : "6P6NtBAjm5WTLLe7cwo0rw",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c0583e78a6f779569d051417538a7ffa3a63a67d",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/b5bfa4febad65bde0c4856cade277bf6cac06f8b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/07439054f02e98ece04e47330ef89ad19708f587",
+          "width" : 64
+        } ],
+        "name" : "By The Horns",
+        "type" : "album",
+        "uri" : "spotify:album:6P6NtBAjm5WTLLe7cwo0rw"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4gZRt9wlRx1IsxT9glJdrc"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4gZRt9wlRx1IsxT9glJdrc",
+        "id" : "4gZRt9wlRx1IsxT9glJdrc",
+        "name" : "Julia Stone",
+        "type" : "artist",
+        "uri" : "spotify:artist:4gZRt9wlRx1IsxT9glJdrc"
+      } ],
+      "available_markets" : [ "GB", "IE" ],
+      "disc_number" : 1,
+      "duration_ms" : 310840,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "AUAP11100004"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1XPcrXb5bbnRaafvnSvp8x"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1XPcrXb5bbnRaafvnSvp8x",
+      "id" : "1XPcrXb5bbnRaafvnSvp8x",
+      "name" : "Bloodbuzz Ohio",
+      "popularity" : 29,
+      "preview_url" : "https://p.scdn.co/mp3-preview/ca436c8b84fc216a43d050f31dacb1f4c9903317",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:1XPcrXb5bbnRaafvnSvp8x"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Bloodbuzz+Ohio+Julia+Stone&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 2
+  }
+}

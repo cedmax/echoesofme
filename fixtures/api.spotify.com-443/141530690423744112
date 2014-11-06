@@ -1,0 +1,85 @@
+GET /v1/search?q=Today%20The%20Smashing%20Pumpkins&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:23 GMT
+content-type: application/json; charset=utf-8
+content-length: 3275
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Today+The+Smashing+Pumpkins&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AT", "AU", "BE", "CA", "CH", "DE", "DK", "ES", "FI", "FR", "GB", "NL", "NO", "NZ", "SE", "US", "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/1cUnNrx2TxvrpwPRtvpGwn"
+        },
+        "href" : "https://api.spotify.com/v1/albums/1cUnNrx2TxvrpwPRtvpGwn",
+        "id" : "1cUnNrx2TxvrpwPRtvpGwn",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/02ce8e6f4f420301b6c03ed22046255cd96cc1b2",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/143b7df792627effa06ff7eb02be3124ef23c036",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/54de1e8af28f9d6337f34773b30768054329b932",
+          "width" : 64
+        } ],
+        "name" : "Rotten Apples, The Smashing Pumpkins Greatest Hits",
+        "type" : "album",
+        "uri" : "spotify:album:1cUnNrx2TxvrpwPRtvpGwn"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/40Yq4vzPs9VNUrIBG5Jr2i"
+        },
+        "href" : "https://api.spotify.com/v1/artists/40Yq4vzPs9VNUrIBG5Jr2i",
+        "id" : "40Yq4vzPs9VNUrIBG5Jr2i",
+        "name" : "The Smashing Pumpkins",
+        "type" : "artist",
+        "uri" : "spotify:artist:40Yq4vzPs9VNUrIBG5Jr2i"
+      } ],
+      "available_markets" : [ "AT", "AU", "BE", "CA", "CH", "DE", "DK", "ES", "FI", "FR", "GB", "NL", "NO", "NZ", "SE", "US", "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 202133,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USVI29300027"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1XPta4VLT78HQnVFd1hlsK"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1XPta4VLT78HQnVFd1hlsK",
+      "id" : "1XPta4VLT78HQnVFd1hlsK",
+      "name" : "Today",
+      "popularity" : 65,
+      "preview_url" : "https://p.scdn.co/mp3-preview/661d3b187ba4eb1fca81f23b19a1a03500bf8e51",
+      "track_number" : 5,
+      "type" : "track",
+      "uri" : "spotify:track:1XPta4VLT78HQnVFd1hlsK"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Today+The+Smashing+Pumpkins&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 28
+  }
+}

@@ -1,0 +1,85 @@
+GET /v1/search?q=Beautiful%20P.O.D.&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:18 GMT
+content-type: application/json; charset=utf-8
+content-length: 2965
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Beautiful+P.O.D.&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0mKv8eXP7fCar8BAPwn2vm"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0mKv8eXP7fCar8BAPwn2vm",
+        "id" : "0mKv8eXP7fCar8BAPwn2vm",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/3e59c7bc2cc41d463109ca3b7b0e255548dd78d5",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/8613f70f24603df0135b2bf35113f45353d44ed1",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/8203f02c4deb0fd300017da116e5e2b55d893dd7",
+          "width" : 64
+        } ],
+        "name" : "Murdered Love",
+        "type" : "album",
+        "uri" : "spotify:album:0mKv8eXP7fCar8BAPwn2vm"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6KO6G41BBLTDNYOLefWTMU"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6KO6G41BBLTDNYOLefWTMU",
+        "id" : "6KO6G41BBLTDNYOLefWTMU",
+        "name" : "P.O.D.",
+        "type" : "artist",
+        "uri" : "spotify:artist:6KO6G41BBLTDNYOLefWTMU"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 232986,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USRZR1233006"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/7htzgCtU33Hxp1dxaMFOV7"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/7htzgCtU33Hxp1dxaMFOV7",
+      "id" : "7htzgCtU33Hxp1dxaMFOV7",
+      "name" : "Beautiful",
+      "popularity" : 41,
+      "preview_url" : "https://p.scdn.co/mp3-preview/a2169d0119bb777099841b47979f56e3b6473a4a",
+      "track_number" : 6,
+      "type" : "track",
+      "uri" : "spotify:track:7htzgCtU33Hxp1dxaMFOV7"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Beautiful+P.O.D.&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 11
+  }
+}

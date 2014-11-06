@@ -1,0 +1,85 @@
+GET /v1/search?q=Follow%20Crystal%20Fighters&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:31 GMT
+content-type: application/json; charset=utf-8
+content-length: 3034
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Follow+Crystal+Fighters&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/1bj3W2riKHMas7gH2TxNrn"
+        },
+        "href" : "https://api.spotify.com/v1/albums/1bj3W2riKHMas7gH2TxNrn",
+        "id" : "1bj3W2riKHMas7gH2TxNrn",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/e716e68adf0b686b50fb42db4743b2328c9585d6",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/c1ef2dd4ee8cc0d5fad02c848ad614ac17bc50f1",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/d5dc953dbe855d27a7f78b4f2fc066fde6c4c448",
+          "width" : 64
+        } ],
+        "name" : "Star Of Love",
+        "type" : "album",
+        "uri" : "spotify:album:1bj3W2riKHMas7gH2TxNrn"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/75EZuo5MHV2572NRpMWotC"
+        },
+        "href" : "https://api.spotify.com/v1/artists/75EZuo5MHV2572NRpMWotC",
+        "id" : "75EZuo5MHV2572NRpMWotC",
+        "name" : "Crystal Fighters",
+        "type" : "artist",
+        "uri" : "spotify:artist:75EZuo5MHV2572NRpMWotC"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 196480,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBE7C1000010"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0MMWj8de7P5rm4OnsJzlMn"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0MMWj8de7P5rm4OnsJzlMn",
+      "id" : "0MMWj8de7P5rm4OnsJzlMn",
+      "name" : "Follow",
+      "popularity" : 61,
+      "preview_url" : "https://p.scdn.co/mp3-preview/df19c1ed5b04643b65ae07a14d414306bf7a4f61",
+      "track_number" : 11,
+      "type" : "track",
+      "uri" : "spotify:track:0MMWj8de7P5rm4OnsJzlMn"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Follow+Crystal+Fighters&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 30
+  }
+}

@@ -1,0 +1,85 @@
+GET /v1/search?q=I%27m%20Yours%20Jason%20Mraz&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:03 GMT
+content-type: application/json; charset=utf-8
+content-length: 3052
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=I%27m+Yours+Jason+Mraz&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/04G0YylSjvDQZrjOfE5jA5"
+        },
+        "href" : "https://api.spotify.com/v1/albums/04G0YylSjvDQZrjOfE5jA5",
+        "id" : "04G0YylSjvDQZrjOfE5jA5",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/da78aa2fadacfabdc80addc724f6c01c9752aa02",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/0d860d22da2b9c1e4b9641aabc8df5235cbe27db",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c7cb604f0f31884af9c79d1e01f46c518ebb2b6b",
+          "width" : 64
+        } ],
+        "name" : "We Sing. We Dance. We Steal Things.",
+        "type" : "album",
+        "uri" : "spotify:album:04G0YylSjvDQZrjOfE5jA5"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4phGZZrJZRo4ElhRtViYdl"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4phGZZrJZRo4ElhRtViYdl",
+        "id" : "4phGZZrJZRo4ElhRtViYdl",
+        "name" : "Jason Mraz",
+        "type" : "artist",
+        "uri" : "spotify:artist:4phGZZrJZRo4ElhRtViYdl"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 242186,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USEE10800667"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1EzrEOXmMH3G43AXT1y7pA"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1EzrEOXmMH3G43AXT1y7pA",
+      "id" : "1EzrEOXmMH3G43AXT1y7pA",
+      "name" : "I'm Yours",
+      "popularity" : 81,
+      "preview_url" : "https://p.scdn.co/mp3-preview/2fee94f72527b42f3af8cb003a14f2ac16a97c5e",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:1EzrEOXmMH3G43AXT1y7pA"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=I%27m+Yours+Jason+Mraz&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 190
+  }
+}

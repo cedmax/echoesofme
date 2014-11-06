@@ -1,0 +1,85 @@
+GET /v1/search?q=Drinking%20In%20L.A.%20Bran%20Van%203000&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:20 GMT
+content-type: application/json; charset=utf-8
+content-length: 3021
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Drinking+In+L.A.+Bran+Van+3000&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6mJ0W6Cdr8C8K3sC2R0QCD"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6mJ0W6Cdr8C8K3sC2R0QCD",
+        "id" : "6mJ0W6Cdr8C8K3sC2R0QCD",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/be0f0d6ffc7eb6d02b640658aa81af7b29898192",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/f0c3af822af62c1beab89cdba58da01725199ebb",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/64ea5558d349cc9bb502bac2326cce799e24c2ec",
+          "width" : 64
+        } ],
+        "name" : "This Is... 1998",
+        "type" : "album",
+        "uri" : "spotify:album:6mJ0W6Cdr8C8K3sC2R0QCD"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3D3blX3lLE3BCMdo3SOMlB"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3D3blX3lLE3BCMdo3SOMlB",
+        "id" : "3D3blX3lLE3BCMdo3SOMlB",
+        "name" : "Bran Van 3000",
+        "type" : "artist",
+        "uri" : "spotify:artist:3D3blX3lLE3BCMdo3SOMlB"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 220000,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "CAA509711403"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/7J71oVcsttUDtL3bc47ClX"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/7J71oVcsttUDtL3bc47ClX",
+      "id" : "7J71oVcsttUDtL3bc47ClX",
+      "name" : "Drinking In L.A.",
+      "popularity" : 51,
+      "preview_url" : "https://p.scdn.co/mp3-preview/a5372b9cd28356d94d52cf1f935e56a929723bf4",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:7J71oVcsttUDtL3bc47ClX"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Drinking+In+L.A.+Bran+Van+3000&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 33
+  }
+}

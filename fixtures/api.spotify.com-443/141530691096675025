@@ -1,0 +1,85 @@
+GET /v1/search?q=Ho%20Hey%20The%20Lumineers&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:29 GMT
+content-type: application/json; charset=utf-8
+content-length: 2954
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Ho+Hey+The+Lumineers&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/5h7fx8ILwOZ3I5yQ4eGBl7"
+        },
+        "href" : "https://api.spotify.com/v1/albums/5h7fx8ILwOZ3I5yQ4eGBl7",
+        "id" : "5h7fx8ILwOZ3I5yQ4eGBl7",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/3605f9c72a5122efd45ce4d6474b9efedfbf930b",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/50e23beb93336b948f0c9f078d1fc97eaa43eec8",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/e12b637db32868c89a9e514e47ca5239ae705fe1",
+          "width" : 64
+        } ],
+        "name" : "The Lumineers",
+        "type" : "album",
+        "uri" : "spotify:album:5h7fx8ILwOZ3I5yQ4eGBl7"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/16oZKvXb6WkQlVAjwo2Wbg"
+        },
+        "href" : "https://api.spotify.com/v1/artists/16oZKvXb6WkQlVAjwo2Wbg",
+        "id" : "16oZKvXb6WkQlVAjwo2Wbg",
+        "name" : "The Lumineers",
+        "type" : "artist",
+        "uri" : "spotify:artist:16oZKvXb6WkQlVAjwo2Wbg"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 161226,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USDMG1260805"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1jdNcAD8Ir58RlsdGjJJdx"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1jdNcAD8Ir58RlsdGjJJdx",
+      "id" : "1jdNcAD8Ir58RlsdGjJJdx",
+      "name" : "Ho Hey",
+      "popularity" : 76,
+      "preview_url" : "https://p.scdn.co/mp3-preview/e9b8fd9d6ccb0ca21ce0b83a2eeb4e97c69d38d4",
+      "track_number" : 5,
+      "type" : "track",
+      "uri" : "spotify:track:1jdNcAD8Ir58RlsdGjJJdx"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Ho+Hey+The+Lumineers&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 173
+  }
+}

@@ -1,0 +1,85 @@
+GET /v1/search?q=Everything%20Trying%20Damien%20Jurado&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:11 GMT
+content-type: application/json; charset=utf-8
+content-length: 2896
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Everything+Trying+Damien+Jurado&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "NI", "NL", "NO", "NZ", "PA", "PE", "PL", "PT", "PY", "RO", "SE", "SI", "SK", "SV", "TR", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6tHOCtP4zbc3tNAklAKSUU"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6tHOCtP4zbc3tNAklAKSUU",
+        "id" : "6tHOCtP4zbc3tNAklAKSUU",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/6060a05468a6b9099c10a5d3dcada3cc02082b25",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/97d9243d9d59d4230174eae991768d629e6636ed",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/7b2c625ba6991afc5ef419dac590069712b192b5",
+          "width" : 64
+        } ],
+        "name" : "Caught In The Trees",
+        "type" : "album",
+        "uri" : "spotify:album:6tHOCtP4zbc3tNAklAKSUU"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/79JJCxCCfJ8HufX6w8q2k4"
+        },
+        "href" : "https://api.spotify.com/v1/artists/79JJCxCCfJ8HufX6w8q2k4",
+        "id" : "79JJCxCCfJ8HufX6w8q2k4",
+        "name" : "Damien Jurado",
+        "type" : "artist",
+        "uri" : "spotify:artist:79JJCxCCfJ8HufX6w8q2k4"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "NI", "NL", "NO", "NZ", "PA", "PE", "PL", "PT", "PY", "RO", "SE", "SI", "SK", "SV", "TR", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 205106,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "US38W0817509"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/7oHCMx8VBJ4t9EpEcZzw1c"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/7oHCMx8VBJ4t9EpEcZzw1c",
+      "id" : "7oHCMx8VBJ4t9EpEcZzw1c",
+      "name" : "Everything Trying",
+      "popularity" : 48,
+      "preview_url" : "https://p.scdn.co/mp3-preview/4cb281d83d36d0700d36a89bc1d18edd6370b984",
+      "track_number" : 9,
+      "type" : "track",
+      "uri" : "spotify:track:7oHCMx8VBJ4t9EpEcZzw1c"
+    } ],
+    "limit" : 1,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 1
+  }
+}

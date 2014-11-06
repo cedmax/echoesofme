@@ -1,0 +1,85 @@
+GET /v1/search?q=You%27ve%20Got%20Time%20Regina%20Spektor&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:19 GMT
+content-type: application/json; charset=utf-8
+content-length: 3049
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=You%27ve+Got+Time+Regina+Spektor&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "single",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/5QOP3w3rOF5TBYgzjGep5Y"
+        },
+        "href" : "https://api.spotify.com/v1/albums/5QOP3w3rOF5TBYgzjGep5Y",
+        "id" : "5QOP3w3rOF5TBYgzjGep5Y",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/68552447216d4e46e5e73869997306d59d6c9914",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/112dec853542f057f23cee8e70f805cc4d8ed50d",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/35419b3f312c713354d731d18724d463c7ce728f",
+          "width" : 64
+        } ],
+        "name" : "You've Got Time",
+        "type" : "album",
+        "uri" : "spotify:album:5QOP3w3rOF5TBYgzjGep5Y"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3z6Gk257P9jNcZbBXJNX5i"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3z6Gk257P9jNcZbBXJNX5i",
+        "id" : "3z6Gk257P9jNcZbBXJNX5i",
+        "name" : "Regina Spektor",
+        "type" : "artist",
+        "uri" : "spotify:artist:3z6Gk257P9jNcZbBXJNX5i"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 189480,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USWB11302031"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1vDMGBzqLJWZC5UzePDURw"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1vDMGBzqLJWZC5UzePDURw",
+      "id" : "1vDMGBzqLJWZC5UzePDURw",
+      "name" : "You've Got Time",
+      "popularity" : 67,
+      "preview_url" : "https://p.scdn.co/mp3-preview/392d002f1f73c3afde83090b6663368e9ed7888b",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:1vDMGBzqLJWZC5UzePDURw"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=You%27ve+Got+Time+Regina+Spektor&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 3
+  }
+}

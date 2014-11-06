@@ -1,0 +1,19 @@
+POST /v1/users/cedmax/playlists/7tRPWgbD5OGmM7mBz0ODAY/tracks?uris=spotify%3Atrack%3A7xqcdtwYBRQDsBNp3pZFKf%2Cspotify%3Atrack%3A4wohhwwsZtZ3IspX26OCXV%2Cspotify%3Atrack%3A4UqnJPMR50B2LVjN9SsPCN%2Cspotify%3Atrack%3A1EzrEOXmMH3G43AXT1y7pA%2Cspotify%3Atrack%3A0EdCt9PpsDneh4LeNIy5vp%2Cspotify%3Atrack%3A3G2eh98s3PL01N2EeCJHep%2Cspotify%3Atrack%3A3epbUush0ajr7RvwG014nO%2Cspotify%3Atrack%3A0ifSeVGUr7py5GggttDhXw%2Cspotify%3Atrack%3A4VrWlk8IQxevMvERoX08iC%2Cspotify%3Atrack%3A35VqQrwh16t58JMjdLxZDZ%2Cspotify%3Atrack%3A6GJTapmJmNA9bZLyow7XPh%2Cspotify%3Atrack%3A2emjgVnrbTxBpdP6Ww0aJo%2Cspotify%3Atrack%3A7atkh5GtwekmQDE0GTMqKT
+authorization: Bearer BQAvZu1pqp-2_zk2qNBL_etBroUuCrIOX7lrhoHdQA5w0bBzww8TTUC4_YLF3YuUOY8xs2xNgSStIxtq6pCTkM1ht1YZ5FjRpC4QJniAY6NTzNr-ZP1YRLnHM0Hjd0SovvfxIWZjcKy_Xdq5MtDnQdMOISCqKm4R9dWeblBP6ivruzgj82ixq487MDUDDQcSKAM1RS7xVz54obkfN5e37NzZdNUFZcdMJByuhGUG7nxWXg
+host: api.spotify.com
+accept: application/json
+
+400 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:41 GMT
+content-type: text/html
+content-length: 166
+connection: close
+
+<html>
+<head><title>400 Bad Request</title></head>
+<body bgcolor="white">
+<center><h1>400 Bad Request</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>

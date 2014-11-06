@@ -1,0 +1,23 @@
+POST /api/token
+authorization: Basic YmQzYzRiMTJlNjUyNGMwZGI5ZTE5OGZlN2Y0ZWNhMjQ6ZmQ4NTE2ZDJkZTc5NDU3Yjk3NTUxMWM0NTNkOGQ4MDY=
+host: accounts.spotify.com
+content-type: application/x-www-form-urlencoded; charset=utf-8
+accept: application/json
+body: code=AQDn0AG5ve69ito7Uad0cPyy67wxUzhSCpllL0FaBsaafkJ1BWJKJchNJrscIjTTdolNXJU2haH5PM43EsYBXVisKxhN4qZtlpK2VMYM4UbBbs2ql5m86kMB_e2jfa-VZJEp28FXjo9pzleIneR-oN88pP9dUHUWCsyzPe_HIYjP2qcr92H6H4IpRC2D3acuFSX1i3RbhYCETRShDZyaJHEW6BlevioKHZscKHQYIJdn-MU4_HY3fv2ZLsBfSSqN7VZBFdyb8TgpjNTXlx46NE8vXZqkSOf9FAC4HdxB1yBK6DcaAmDh8qt_hMkSb0WF7PA9gGcEbhoCj8JvSZ4Cng&redirect_uri=http%3A%2F%2Flocalhost%3A8888%2Fcallback&grant_type=authorization_code
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:47:36 GMT
+content-type: application/json
+content-length: 447
+connection: keep-alive
+keep-alive: timeout=10
+vary: Accept-Encoding
+x-frame-options: deny
+content-security-policy: default-src 'self'; script-src 'self' https://d2d1dxiu3v1f2i.cloudfront.net https://www.google-analytics.com; img-src 'self' https://d2d1dxiu3v1f2i.cloudfront.net https://i.imgur.com https://d2mv8tnci56s9d.cloudfront.net https://graph.facebook.com https://fbcdn-profile-a.akamaihd.net https://www.google-analytics.com https://stats.g.doubleclick.net data: d2d1dxiu3v1f2i.cloudfront.net; font-src 'self' https://d2d1dxiu3v1f2i.cloudfront.net; style-src 'self' 'unsafe-inline' https://d2d1dxiu3v1f2i.cloudfront.net; frame-src 'self' https://www.spotify.com;
+cache-control: : no-cache, no-store, must-revalidate
+pragma: : no-cache
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{"access_token":"BQAvZu1pqp-2_zk2qNBL_etBroUuCrIOX7lrhoHdQA5w0bBzww8TTUC4_YLF3YuUOY8xs2xNgSStIxtq6pCTkM1ht1YZ5FjRpC4QJniAY6NTzNr-ZP1YRLnHM0Hjd0SovvfxIWZjcKy_Xdq5MtDnQdMOISCqKm4R9dWeblBP6ivruzgj82ixq487MDUDDQcSKAM1RS7xVz54obkfN5e37NzZdNUFZcdMJByuhGUG7nxWXg","token_type":"Bearer","expires_in":3600,"refresh_token":"AQCLKh-CsBfKpsPjeYpDjGlqpapYAy2GyCcSwmGol1SCZQIvsrYT3EB09QqYb3HVsYHG6vV_Y6Z8YBcTtH27-i7lg3vUTG60T4VNEhuxME_uHPc2_6iSybhib_BUEfpKl_k"}

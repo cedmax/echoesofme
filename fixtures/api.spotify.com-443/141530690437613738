@@ -1,0 +1,85 @@
+GET /v1/search?q=Palaces%20Of%20Montezuma%20Grinderman&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:23 GMT
+content-type: application/json; charset=utf-8
+content-length: 2960
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Palaces+Of+Montezuma+Grinderman&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "NI", "NL", "NO", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SI", "SK", "SV", "TR", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/13v92RQAMAswi6KpZPWTuY"
+        },
+        "href" : "https://api.spotify.com/v1/albums/13v92RQAMAswi6KpZPWTuY",
+        "id" : "13v92RQAMAswi6KpZPWTuY",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/8c76bf9b999c24b135085cca4e375253a99991e4",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/f7e90ba501b4ad3db7d6b4aa7caf22761f33c07c",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/2e441716b81b28d92305e14376283e1625d89062",
+          "width" : 64
+        } ],
+        "name" : "Grinderman 2",
+        "type" : "album",
+        "uri" : "spotify:album:13v92RQAMAswi6KpZPWTuY"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0IpDaO9A1OW1h0YChKzVaX"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0IpDaO9A1OW1h0YChKzVaX",
+        "id" : "0IpDaO9A1OW1h0YChKzVaX",
+        "name" : "Grinderman",
+        "type" : "artist",
+        "uri" : "spotify:artist:0IpDaO9A1OW1h0YChKzVaX"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "NI", "NL", "NO", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SI", "SK", "SV", "TR", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 212226,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJH1000441"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/33qCADPKZvNLx5uBvVrwfd"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/33qCADPKZvNLx5uBvVrwfd",
+      "id" : "33qCADPKZvNLx5uBvVrwfd",
+      "name" : "Palaces Of Montezuma",
+      "popularity" : 43,
+      "preview_url" : "https://p.scdn.co/mp3-preview/5fd546214b83427a3f3f319a0ce7244308f79f0c",
+      "track_number" : 8,
+      "type" : "track",
+      "uri" : "spotify:track:33qCADPKZvNLx5uBvVrwfd"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Palaces+Of+Montezuma+Grinderman&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 6
+  }
+}

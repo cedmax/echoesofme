@@ -1,0 +1,85 @@
+GET /v1/search?q=Finito%20Il%20Caff%C3%A8%20Gazebo%20Penguins&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:16 GMT
+content-type: application/json; charset=utf-8
+content-length: 3060
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Finito+Il+Caff%C3%A8+Gazebo+Penguins&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0HeGP3dxJjB1acOIyXKuMW"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0HeGP3dxJjB1acOIyXKuMW",
+        "id" : "0HeGP3dxJjB1acOIyXKuMW",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/772f0b0da543b9deead733290660f19f9d2db032",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/c89df480fc142aebe08944223a8ee239bc910c19",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/91f6cbc029d5e6370445e48786e91b34fbdb2933",
+          "width" : 64
+        } ],
+        "name" : "Raudo",
+        "type" : "album",
+        "uri" : "spotify:album:0HeGP3dxJjB1acOIyXKuMW"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/7w6Xdr6KK4A4g9OySnUOUN"
+        },
+        "href" : "https://api.spotify.com/v1/artists/7w6Xdr6KK4A4g9OySnUOUN",
+        "id" : "7w6Xdr6KK4A4g9OySnUOUN",
+        "name" : "Gazebo Penguins",
+        "type" : "artist",
+        "uri" : "spotify:artist:7w6Xdr6KK4A4g9OySnUOUN"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 185173,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "US6R21388495"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3yXTRSCRJxEMuUD9BXiGz5"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3yXTRSCRJxEMuUD9BXiGz5",
+      "id" : "3yXTRSCRJxEMuUD9BXiGz5",
+      "name" : "Finito il caffè",
+      "popularity" : 33,
+      "preview_url" : "https://p.scdn.co/mp3-preview/f93f7070d7732f755567418cd29bec2d0b3cb324",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:3yXTRSCRJxEMuUD9BXiGz5"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Finito+Il+Caff%C3%A8+Gazebo+Penguins&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 2
+  }
+}

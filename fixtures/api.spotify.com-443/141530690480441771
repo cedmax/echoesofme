@@ -1,0 +1,85 @@
+GET /v1/search?q=My%20Beloved%20Monster%20Eels&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:23 GMT
+content-type: application/json; charset=utf-8
+content-length: 2971
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=My+Beloved+Monster+Eels&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SI", "SK", "SV", "TW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/7jqtzIfRUWRb1INiPvXF2U"
+        },
+        "href" : "https://api.spotify.com/v1/albums/7jqtzIfRUWRb1INiPvXF2U",
+        "id" : "7jqtzIfRUWRb1INiPvXF2U",
+        "images" : [ {
+          "height" : 574,
+          "url" : "https://i.scdn.co/image/4c4b994985cac9f83c99ad7ecd2d643915c2cce9",
+          "width" : 640
+        }, {
+          "height" : 269,
+          "url" : "https://i.scdn.co/image/bf789da706168b2922f620c92760029494b0fff5",
+          "width" : 300
+        }, {
+          "height" : 57,
+          "url" : "https://i.scdn.co/image/ef488aa36e4d1f00440388d4ef76646fc06b388f",
+          "width" : 64
+        } ],
+        "name" : "Meet The EELS: Essential EELS 1996-2006 Vol. 1",
+        "type" : "album",
+        "uri" : "spotify:album:7jqtzIfRUWRb1INiPvXF2U"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3zunDAtRDg7kflREzWAhxl"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3zunDAtRDg7kflREzWAhxl",
+        "id" : "3zunDAtRDg7kflREzWAhxl",
+        "name" : "Eels",
+        "type" : "artist",
+        "uri" : "spotify:artist:3zunDAtRDg7kflREzWAhxl"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SI", "SK", "SV", "TW" ],
+      "disc_number" : 1,
+      "duration_ms" : 130919,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USDW19600106"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/7cnzMdmMgxua5LA0isNTVR"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/7cnzMdmMgxua5LA0isNTVR",
+      "id" : "7cnzMdmMgxua5LA0isNTVR",
+      "name" : "My Beloved Monster",
+      "popularity" : 41,
+      "preview_url" : "https://p.scdn.co/mp3-preview/ba9de8ad45b4acbeb7c8e2569c407d6c8aefe01b",
+      "track_number" : 3,
+      "type" : "track",
+      "uri" : "spotify:track:7cnzMdmMgxua5LA0isNTVR"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=My+Beloved+Monster+Eels&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 11
+  }
+}

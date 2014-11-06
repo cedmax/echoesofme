@@ -1,0 +1,85 @@
+GET /v1/search?q=Dark%20And%20Stormy%20Hot%20Chip&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:18 GMT
+content-type: application/json; charset=utf-8
+content-length: 2955
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Dark+And+Stormy+Hot+Chip&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "single",
+        "available_markets" : [ "AD", "AT", "BE", "BG", "BO", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6uY681zXGzGoHG5WA8AWYw"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6uY681zXGzGoHG5WA8AWYw",
+        "id" : "6uY681zXGzGoHG5WA8AWYw",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/d22b025752174f31f51aeb7c30956941616e87c0",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/2f5c27109f16038eae475934c3d831ac28e092fb",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/d9e2cbfc29fa0e24faaaba6c23ff33799ff5e7e1",
+          "width" : 64
+        } ],
+        "name" : "Dark and Stormy",
+        "type" : "album",
+        "uri" : "spotify:album:6uY681zXGzGoHG5WA8AWYw"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/37uLId6Z5ZXCx19vuruvv5"
+        },
+        "href" : "https://api.spotify.com/v1/artists/37uLId6Z5ZXCx19vuruvv5",
+        "id" : "37uLId6Z5ZXCx19vuruvv5",
+        "name" : "Hot Chip",
+        "type" : "artist",
+        "uri" : "spotify:artist:37uLId6Z5ZXCx19vuruvv5"
+      } ],
+      "available_markets" : [ "AD", "AT", "BE", "BG", "BO", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 295840,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBCEL1300277"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0rTgjG2R5mdd6N8cHKGsgB"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0rTgjG2R5mdd6N8cHKGsgB",
+      "id" : "0rTgjG2R5mdd6N8cHKGsgB",
+      "name" : "Dark and Stormy",
+      "popularity" : 42,
+      "preview_url" : "https://p.scdn.co/mp3-preview/27eacb8fddbb6eb6fdc055c94fe4de112d072c96",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:0rTgjG2R5mdd6N8cHKGsgB"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Dark+And+Stormy+Hot+Chip&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 2
+  }
+}

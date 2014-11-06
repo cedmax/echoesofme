@@ -1,0 +1,85 @@
+GET /v1/search?q=Zebra%20Beach%20House&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:14 GMT
+content-type: application/json; charset=utf-8
+content-length: 2701
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Zebra+Beach+House&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AT", "BE", "BG", "CH", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "NL", "NO", "PL", "PT", "RO", "SE", "SI", "SK", "TR" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/5BouX39qnrl5UxjB0Cs3lO"
+        },
+        "href" : "https://api.spotify.com/v1/albums/5BouX39qnrl5UxjB0Cs3lO",
+        "id" : "5BouX39qnrl5UxjB0Cs3lO",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/bf411cd27e94904949860b58bdfaff92084fb4b5",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/a82e48de2b22c74c579da42d0acab664609fe906",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/6e53511549f551e65bd3520956aa92cfb165c7b9",
+          "width" : 64
+        } ],
+        "name" : "Teen Dream",
+        "type" : "album",
+        "uri" : "spotify:album:5BouX39qnrl5UxjB0Cs3lO"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/56ZTgzPBDge0OvCGgMO3OY"
+        },
+        "href" : "https://api.spotify.com/v1/artists/56ZTgzPBDge0OvCGgMO3OY",
+        "id" : "56ZTgzPBDge0OvCGgMO3OY",
+        "name" : "Beach House",
+        "type" : "artist",
+        "uri" : "spotify:artist:56ZTgzPBDge0OvCGgMO3OY"
+      } ],
+      "available_markets" : [ "AD", "AT", "BE", "BG", "CH", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "NL", "NO", "PL", "PT", "RO", "SE", "SI", "SK", "TR" ],
+      "disc_number" : 1,
+      "duration_ms" : 288720,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBBRP1022501"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3E3dnHbmTxANxgMqKrf1go"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3E3dnHbmTxANxgMqKrf1go",
+      "id" : "3E3dnHbmTxANxgMqKrf1go",
+      "name" : "Zebra",
+      "popularity" : 54,
+      "preview_url" : "https://p.scdn.co/mp3-preview/d1d2c15b70ce9b30dfa5fa77475f79b0ea28fbe6",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:3E3dnHbmTxANxgMqKrf1go"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Zebra+Beach+House&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 10
+  }
+}

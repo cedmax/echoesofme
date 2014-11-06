@@ -1,0 +1,85 @@
+GET /v1/search?q=Don%27t%20Let%20Me%20Be%20Misunderstood%20Nina%20Simone&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:24 GMT
+content-type: application/json; charset=utf-8
+content-length: 3063
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Don%27t+Let+Me+Be+Misunderstood+Nina+Simone&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6KotLGYrkXV6zpP6jPxNt2"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6KotLGYrkXV6zpP6jPxNt2",
+        "id" : "6KotLGYrkXV6zpP6jPxNt2",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/49e6ea07bfe278a4e659f79648dcf8d3410a654c",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/167584b70b62e393667d6eeef5a8e398faf9510f",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/34b4c6bc9fcc03338b2d3c5d98bb8e5005c6b4d6",
+          "width" : 64
+        } ],
+        "name" : "Nina Simone: Verve Ultimate Cool",
+        "type" : "album",
+        "uri" : "spotify:album:6KotLGYrkXV6zpP6jPxNt2"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/7G1GBhoKtEPnP86X2PvEYO"
+        },
+        "href" : "https://api.spotify.com/v1/artists/7G1GBhoKtEPnP86X2PvEYO",
+        "id" : "7G1GBhoKtEPnP86X2PvEYO",
+        "name" : "Nina Simone",
+        "type" : "artist",
+        "uri" : "spotify:artist:7G1GBhoKtEPnP86X2PvEYO"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 164440,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USPR36400091"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0LeURwpguxmi8EJembOYEt"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0LeURwpguxmi8EJembOYEt",
+      "id" : "0LeURwpguxmi8EJembOYEt",
+      "name" : "Don't Let Me Be Misunderstood",
+      "popularity" : 48,
+      "preview_url" : "https://p.scdn.co/mp3-preview/e56fa3cd6c7bb73881a06423d11fe1b1947abdc3",
+      "track_number" : 3,
+      "type" : "track",
+      "uri" : "spotify:track:0LeURwpguxmi8EJembOYEt"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Don%27t+Let+Me+Be+Misunderstood+Nina+Simone&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 57
+  }
+}
