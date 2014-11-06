@@ -1,0 +1,85 @@
+GET /v1/search?q=Wild%20Water%20Threelakes%20And%20The%20Flatland%20Eagles&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:07 GMT
+content-type: application/json; charset=utf-8
+content-length: 2973
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Wild+Water+Threelakes+And+The+Flatland+Eagles&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0TVFWFlr7QU67IsC7DTJnh"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0TVFWFlr7QU67IsC7DTJnh",
+        "id" : "0TVFWFlr7QU67IsC7DTJnh",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/86a5d12a5b038f2f61a5390c6bbf80b70f9687db",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/1522451f33d1c525925c617b5f0f9307a1746288",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/dc3bfd32aa947f02008989860909cc0d20cdd76d",
+          "width" : 64
+        } ],
+        "name" : "War Tales",
+        "type" : "album",
+        "uri" : "spotify:album:0TVFWFlr7QU67IsC7DTJnh"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0Q31zmrdIs067LNel32GL5"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0Q31zmrdIs067LNel32GL5",
+        "id" : "0Q31zmrdIs067LNel32GL5",
+        "name" : "Threelakes and the Flatland Eagles",
+        "type" : "artist",
+        "uri" : "spotify:artist:0Q31zmrdIs067LNel32GL5"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 254453,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "ushm91348750"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6G5PZdhanDaR4MUFNi55Ye"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6G5PZdhanDaR4MUFNi55Ye",
+      "id" : "6G5PZdhanDaR4MUFNi55Ye",
+      "name" : "Wild Water",
+      "popularity" : 6,
+      "preview_url" : "https://p.scdn.co/mp3-preview/732033529b69f96bce85ad67449260cb8bdca4cd",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:6G5PZdhanDaR4MUFNi55Ye"
+    } ],
+    "limit" : 1,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 1
+  }
+}

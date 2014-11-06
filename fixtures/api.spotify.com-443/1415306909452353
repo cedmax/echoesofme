@@ -1,0 +1,85 @@
+GET /v1/search?q=The%20Future%20Now%20Peter%20Hammill&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:28 GMT
+content-type: application/json; charset=utf-8
+content-length: 3073
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=The+Future+Now+Peter+Hammill&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/689VLbwUkr5D7YdQLrbKFW"
+        },
+        "href" : "https://api.spotify.com/v1/albums/689VLbwUkr5D7YdQLrbKFW",
+        "id" : "689VLbwUkr5D7YdQLrbKFW",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/89f9b8cc3a27e35ca4a40461c939708fda9544f0",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/a17b464f503e45e057c12952418beab9815e0707",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/b987ff6c6e49d9ac0e98db4823176a753c06cf2b",
+          "width" : 64
+        } ],
+        "name" : "The Future Now",
+        "type" : "album",
+        "uri" : "spotify:album:689VLbwUkr5D7YdQLrbKFW"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/7uBH52YnXUbJ0ssoyNqQTB"
+        },
+        "href" : "https://api.spotify.com/v1/artists/7uBH52YnXUbJ0ssoyNqQTB",
+        "id" : "7uBH52YnXUbJ0ssoyNqQTB",
+        "name" : "Peter Hammill",
+        "type" : "artist",
+        "uri" : "spotify:artist:7uBH52YnXUbJ0ssoyNqQTB"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 253946,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAAA0600470"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3N2ZiW6urgnyHJwULuHiav"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3N2ZiW6urgnyHJwULuHiav",
+      "id" : "3N2ZiW6urgnyHJwULuHiav",
+      "name" : "The Future Now - 2006 Digital Remaster",
+      "popularity" : 7,
+      "preview_url" : "https://p.scdn.co/mp3-preview/67f145527c6a2b1bc597d439d5db8c2ecf14dd85",
+      "track_number" : 7,
+      "type" : "track",
+      "uri" : "spotify:track:3N2ZiW6urgnyHJwULuHiav"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=The+Future+Now+Peter+Hammill&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 16
+  }
+}

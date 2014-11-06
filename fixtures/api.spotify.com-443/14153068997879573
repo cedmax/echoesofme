@@ -1,0 +1,85 @@
+GET /v1/search?q=To%20The%20Spring%20Shweta%20Jhaveri&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:18 GMT
+content-type: application/json; charset=utf-8
+content-length: 2937
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=To+The+Spring+Shweta+Jhaveri&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/5VZHeAWcPmDW1FwEgUiid9"
+        },
+        "href" : "https://api.spotify.com/v1/albums/5VZHeAWcPmDW1FwEgUiid9",
+        "id" : "5VZHeAWcPmDW1FwEgUiid9",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ca78cea4b6b88d30241ec78466524d2c5d787220",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/3c9bd1c900a84ea9394d048306106b4d4c5bc6c8",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/e6fda5aab86cfea7ff4fb238c6fab44b86da1d8d",
+          "width" : 64
+        } ],
+        "name" : "Anahita",
+        "type" : "album",
+        "uri" : "spotify:album:5VZHeAWcPmDW1FwEgUiid9"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/52jyGLCM2XIkVpzxa4dSld"
+        },
+        "href" : "https://api.spotify.com/v1/artists/52jyGLCM2XIkVpzxa4dSld",
+        "id" : "52jyGLCM2XIkVpzxa4dSld",
+        "name" : "Shweta Jhaveri",
+        "type" : "artist",
+        "uri" : "spotify:artist:52jyGLCM2XIkVpzxa4dSld"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 302786,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "DEF309800031"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/7b3B1yuU8iudMwdeIfxu4P"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/7b3B1yuU8iudMwdeIfxu4P",
+      "id" : "7b3B1yuU8iudMwdeIfxu4P",
+      "name" : "To The Spring",
+      "popularity" : 4,
+      "preview_url" : "https://p.scdn.co/mp3-preview/64e9130b782741dd33e73aa177d3349000daa533",
+      "track_number" : 5,
+      "type" : "track",
+      "uri" : "spotify:track:7b3B1yuU8iudMwdeIfxu4P"
+    } ],
+    "limit" : 1,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 1
+  }
+}

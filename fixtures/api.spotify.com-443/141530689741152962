@@ -1,0 +1,31 @@
+GET /v1/search?q=The%20Adventures%20Of%20Grandmaster%20Flash%20On%20The%20Wheels%20Of%20Steel%20(Album%20Version)%20Grandmaster%20Flash%20&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:16 GMT
+content-type: application/json; charset=utf-8
+content-length: 326
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=The+Adventures+Of+Grandmaster+Flash+On+The+Wheels+Of+Steel+%28Album+Version%29+Grandmaster+Flash+&offset=0&limit=1&type=track&market=GB",
+    "items" : [ ],
+    "limit" : 1,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 0
+  }
+}

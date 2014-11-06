@@ -1,0 +1,85 @@
+GET /v1/search?q=Disparate%20Youth%20Santigold&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:11 GMT
+content-type: application/json; charset=utf-8
+content-length: 2815
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Disparate+Youth+Santigold&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "single",
+        "available_markets" : [ "AD", "AT", "AU", "BE", "BG", "CH", "CR", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HN", "HU", "IE", "IS", "IT", "LT", "LU", "LV", "MC", "MT", "NI", "NL", "NO", "NZ", "PA", "PL", "PT", "RO", "SE", "SI", "SK", "SV", "TR" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6rftyuGexVemDEXwhli59f"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6rftyuGexVemDEXwhli59f",
+        "id" : "6rftyuGexVemDEXwhli59f",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/0de0811d7a3acf6de9c0ef65ea3118799b50da81",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/9d42baf45e5abaa6d9823416bb1ae99a2cdfba5a",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/8737d49add50b9b95c7449234f7d8cc0838a098d",
+          "width" : 64
+        } ],
+        "name" : "Disparate Youth",
+        "type" : "album",
+        "uri" : "spotify:album:6rftyuGexVemDEXwhli59f"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6Jrxnp0JgqmeUX1veU591p"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6Jrxnp0JgqmeUX1veU591p",
+        "id" : "6Jrxnp0JgqmeUX1veU591p",
+        "name" : "Santigold",
+        "type" : "artist",
+        "uri" : "spotify:artist:6Jrxnp0JgqmeUX1veU591p"
+      } ],
+      "available_markets" : [ "AD", "AT", "AU", "BE", "BG", "CH", "CR", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HN", "HU", "IE", "IS", "IT", "LT", "LU", "LV", "MC", "MT", "NI", "NL", "NO", "NZ", "PA", "PL", "PT", "RO", "SE", "SI", "SK", "SV", "TR" ],
+      "disc_number" : 1,
+      "duration_ms" : 284400,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAHS1100389"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2anqvLXhJRNLJC6K4XD0Mj"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2anqvLXhJRNLJC6K4XD0Mj",
+      "id" : "2anqvLXhJRNLJC6K4XD0Mj",
+      "name" : "Disparate Youth",
+      "popularity" : 64,
+      "preview_url" : "https://p.scdn.co/mp3-preview/d97408fee4140eaef4307209331af6c8ae3177ab",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:2anqvLXhJRNLJC6K4XD0Mj"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Disparate+Youth+Santigold&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 17
+  }
+}

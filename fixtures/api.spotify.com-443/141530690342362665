@@ -1,0 +1,85 @@
+GET /v1/search?q=Warm%20Shadow%20Fink&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:22 GMT
+content-type: application/json; charset=utf-8
+content-length: 2763
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Warm+Shadow+Fink&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AT", "BE", "BG", "CH", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "HK", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NL", "NO", "PH", "PL", "PT", "RO", "SE", "SG", "SI", "SK", "TR", "TW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3s8cIQuGT45N56XsJehuvE"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3s8cIQuGT45N56XsJehuvE",
+        "id" : "3s8cIQuGT45N56XsJehuvE",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ebf5ed2add2e286a48d28b54e964d33c10f36363",
+          "width" : 629
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/d84604892cd786e87898db3452a0d805626782b1",
+          "width" : 295
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/e07c753323c262cb0568199ca14716583f46509d",
+          "width" : 63
+        } ],
+        "name" : "Perfect Darkness",
+        "type" : "album",
+        "uri" : "spotify:album:3s8cIQuGT45N56XsJehuvE"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2t9yJDJIEtvPmr2iRIdqBf"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2t9yJDJIEtvPmr2iRIdqBf",
+        "id" : "2t9yJDJIEtvPmr2iRIdqBf",
+        "name" : "Fink",
+        "type" : "artist",
+        "uri" : "spotify:artist:2t9yJDJIEtvPmr2iRIdqBf"
+      } ],
+      "available_markets" : [ "AD", "AT", "BE", "BG", "CH", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "HK", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NL", "NO", "PH", "PL", "PT", "RO", "SE", "SG", "SI", "SK", "TR", "TW" ],
+      "disc_number" : 1,
+      "duration_ms" : 346760,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBCFB1102105"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3jWwXvWrJ1eFPCUrXJdR3E"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3jWwXvWrJ1eFPCUrXJdR3E",
+      "id" : "3jWwXvWrJ1eFPCUrXJdR3E",
+      "name" : "Warm Shadow",
+      "popularity" : 51,
+      "preview_url" : "https://p.scdn.co/mp3-preview/c678fed94656c3b4731bb78c45ca34d6a96ef1ee",
+      "track_number" : 6,
+      "type" : "track",
+      "uri" : "spotify:track:3jWwXvWrJ1eFPCUrXJdR3E"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Warm+Shadow+Fink&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 7
+  }
+}

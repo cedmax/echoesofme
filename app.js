@@ -8,20 +8,21 @@
  */
 ( function() {
 	'use strict';
-	require('newrelic');
-	
+	var replay = require( 'replay' );
+
 	var express = require( 'express' ); // Express web server framework
-	var bodyParser = require('body-parser');
+	var bodyParser = require( 'body-parser' );
 	var cookieParser = require( 'cookie-parser' );
 	var client = require( './settings.json' );
 
 	var app = express();
-	app.use(bodyParser.json());
-	
+	app.use( bodyParser.json() );
+
 	app.use( express.static( __dirname + '/public' ) )
 		.use( cookieParser() );
 
 	app.get( '/login', require( './controller/login' )( client ) );
+	app.get( '/me', require( './controller/me' )( client ) );
 
 	app.get( '/callback', require( './controller/callback' )( client ) );
 
@@ -29,6 +30,6 @@
 	app.post( '/playlist', require( './controller/playlist' )( client ) );
 
 	app.get( '/refresh_token', require( './controller/refresh_token' )( client ) );
-	app.listen( 24197 );
+	app.listen( 8888 );
 
 } )();

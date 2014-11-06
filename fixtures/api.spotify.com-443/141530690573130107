@@ -1,0 +1,85 @@
+GET /v1/search?q=Man%20Like%20You%20Patrick%20Watson&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:24 GMT
+content-type: application/json; charset=utf-8
+content-length: 2244
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Man+Like+You+Patrick+Watson&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "GB", "IE" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2fXC63cUEMjgjApHLaTyt4"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2fXC63cUEMjgjApHLaTyt4",
+        "id" : "2fXC63cUEMjgjApHLaTyt4",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/de31f44aa28727f34dc88d9a47558d79cc5b9291",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/05c1125ab5a00ddcbef5f047771a9949d4aa9ba2",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/94d85c30905111a621758840aeb853566fb8ca95",
+          "width" : 64
+        } ],
+        "name" : "Wooden Arms",
+        "type" : "album",
+        "uri" : "spotify:album:2fXC63cUEMjgjApHLaTyt4"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/7bPs6jf983f0bjRAt1yxDM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/7bPs6jf983f0bjRAt1yxDM",
+        "id" : "7bPs6jf983f0bjRAt1yxDM",
+        "name" : "Patrick Watson",
+        "type" : "artist",
+        "uri" : "spotify:artist:7bPs6jf983f0bjRAt1yxDM"
+      } ],
+      "available_markets" : [ "GB", "IE" ],
+      "disc_number" : 1,
+      "duration_ms" : 251760,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "CA0RZ0900009"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/01YOjn8NvyIj0gECCvhtsA"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/01YOjn8NvyIj0gECCvhtsA",
+      "id" : "01YOjn8NvyIj0gECCvhtsA",
+      "name" : "Man Like You",
+      "popularity" : 18,
+      "preview_url" : "https://p.scdn.co/mp3-preview/f885943fd1f61bb7036c8abc39abf8dc623dd43a",
+      "track_number" : 9,
+      "type" : "track",
+      "uri" : "spotify:track:01YOjn8NvyIj0gECCvhtsA"
+    } ],
+    "limit" : 1,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 1
+  }
+}

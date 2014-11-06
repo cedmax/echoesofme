@@ -1,0 +1,85 @@
+GET /v1/search?q=Some%20Nights%20Fun.&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:35 GMT
+content-type: application/json; charset=utf-8
+content-length: 2831
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Some+Nights+Fun.&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AU", "BE", "BO", "BR", "CA", "CL", "CO", "CR", "CY", "DK", "DO", "EC", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "IE", "IS", "IT", "LU", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PT", "PY", "SE", "SG", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/7m7F7SQ3BXvIpvOgjW51Gp"
+        },
+        "href" : "https://api.spotify.com/v1/albums/7m7F7SQ3BXvIpvOgjW51Gp",
+        "id" : "7m7F7SQ3BXvIpvOgjW51Gp",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/a04961a66c132aaf5628b8b90d6d73ca0ae73ad8",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/96ae5b5d7a02efd9aa662fd607492aa55922946a",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/b6777dcab0005ee9a10b7fd8cbdcb1abecc491b7",
+          "width" : 64
+        } ],
+        "name" : "Some Nights",
+        "type" : "album",
+        "uri" : "spotify:album:7m7F7SQ3BXvIpvOgjW51Gp"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5nCi3BB41mBaMH9gfr6Su0"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5nCi3BB41mBaMH9gfr6Su0",
+        "id" : "5nCi3BB41mBaMH9gfr6Su0",
+        "name" : "Fun.",
+        "type" : "artist",
+        "uri" : "spotify:artist:5nCi3BB41mBaMH9gfr6Su0"
+      } ],
+      "available_markets" : [ "AD", "AR", "AU", "BE", "BO", "BR", "CA", "CL", "CO", "CR", "CY", "DK", "DO", "EC", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "IE", "IS", "IT", "LU", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PT", "PY", "SE", "SG", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 277040,
+      "explicit" : true,
+      "external_ids" : {
+        "isrc" : "USAT21104050"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/67WTwafOMgegV6ABnBQxcE"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/67WTwafOMgegV6ABnBQxcE",
+      "id" : "67WTwafOMgegV6ABnBQxcE",
+      "name" : "Some Nights",
+      "popularity" : 72,
+      "preview_url" : "https://p.scdn.co/mp3-preview/92471fcfdf9cbf9c8a14a913eb2ade912f2efadf",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:67WTwafOMgegV6ABnBQxcE"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Some+Nights+Fun.&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 164
+  }
+}

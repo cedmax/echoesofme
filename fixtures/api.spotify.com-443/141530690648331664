@@ -1,0 +1,85 @@
+GET /v1/search?q=A%20Cautionary%20Song%20The%20Decemberists&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:25 GMT
+content-type: application/json; charset=utf-8
+content-length: 3074
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=A+Cautionary+Song+The+Decemberists&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/1RFOcMeZN0jGQaiQMDq03d"
+        },
+        "href" : "https://api.spotify.com/v1/albums/1RFOcMeZN0jGQaiQMDq03d",
+        "id" : "1RFOcMeZN0jGQaiQMDq03d",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/8c597a547e7b300816409f4a3d5707b59682b5b4",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/3ecdeea88591d5d1ae3d802a267f54158d95812f",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/8245d3d6fa21935f4836eeaa35a9c354b2dea2c7",
+          "width" : 64
+        } ],
+        "name" : "Castaways and Cutouts",
+        "type" : "album",
+        "uri" : "spotify:album:1RFOcMeZN0jGQaiQMDq03d"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/7ITd48RbLVpUfheE7B86o2"
+        },
+        "href" : "https://api.spotify.com/v1/artists/7ITd48RbLVpUfheE7B86o2",
+        "id" : "7ITd48RbLVpUfheE7B86o2",
+        "name" : "The Decemberists",
+        "type" : "artist",
+        "uri" : "spotify:artist:7ITd48RbLVpUfheE7B86o2"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 188880,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USKRS0339704"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1Rmw8sr57wSm80CqiZ79nK"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1Rmw8sr57wSm80CqiZ79nK",
+      "id" : "1Rmw8sr57wSm80CqiZ79nK",
+      "name" : "A Cautionary Song",
+      "popularity" : 36,
+      "preview_url" : "https://p.scdn.co/mp3-preview/9583ce98f3cf6cfb23d76217d36ef0cf69def28a",
+      "track_number" : 4,
+      "type" : "track",
+      "uri" : "spotify:track:1Rmw8sr57wSm80CqiZ79nK"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=A+Cautionary+Song+The+Decemberists&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 2
+  }
+}

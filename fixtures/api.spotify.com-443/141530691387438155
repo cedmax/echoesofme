@@ -1,0 +1,85 @@
+GET /v1/search?q=Kingdoms%20Of%20Rain%20Soulsavers&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:32 GMT
+content-type: application/json; charset=utf-8
+content-length: 2557
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Kingdoms+Of+Rain+Soulsavers&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BR", "CH", "CL", "CO", "CR", "DE", "EE", "FR", "GB", "IE", "LI", "LT", "LV", "MC", "NZ", "PE", "PT", "RO", "SE", "SI", "SK" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4gAPqCz7P4b7SJ7bzHTtIm"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4gAPqCz7P4b7SJ7bzHTtIm",
+        "id" : "4gAPqCz7P4b7SJ7bzHTtIm",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c16244677cd725cbb4ee7a6b6bca24003c74489a",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/e2e8f5cb17d67984fb3eff96853159a5e1daf262",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/1e39171fb7e5282dbd933c485fae047478bf24e2",
+          "width" : 64
+        } ],
+        "name" : "It's Not How Far You Fall, It's The Way You Land",
+        "type" : "album",
+        "uri" : "spotify:album:4gAPqCz7P4b7SJ7bzHTtIm"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/762Lq0yk2VhjIfkTVDzlhv"
+        },
+        "href" : "https://api.spotify.com/v1/artists/762Lq0yk2VhjIfkTVDzlhv",
+        "id" : "762Lq0yk2VhjIfkTVDzlhv",
+        "name" : "Soulsavers",
+        "type" : "artist",
+        "uri" : "spotify:artist:762Lq0yk2VhjIfkTVDzlhv"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BR", "CH", "CL", "CO", "CR", "DE", "EE", "FR", "GB", "IE", "LI", "LT", "LV", "MC", "NZ", "PE", "PT", "RO", "SE", "SI", "SK" ],
+      "disc_number" : 1,
+      "duration_ms" : 231880,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBBLK0600593"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3X38LVYT6pzSyLXzWu3moY"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3X38LVYT6pzSyLXzWu3moY",
+      "id" : "3X38LVYT6pzSyLXzWu3moY",
+      "name" : "Kingdoms Of Rain",
+      "popularity" : 22,
+      "preview_url" : "https://p.scdn.co/mp3-preview/48fb932242e9df6b79b2532b92b85ed4c87f2036",
+      "track_number" : 6,
+      "type" : "track",
+      "uri" : "spotify:track:3X38LVYT6pzSyLXzWu3moY"
+    } ],
+    "limit" : 1,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 1
+  }
+}

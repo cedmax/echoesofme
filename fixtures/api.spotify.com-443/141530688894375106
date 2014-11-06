@@ -1,0 +1,85 @@
+GET /v1/search?q=Take%20Me%20Out%20Scissor%20Sisters&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:07 GMT
+content-type: application/json; charset=utf-8
+content-length: 2941
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Take+Me+Out+Scissor+Sisters&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "single",
+        "available_markets" : [ "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LT", "LV", "MT", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6GuX0WFDPkeZ7N5zwgE5Fp"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6GuX0WFDPkeZ7N5zwgE5Fp",
+        "id" : "6GuX0WFDPkeZ7N5zwgE5Fp",
+        "images" : [ {
+          "height" : 558,
+          "url" : "https://i.scdn.co/image/9cc924b5816bbe4acccbd9dcc4e96a48b23512c7",
+          "width" : 640
+        }, {
+          "height" : 262,
+          "url" : "https://i.scdn.co/image/f4f84ef842f116f7afe8d8e75edf8329126b8176",
+          "width" : 300
+        }, {
+          "height" : 56,
+          "url" : "https://i.scdn.co/image/0a7be03b2c358bdb4f244ff1e4923f06e03dfd8a",
+          "width" : 64
+        } ],
+        "name" : "Mary",
+        "type" : "album",
+        "uri" : "spotify:album:6GuX0WFDPkeZ7N5zwgE5Fp"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3Y10boYzeuFCJ4Qgp53w6o"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3Y10boYzeuFCJ4Qgp53w6o",
+        "id" : "3Y10boYzeuFCJ4Qgp53w6o",
+        "name" : "Scissor Sisters",
+        "type" : "artist",
+        "uri" : "spotify:artist:3Y10boYzeuFCJ4Qgp53w6o"
+      } ],
+      "available_markets" : [ "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LT", "LV", "MT", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW" ],
+      "disc_number" : 1,
+      "duration_ms" : 272386,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAKW0400648"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/5Wb2so09oeGK5YAaGJwt13"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/5Wb2so09oeGK5YAaGJwt13",
+      "id" : "5Wb2so09oeGK5YAaGJwt13",
+      "name" : "Take Me Out",
+      "popularity" : 28,
+      "preview_url" : "https://p.scdn.co/mp3-preview/1797acd37ed6fb9f889a03ea17fbcb9843c646ea",
+      "track_number" : 3,
+      "type" : "track",
+      "uri" : "spotify:track:5Wb2so09oeGK5YAaGJwt13"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Take+Me+Out+Scissor+Sisters&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 6
+  }
+}

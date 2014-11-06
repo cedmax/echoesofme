@@ -1,0 +1,94 @@
+GET /v1/search?q=Let%20Me%20Blow%20Ya%20Mind%20Eve%2C%20Gwen%20Stefani&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:05 GMT
+content-type: application/json; charset=utf-8
+content-length: 3340
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Let+Me+Blow+Ya+Mind+Eve%2C+Gwen+Stefani&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SK", "SV", "TR", "TW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/5z1Su2S6WXspjhLNBkAScm"
+        },
+        "href" : "https://api.spotify.com/v1/albums/5z1Su2S6WXspjhLNBkAScm",
+        "id" : "5z1Su2S6WXspjhLNBkAScm",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/8be3319f0d7c1e234c7f4134b0a150af560da4b4",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/c664786a86e51bc149cf188142bdc9e8058ca2ec",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/74aeed4a241b7622a48657db91555b37d565a7d2",
+          "width" : 64
+        } ],
+        "name" : "Scorpion",
+        "type" : "album",
+        "uri" : "spotify:album:5z1Su2S6WXspjhLNBkAScm"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4d3yvTptO48nOYTPBcPFZC"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4d3yvTptO48nOYTPBcPFZC",
+        "id" : "4d3yvTptO48nOYTPBcPFZC",
+        "name" : "Eve",
+        "type" : "artist",
+        "uri" : "spotify:artist:4d3yvTptO48nOYTPBcPFZC"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4yiQZ8tQPux8cPriYMWUFP"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4yiQZ8tQPux8cPriYMWUFP",
+        "id" : "4yiQZ8tQPux8cPriYMWUFP",
+        "name" : "Gwen Stefani",
+        "type" : "artist",
+        "uri" : "spotify:artist:4yiQZ8tQPux8cPriYMWUFP"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SK", "SV", "TR", "TW" ],
+      "disc_number" : 1,
+      "duration_ms" : 229933,
+      "explicit" : true,
+      "external_ids" : {
+        "isrc" : "USIR10110155"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/5DCA1FOUDBURlRTNg4ganf"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/5DCA1FOUDBURlRTNg4ganf",
+      "id" : "5DCA1FOUDBURlRTNg4ganf",
+      "name" : "Let Me Blow Ya Mind",
+      "popularity" : 65,
+      "preview_url" : "https://p.scdn.co/mp3-preview/6bf8ae7bb15dd68caa99255aff30c9f0692e126c",
+      "track_number" : 4,
+      "type" : "track",
+      "uri" : "spotify:track:5DCA1FOUDBURlRTNg4ganf"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Let+Me+Blow+Ya+Mind+Eve%2C+Gwen+Stefani&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 53
+  }
+}

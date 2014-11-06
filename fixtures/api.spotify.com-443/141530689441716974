@@ -1,0 +1,85 @@
+GET /v1/search?q=Shoot%20The%20Runner%20Kasabian&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:13 GMT
+content-type: application/json; charset=utf-8
+content-length: 2937
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Shoot+The+Runner+Kasabian&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "NI", "NL", "NO", "PA", "PE", "PL", "PT", "PY", "RO", "SE", "SI", "SK", "SV", "TR", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/22cuBzNBEzMhitybh0WEIh"
+        },
+        "href" : "https://api.spotify.com/v1/albums/22cuBzNBEzMhitybh0WEIh",
+        "id" : "22cuBzNBEzMhitybh0WEIh",
+        "images" : [ {
+          "height" : 634,
+          "url" : "https://i.scdn.co/image/639974072b00fe47b1f588eff071d09fed234347",
+          "width" : 640
+        }, {
+          "height" : 297,
+          "url" : "https://i.scdn.co/image/fca51ab39a04ba00e035f834fe8353d227fad4c7",
+          "width" : 300
+        }, {
+          "height" : 63,
+          "url" : "https://i.scdn.co/image/29b6432bd0ce0ec8ad00bab80b2c2ab6c70e266b",
+          "width" : 64
+        } ],
+        "name" : "Empire",
+        "type" : "album",
+        "uri" : "spotify:album:22cuBzNBEzMhitybh0WEIh"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/11wRdbnoYqRddKBrpHt4Ue"
+        },
+        "href" : "https://api.spotify.com/v1/artists/11wRdbnoYqRddKBrpHt4Ue",
+        "id" : "11wRdbnoYqRddKBrpHt4Ue",
+        "name" : "Kasabian",
+        "type" : "artist",
+        "uri" : "spotify:artist:11wRdbnoYqRddKBrpHt4Ue"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "NI", "NL", "NO", "PA", "PE", "PL", "PT", "PY", "RO", "SE", "SI", "SK", "SV", "TR", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 207373,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBARL0600586"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4baAwbpkroYCwSIlaqzNXy"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4baAwbpkroYCwSIlaqzNXy",
+      "id" : "4baAwbpkroYCwSIlaqzNXy",
+      "name" : "Shoot the Runner",
+      "popularity" : 60,
+      "preview_url" : "https://p.scdn.co/mp3-preview/6a82803a6068f8374bae25d2b83141bf8340a0b9",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:4baAwbpkroYCwSIlaqzNXy"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Shoot+The+Runner+Kasabian&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 38
+  }
+}

@@ -1,0 +1,85 @@
+GET /v1/search?q=Crown%20The%20Pines%20S.%20Carey&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:04 GMT
+content-type: application/json; charset=utf-8
+content-length: 2979
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Crown+The+Pines+S.+Carey&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "single",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "NI", "NL", "NO", "NZ", "PA", "PE", "PL", "PT", "PY", "RO", "SE", "SI", "SK", "SV", "TR", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0dkVeu143WIVWJaQ6kwaCC"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0dkVeu143WIVWJaQ6kwaCC",
+        "id" : "0dkVeu143WIVWJaQ6kwaCC",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ad51255178249eb2a1cb629431c29bf5aa3edb18",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/38c7663b0b09e40e1d7b14d3dd4156062d8d3ea5",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/16be6369530ae258f9f8bb3a50ea12276b502766",
+          "width" : 64
+        } ],
+        "name" : "Crown the Pines",
+        "type" : "album",
+        "uri" : "spotify:album:0dkVeu143WIVWJaQ6kwaCC"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2LSJrlndCuTpdEluvYHc2E"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2LSJrlndCuTpdEluvYHc2E",
+        "id" : "2LSJrlndCuTpdEluvYHc2E",
+        "name" : "S. Carey",
+        "type" : "artist",
+        "uri" : "spotify:artist:2LSJrlndCuTpdEluvYHc2E"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "NI", "NL", "NO", "NZ", "PA", "PE", "PL", "PT", "PY", "RO", "SE", "SI", "SK", "SV", "TR", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 210253,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "US38Y1424003"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/24RYkVA1FxOhsUIH06NLbb"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/24RYkVA1FxOhsUIH06NLbb",
+      "id" : "24RYkVA1FxOhsUIH06NLbb",
+      "name" : "Crown the Pines",
+      "popularity" : 52,
+      "preview_url" : "https://p.scdn.co/mp3-preview/3f914200754cfbc5d33d0ac4da43bc0783565efc",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:24RYkVA1FxOhsUIH06NLbb"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Crown+The+Pines+S.+Carey&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 2
+  }
+}

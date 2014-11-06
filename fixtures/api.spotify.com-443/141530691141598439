@@ -1,0 +1,85 @@
+GET /v1/search?q=Muscle%27n%20Flo%20Menomena&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:30 GMT
+content-type: application/json; charset=utf-8
+content-length: 2873
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Muscle%27n+Flo+Menomena&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AU", "BE", "BG", "BO", "BR", "CL", "CO", "CR", "CY", "CZ", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/11HVGqjm4jbJLFLO6XLQvk"
+        },
+        "href" : "https://api.spotify.com/v1/albums/11HVGqjm4jbJLFLO6XLQvk",
+        "id" : "11HVGqjm4jbJLFLO6XLQvk",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/50d7bfeb30d0ea81e7c37e0dce195f9ac3f11bdd",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ee8a4cee25712b882e232c945ceffc50836a0e8b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/8aad0298e67e6a0db8ab88430e1345eee03dc823",
+          "width" : 64
+        } ],
+        "name" : "Friend and Foe",
+        "type" : "album",
+        "uri" : "spotify:album:11HVGqjm4jbJLFLO6XLQvk"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/676oR6vRgfSzaBibbPhLhH"
+        },
+        "href" : "https://api.spotify.com/v1/artists/676oR6vRgfSzaBibbPhLhH",
+        "id" : "676oR6vRgfSzaBibbPhLhH",
+        "name" : "Menomena",
+        "type" : "artist",
+        "uri" : "spotify:artist:676oR6vRgfSzaBibbPhLhH"
+      } ],
+      "available_markets" : [ "AD", "AR", "AU", "BE", "BG", "BO", "BR", "CL", "CO", "CR", "CY", "CZ", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 260826,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USBS50611447"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6W3e76D3myDYzc2oo1E9wx"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6W3e76D3myDYzc2oo1E9wx",
+      "id" : "6W3e76D3myDYzc2oo1E9wx",
+      "name" : "Muscle'n Flo",
+      "popularity" : 11,
+      "preview_url" : "https://p.scdn.co/mp3-preview/c23a6d668eecc1b8b205057575a56d0fe6d100a7",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:6W3e76D3myDYzc2oo1E9wx"
+    } ],
+    "limit" : 1,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 1
+  }
+}

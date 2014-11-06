@@ -1,0 +1,85 @@
+GET /v1/search?q=Full%20Moon%20Eden%20Ahbez&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:06 GMT
+content-type: application/json; charset=utf-8
+content-length: 3025
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Full+Moon+Eden+Ahbez&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6KnWHN5XZ4eMqGFOYyCKyI"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6KnWHN5XZ4eMqGFOYyCKyI",
+        "id" : "6KnWHN5XZ4eMqGFOYyCKyI",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/47a492b671e032c552ac2da92ffc198f72347bf6",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/8bc0b241c83d9bcea547371078429e1817c467ae",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c5bd4b12300cd0634b666f01ae895182cb7e8c09",
+          "width" : 64
+        } ],
+        "name" : "Eden's Island",
+        "type" : "album",
+        "uri" : "spotify:album:6KnWHN5XZ4eMqGFOYyCKyI"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/10uwDZEuXM1HzOeDlrybCS"
+        },
+        "href" : "https://api.spotify.com/v1/artists/10uwDZEuXM1HzOeDlrybCS",
+        "id" : "10uwDZEuXM1HzOeDlrybCS",
+        "name" : "Eden Ahbez",
+        "type" : "artist",
+        "uri" : "spotify:artist:10uwDZEuXM1HzOeDlrybCS"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 177373,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USRH10721280"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4YP81OCyHsxAb23UTAW7Vn"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4YP81OCyHsxAb23UTAW7Vn",
+      "id" : "4YP81OCyHsxAb23UTAW7Vn",
+      "name" : "Full Moon",
+      "popularity" : 29,
+      "preview_url" : "https://p.scdn.co/mp3-preview/660a0bf0fd69f4cc3485010189407ad680d85f93",
+      "track_number" : 6,
+      "type" : "track",
+      "uri" : "spotify:track:4YP81OCyHsxAb23UTAW7Vn"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Full+Moon+Eden+Ahbez&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 23
+  }
+}

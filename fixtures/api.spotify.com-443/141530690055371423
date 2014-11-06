@@ -1,0 +1,85 @@
+GET /v1/search?q=Always%20On%20My%20Mind%20Willie%20Nelson%20&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:19 GMT
+content-type: application/json; charset=utf-8
+content-length: 3065
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Always+On+My+Mind+Willie+Nelson+&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/5lSPP40Df9t2nkusLZtXTb"
+        },
+        "href" : "https://api.spotify.com/v1/albums/5lSPP40Df9t2nkusLZtXTb",
+        "id" : "5lSPP40Df9t2nkusLZtXTb",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/0ae1bdb0a351cbc2bf30ec74ced990a15e4488a8",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/cc1231af3448d5c6919e7eecc33af5673673fd41",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/36e363e8c30576d6288bccd0d78e9acd35d66e91",
+          "width" : 64
+        } ],
+        "name" : "Always On My Mind",
+        "type" : "album",
+        "uri" : "spotify:album:5lSPP40Df9t2nkusLZtXTb"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5W5bDNCqJ1jbCgTxDD0Cb3"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5W5bDNCqJ1jbCgTxDD0Cb3",
+        "id" : "5W5bDNCqJ1jbCgTxDD0Cb3",
+        "name" : "Willie Nelson",
+        "type" : "artist",
+        "uri" : "spotify:artist:5W5bDNCqJ1jbCgTxDD0Cb3"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 212666,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USSM18100410"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2xYQTU2bbg6WVAmpY1eae4"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2xYQTU2bbg6WVAmpY1eae4",
+      "id" : "2xYQTU2bbg6WVAmpY1eae4",
+      "name" : "Always on My Mind",
+      "popularity" : 61,
+      "preview_url" : "https://p.scdn.co/mp3-preview/7a78d404a80e45968f9eae2b64d137b8865d6bf2",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:2xYQTU2bbg6WVAmpY1eae4"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Always+On+My+Mind+Willie+Nelson+&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 337
+  }
+}

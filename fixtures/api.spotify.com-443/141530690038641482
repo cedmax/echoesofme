@@ -1,0 +1,85 @@
+GET /v1/search?q=Take%20You%20Down%20Quint&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:19 GMT
+content-type: application/json; charset=utf-8
+content-length: 2929
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Take+You+Down+Quint&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "single",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/61MlTFbb0BDBdqU3n1YoUX"
+        },
+        "href" : "https://api.spotify.com/v1/albums/61MlTFbb0BDBdqU3n1YoUX",
+        "id" : "61MlTFbb0BDBdqU3n1YoUX",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c06f98f27aff19b686ffcb264b1fd776c7e672ae",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/e2c54f4f5f1339c21ef53054121bc31d95404949",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/2ee7a7829758df071bd66e97d0b4c2154ed58f6d",
+          "width" : 64
+        } ],
+        "name" : "Quint - The E.P.",
+        "type" : "album",
+        "uri" : "spotify:album:61MlTFbb0BDBdqU3n1YoUX"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6NafazqnS9JCwf1X31LX9f"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6NafazqnS9JCwf1X31LX9f",
+        "id" : "6NafazqnS9JCwf1X31LX9f",
+        "name" : "Quint",
+        "type" : "artist",
+        "uri" : "spotify:artist:6NafazqnS9JCwf1X31LX9f"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 179832,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "TCABP1327432"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6y8uZ6cYBmTfnDWfkehv7W"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6y8uZ6cYBmTfnDWfkehv7W",
+      "id" : "6y8uZ6cYBmTfnDWfkehv7W",
+      "name" : "Take You Down",
+      "popularity" : 7,
+      "preview_url" : "https://p.scdn.co/mp3-preview/4f8154a8c614206b49d00a897b8db5b73ebb154e",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:6y8uZ6cYBmTfnDWfkehv7W"
+    } ],
+    "limit" : 1,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 1
+  }
+}

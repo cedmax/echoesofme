@@ -1,0 +1,85 @@
+GET /v1/search?q=The%20First%20Days%20Of%20Spring%20Noah%20And%20The%20Whale&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:20 GMT
+content-type: application/json; charset=utf-8
+content-length: 2409
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=The+First+Days+Of+Spring+Noah+And+The+Whale&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "GB", "IE" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/17CbZe05VyzC2QsVx6PT06"
+        },
+        "href" : "https://api.spotify.com/v1/albums/17CbZe05VyzC2QsVx6PT06",
+        "id" : "17CbZe05VyzC2QsVx6PT06",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/79c0db993351011af95165aa4aa2119edf050e15",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/971567ea8cebd9023af8538c8eab208e65162dd1",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/214ed541d05ec370583bb1cf06eb468b960b15e2",
+          "width" : 64
+        } ],
+        "name" : "The First Days Of Spring",
+        "type" : "album",
+        "uri" : "spotify:album:17CbZe05VyzC2QsVx6PT06"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0aeLcja6hKzb7Uz2ou7ulP"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0aeLcja6hKzb7Uz2ou7ulP",
+        "id" : "0aeLcja6hKzb7Uz2ou7ulP",
+        "name" : "Noah And The Whale",
+        "type" : "artist",
+        "uri" : "spotify:artist:0aeLcja6hKzb7Uz2ou7ulP"
+      } ],
+      "available_markets" : [ "GB", "IE" ],
+      "disc_number" : 1,
+      "duration_ms" : 399160,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBUM70907130"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1np6Z0Xx0MlcPXfOi6UL6s"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1np6Z0Xx0MlcPXfOi6UL6s",
+      "id" : "1np6Z0Xx0MlcPXfOi6UL6s",
+      "name" : "The First Days Of Spring",
+      "popularity" : 41,
+      "preview_url" : "https://p.scdn.co/mp3-preview/5fecb65ead592b3e4d07130d8309b2818c8cea6c",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:1np6Z0Xx0MlcPXfOi6UL6s"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=The+First+Days+Of+Spring+Noah+And+The+Whale&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 22
+  }
+}

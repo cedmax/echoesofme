@@ -1,0 +1,85 @@
+GET /v1/search?q=Bocca%20Di%20Rosa%20GnuQuartet&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:28 GMT
+content-type: application/json; charset=utf-8
+content-length: 2939
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Bocca+Di+Rosa+GnuQuartet&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/1lYa3z0EQ5RxiIBc1NoIbZ"
+        },
+        "href" : "https://api.spotify.com/v1/albums/1lYa3z0EQ5RxiIBc1NoIbZ",
+        "id" : "1lYa3z0EQ5RxiIBc1NoIbZ",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/7b7a60989217c7f6be462da152fa4e94060c9a4f",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/a9c4243b475e3cb8cafa31e1458cd05f8c100a45",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/3ade57caf338492e06fe01b6b751c4ebbd013551",
+          "width" : 64
+        } ],
+        "name" : "Il diverso sei tu",
+        "type" : "album",
+        "uri" : "spotify:album:1lYa3z0EQ5RxiIBc1NoIbZ"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/7AQz51DdQTCmgY5gSac1GM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/7AQz51DdQTCmgY5gSac1GM",
+        "id" : "7AQz51DdQTCmgY5gSac1GM",
+        "name" : "GnuQuartet",
+        "type" : "artist",
+        "uri" : "spotify:artist:7AQz51DdQTCmgY5gSac1GM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 212493,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "ITK601100017"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/7HAAz3fZBEfciGAafYbKOn"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/7HAAz3fZBEfciGAafYbKOn",
+      "id" : "7HAAz3fZBEfciGAafYbKOn",
+      "name" : "Bocca di Rosa",
+      "popularity" : 0,
+      "preview_url" : "https://p.scdn.co/mp3-preview/206f883c609dd08d3a73a4549016777f05837f17",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:7HAAz3fZBEfciGAafYbKOn"
+    } ],
+    "limit" : 1,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 1
+  }
+}

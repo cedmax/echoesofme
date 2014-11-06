@@ -1,0 +1,85 @@
+GET /v1/search?q=Viz%20Le%20Tigre&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:25 GMT
+content-type: application/json; charset=utf-8
+content-length: 2301
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Viz+Le+Tigre&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "GB", "IE" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/568bzg2QxOVQabJfQwapt7"
+        },
+        "href" : "https://api.spotify.com/v1/albums/568bzg2QxOVQabJfQwapt7",
+        "id" : "568bzg2QxOVQabJfQwapt7",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/3b707cf3f44ceec42edd9e9691b29a6a030715f6",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/940b3e80ca2ba2c0f1884ece8c9ce24ab2564e20",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/8e42c35472bf728cd068dd7ec53e370f37565cd5",
+          "width" : 64
+        } ],
+        "name" : "This Island",
+        "type" : "album",
+        "uri" : "spotify:album:568bzg2QxOVQabJfQwapt7"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2n6FviARgtjjimZXu18uRM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2n6FviARgtjjimZXu18uRM",
+        "id" : "2n6FviARgtjjimZXu18uRM",
+        "name" : "Le Tigre",
+        "type" : "artist",
+        "uri" : "spotify:artist:2n6FviARgtjjimZXu18uRM"
+      } ],
+      "available_markets" : [ "GB", "IE" ],
+      "disc_number" : 1,
+      "duration_ms" : 213626,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USUR10400850"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/76noC78EDOK3cBXHIDa7Ea"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/76noC78EDOK3cBXHIDa7Ea",
+      "id" : "76noC78EDOK3cBXHIDa7Ea",
+      "name" : "Viz",
+      "popularity" : 8,
+      "preview_url" : "https://p.scdn.co/mp3-preview/78c8e998446d78bfd2f4950b3e1e07eafc3bd6c3",
+      "track_number" : 9,
+      "type" : "track",
+      "uri" : "spotify:track:76noC78EDOK3cBXHIDa7Ea"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Viz+Le+Tigre&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 4
+  }
+}
