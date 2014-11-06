@@ -1,0 +1,85 @@
+GET /v1/search?q=Bella%20Senz%27Anima%20(2001%20Digital%20Remaster)%20Mina&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:17 GMT
+content-type: application/json; charset=utf-8
+content-length: 2980
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Bella+Senz%27Anima+%282001+Digital+Remaster%29+Mina&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2ppiXx1h7qyX8zy1q60Bso"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2ppiXx1h7qyX8zy1q60Bso",
+        "id" : "2ppiXx1h7qyX8zy1q60Bso",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/621d9b4d43ba56b215ca4c4a60c5524216070835",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/fc3582cda81f75347cd0ac9aa17b61d7d7e20723",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/3925ba07f340d1c8bc81793e07c4d59954f4a56c",
+          "width" : 64
+        } ],
+        "name" : "Si, Buana",
+        "type" : "album",
+        "uri" : "spotify:album:2ppiXx1h7qyX8zy1q60Bso"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3HL1CyOnDLFJo1Rr8YBlKy"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3HL1CyOnDLFJo1Rr8YBlKy",
+        "id" : "3HL1CyOnDLFJo1Rr8YBlKy",
+        "name" : "Mina",
+        "type" : "artist",
+        "uri" : "spotify:artist:3HL1CyOnDLFJo1Rr8YBlKy"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 285146,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAYE0101704"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3satHFWNe1Vwz3R0OvyxHD"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3satHFWNe1Vwz3R0OvyxHD",
+      "id" : "3satHFWNe1Vwz3R0OvyxHD",
+      "name" : "Bella Senz'Anima - 2001 Digital Remaster",
+      "popularity" : 15,
+      "preview_url" : "https://p.scdn.co/mp3-preview/8d2537b3290174d9bb1a6cc381cbbeb84123b266",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:3satHFWNe1Vwz3R0OvyxHD"
+    } ],
+    "limit" : 1,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 1
+  }
+}

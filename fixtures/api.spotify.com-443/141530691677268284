@@ -1,0 +1,85 @@
+GET /v1/search?q=Celebrate%20Whitney%20Houston%20&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:35 GMT
+content-type: application/json; charset=utf-8
+content-length: 3083
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Celebrate+Whitney+Houston+&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "single",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/7LinAz9ia927LIU1Ug4zft"
+        },
+        "href" : "https://api.spotify.com/v1/albums/7LinAz9ia927LIU1Ug4zft",
+        "id" : "7LinAz9ia927LIU1Ug4zft",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/be30d9acef41e46e65fe41e4db62b7f01d98ca98",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/a69e5a6c1cfdd2dc2768017e1c59e16ae31c9659",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/2b5d8640f812e03e5a59937039294ca298d89b25",
+          "width" : 64
+        } ],
+        "name" : "Celebrate (A Tribute to Whitney Houston and Jordin Sparks)",
+        "type" : "album",
+        "uri" : "spotify:album:7LinAz9ia927LIU1Ug4zft"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4uj4nWYxrcaHidiRmwEsA9"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4uj4nWYxrcaHidiRmwEsA9",
+        "id" : "4uj4nWYxrcaHidiRmwEsA9",
+        "name" : "Cover Cream",
+        "type" : "artist",
+        "uri" : "spotify:artist:4uj4nWYxrcaHidiRmwEsA9"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 230217,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "FR6V80127659"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1riW7QC48Ot0QKYOX0oryT"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1riW7QC48Ot0QKYOX0oryT",
+      "id" : "1riW7QC48Ot0QKYOX0oryT",
+      "name" : "Celebrate",
+      "popularity" : 2,
+      "preview_url" : "https://p.scdn.co/mp3-preview/780ccc4c8f1f1232a201c4656c6554164bebd252",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:1riW7QC48Ot0QKYOX0oryT"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Celebrate+Whitney+Houston+&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 28
+  }
+}

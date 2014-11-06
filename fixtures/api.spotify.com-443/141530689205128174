@@ -1,0 +1,94 @@
+GET /v1/search?q=Another%20Place%20Louis%20Inglis%20Feat.%20Renae%20Elliot&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:11 GMT
+content-type: application/json; charset=utf-8
+content-length: 3365
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Another+Place+Louis+Inglis+Feat.+Renae+Elliot&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "single",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/7ypCj2SU89lJ126GycEUhP"
+        },
+        "href" : "https://api.spotify.com/v1/albums/7ypCj2SU89lJ126GycEUhP",
+        "id" : "7ypCj2SU89lJ126GycEUhP",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/110156ef91b1b5c56bc695ad2d41258a375277bd",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/7b7927cb59a09b0b4dcac013b1dcba84fa54945c",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/04d3afca235b8b6d5c676dc82e60d91a0cb11a74",
+          "width" : 64
+        } ],
+        "name" : "Another Place (feat. Renae Elliot)",
+        "type" : "album",
+        "uri" : "spotify:album:7ypCj2SU89lJ126GycEUhP"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5caIcxBCS8VRkFqkUPSd2L"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5caIcxBCS8VRkFqkUPSd2L",
+        "id" : "5caIcxBCS8VRkFqkUPSd2L",
+        "name" : "Louis Inglis",
+        "type" : "artist",
+        "uri" : "spotify:artist:5caIcxBCS8VRkFqkUPSd2L"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3yZA0JAUeXF8GO7UeZhSIv"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3yZA0JAUeXF8GO7UeZhSIv",
+        "id" : "3yZA0JAUeXF8GO7UeZhSIv",
+        "name" : "Renae Elliot",
+        "type" : "artist",
+        "uri" : "spotify:artist:3yZA0JAUeXF8GO7UeZhSIv"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 146044,
+      "explicit" : true,
+      "external_ids" : {
+        "isrc" : "TCABT1493851"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6RPFzLVBXgFN37IiI71Yjz"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6RPFzLVBXgFN37IiI71Yjz",
+      "id" : "6RPFzLVBXgFN37IiI71Yjz",
+      "name" : "Another Place (feat. Renae Elliot)",
+      "popularity" : 23,
+      "preview_url" : "https://p.scdn.co/mp3-preview/066e46bb68397c4cf09f54b8a8ad6e77d43382c5",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:6RPFzLVBXgFN37IiI71Yjz"
+    } ],
+    "limit" : 1,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 1
+  }
+}

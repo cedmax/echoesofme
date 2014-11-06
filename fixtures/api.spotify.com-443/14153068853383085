@@ -1,0 +1,85 @@
+GET /v1/search?q=A%20Million%20Little%20Pieces%20Placebo&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:04 GMT
+content-type: application/json; charset=utf-8
+content-length: 3022
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=A+Million+Little+Pieces+Placebo&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/1I7nurs0QFuIrDPXjdx96L"
+        },
+        "href" : "https://api.spotify.com/v1/albums/1I7nurs0QFuIrDPXjdx96L",
+        "id" : "1I7nurs0QFuIrDPXjdx96L",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/09fa29ac7823c797c5454095c774ca7766ccd5ef",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ddbb5ce138a2e7d4bc6d4f15562acd640cf39321",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/427b428be119426767118e5fe37e205dae0f719f",
+          "width" : 64
+        } ],
+        "name" : "Loud Like Love",
+        "type" : "album",
+        "uri" : "spotify:album:1I7nurs0QFuIrDPXjdx96L"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6RZUqkomCmb8zCRqc9eznB"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6RZUqkomCmb8zCRqc9eznB",
+        "id" : "6RZUqkomCmb8zCRqc9eznB",
+        "name" : "Placebo",
+        "type" : "artist",
+        "uri" : "spotify:artist:6RZUqkomCmb8zCRqc9eznB"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 280733,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "DEUM71301916"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/7xqcdtwYBRQDsBNp3pZFKf"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/7xqcdtwYBRQDsBNp3pZFKf",
+      "id" : "7xqcdtwYBRQDsBNp3pZFKf",
+      "name" : "A Million Little Pieces",
+      "popularity" : 62,
+      "preview_url" : "https://p.scdn.co/mp3-preview/a4bc415cdd1277b9ab544a17c8f2a1381bc19be1",
+      "track_number" : 6,
+      "type" : "track",
+      "uri" : "spotify:track:7xqcdtwYBRQDsBNp3pZFKf"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=A+Million+Little+Pieces+Placebo&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 3
+  }
+}

@@ -1,0 +1,85 @@
+GET /v1/search?q=Everlasting%20Light%20The%20Black%20Keys&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:29 GMT
+content-type: application/json; charset=utf-8
+content-length: 3037
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Everlasting+Light+The+Black+Keys&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0gVxPZ2tcMgyzLxyw8k1z7"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0gVxPZ2tcMgyzLxyw8k1z7",
+        "id" : "0gVxPZ2tcMgyzLxyw8k1z7",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/e1c8594562d35cd8d4338bfeb6c6b23bd41fd942",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ca4b85e01309d843d615b8ab93d312742650e46d",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/e76deee80fb59daef5f531d08e2fc156c9bdff9a",
+          "width" : 64
+        } ],
+        "name" : "Brothers (Deluxe Edition)",
+        "type" : "album",
+        "uri" : "spotify:album:0gVxPZ2tcMgyzLxyw8k1z7"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/7mnBLXK823vNxN3UWB7Gfz"
+        },
+        "href" : "https://api.spotify.com/v1/artists/7mnBLXK823vNxN3UWB7Gfz",
+        "id" : "7mnBLXK823vNxN3UWB7Gfz",
+        "name" : "The Black Keys",
+        "type" : "artist",
+        "uri" : "spotify:artist:7mnBLXK823vNxN3UWB7Gfz"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 204626,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USNO11000076"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3OYPskZPKnOcHZ9fUDwmCK"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3OYPskZPKnOcHZ9fUDwmCK",
+      "id" : "3OYPskZPKnOcHZ9fUDwmCK",
+      "name" : "Everlasting Light",
+      "popularity" : 58,
+      "preview_url" : "https://p.scdn.co/mp3-preview/48d8d022ef255da7f89f1f851d0882d78ec48394",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:3OYPskZPKnOcHZ9fUDwmCK"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Everlasting+Light+The+Black+Keys&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 11
+  }
+}

@@ -1,0 +1,85 @@
+GET /v1/search?q=Down%20River%20The%20Temper%20Trap&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:20 GMT
+content-type: application/json; charset=utf-8
+content-length: 2727
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Down+River+The+Temper+Trap&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AT", "BE", "BG", "CH", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "NL", "NO", "PL", "PT", "RO", "SE", "SI", "SK", "TR" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/7cBGSjfw2xMosazpbA0tgp"
+        },
+        "href" : "https://api.spotify.com/v1/albums/7cBGSjfw2xMosazpbA0tgp",
+        "id" : "7cBGSjfw2xMosazpbA0tgp",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/dc750801adbdf1d896dd75feae4dfb29447a757e",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/a8d3e7f0757d9c3b049ea35487f7128ab036e8a8",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c3a72694961ef4b9f71ecf0f2548095941120d9e",
+          "width" : 64
+        } ],
+        "name" : "Conditions",
+        "type" : "album",
+        "uri" : "spotify:album:7cBGSjfw2xMosazpbA0tgp"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4W48hZAnAHVOC2c8WH8pcq"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4W48hZAnAHVOC2c8WH8pcq",
+        "id" : "4W48hZAnAHVOC2c8WH8pcq",
+        "name" : "The Temper Trap",
+        "type" : "artist",
+        "uri" : "spotify:artist:4W48hZAnAHVOC2c8WH8pcq"
+      } ],
+      "available_markets" : [ "AD", "AT", "BE", "BG", "CH", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "NL", "NO", "PL", "PT", "RO", "SE", "SI", "SK", "TR" ],
+      "disc_number" : 1,
+      "duration_ms" : 231133,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBZUZ0900011"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2RZR0VKIzWDCnCXPUHZcjT"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2RZR0VKIzWDCnCXPUHZcjT",
+      "id" : "2RZR0VKIzWDCnCXPUHZcjT",
+      "name" : "Down River",
+      "popularity" : 46,
+      "preview_url" : "https://p.scdn.co/mp3-preview/d8cd6a6b4d7c8db66d1b04ede2c0d1b8439e9a66",
+      "track_number" : 4,
+      "type" : "track",
+      "uri" : "spotify:track:2RZR0VKIzWDCnCXPUHZcjT"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Down+River+The+Temper+Trap&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 3
+  }
+}

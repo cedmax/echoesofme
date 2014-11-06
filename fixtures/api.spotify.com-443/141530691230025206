@@ -1,0 +1,85 @@
+GET /v1/search?q=You%20Can%20Call%20Me%20Al%20Paul%20Simon&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:31 GMT
+content-type: application/json; charset=utf-8
+content-length: 3069
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=You+Can+Call+Me+Al+Paul+Simon&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "compilation",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4kdOH3s9cRL9YykvHFpSlD"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4kdOH3s9cRL9YykvHFpSlD",
+        "id" : "4kdOH3s9cRL9YykvHFpSlD",
+        "images" : [ {
+          "height" : 636,
+          "url" : "https://i.scdn.co/image/3b5eaaf3d4800724828fa8537f3b8ceac0e75fed",
+          "width" : 640
+        }, {
+          "height" : 298,
+          "url" : "https://i.scdn.co/image/624ab075bb70682c0e5114638ba10c49dc024646",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ff2b23462baf7b345784711ec82ddc25aabd02db",
+          "width" : 64
+        } ],
+        "name" : "The Essential Paul Simon",
+        "type" : "album",
+        "uri" : "spotify:album:4kdOH3s9cRL9YykvHFpSlD"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2CvCyf1gEVhI0mX6aFXmVI"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2CvCyf1gEVhI0mX6aFXmVI",
+        "id" : "2CvCyf1gEVhI0mX6aFXmVI",
+        "name" : "Paul Simon",
+        "type" : "artist",
+        "uri" : "spotify:artist:2CvCyf1gEVhI0mX6aFXmVI"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 2,
+      "duration_ms" : 276360,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USSM11002274"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6wLr2oR8eqUG5Beleh2Crm"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6wLr2oR8eqUG5Beleh2Crm",
+      "id" : "6wLr2oR8eqUG5Beleh2Crm",
+      "name" : "You Can Call Me Al",
+      "popularity" : 71,
+      "preview_url" : "https://p.scdn.co/mp3-preview/8b0c6e139596bf307253689f5bcdb651793fba62",
+      "track_number" : 4,
+      "type" : "track",
+      "uri" : "spotify:track:6wLr2oR8eqUG5Beleh2Crm"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=You+Can+Call+Me+Al+Paul+Simon&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 69
+  }
+}

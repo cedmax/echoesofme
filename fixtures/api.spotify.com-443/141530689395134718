@@ -1,0 +1,85 @@
+GET /v1/search?q=Karl%20Marx%20And%20History%20Randy&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:12 GMT
+content-type: application/json; charset=utf-8
+content-length: 2949
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Karl+Marx+And+History+Randy&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6ScRjNwd8RXSeV19ltX7iP"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6ScRjNwd8RXSeV19ltX7iP",
+        "id" : "6ScRjNwd8RXSeV19ltX7iP",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/d82b6d45e50863832951123b6ba6999fb893849f",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/2ee858024999136c81c262c1143ee3c065c3944d",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/3aa3bd690463874edfeed84320583e85757ead9e",
+          "width" : 64
+        } ],
+        "name" : "The Human Atom Bombs",
+        "type" : "album",
+        "uri" : "spotify:album:6ScRjNwd8RXSeV19ltX7iP"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1Qote9MpqMZluWzYGifZUg"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1Qote9MpqMZluWzYGifZUg",
+        "id" : "1Qote9MpqMZluWzYGifZUg",
+        "name" : "Randy",
+        "type" : "artist",
+        "uri" : "spotify:artist:1Qote9MpqMZluWzYGifZUg"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 178040,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "SEVHC0022050"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0DBjnITd1K6KRPiD56EZlU"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0DBjnITd1K6KRPiD56EZlU",
+      "id" : "0DBjnITd1K6KRPiD56EZlU",
+      "name" : "Karl Marx And History",
+      "popularity" : 21,
+      "preview_url" : "https://p.scdn.co/mp3-preview/710f33928f8f54320668225cb334f73900656d41",
+      "track_number" : 5,
+      "type" : "track",
+      "uri" : "spotify:track:0DBjnITd1K6KRPiD56EZlU"
+    } ],
+    "limit" : 1,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 1
+  }
+}

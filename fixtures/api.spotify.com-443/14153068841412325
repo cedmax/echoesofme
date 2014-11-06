@@ -1,0 +1,85 @@
+GET /v1/search?q=Chandelier%20Sia&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:03 GMT
+content-type: application/json; charset=utf-8
+content-length: 2989
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Chandelier+Sia&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3xFSl9lIRaYXIYkIn3OIl9"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3xFSl9lIRaYXIYkIn3OIl9",
+        "id" : "3xFSl9lIRaYXIYkIn3OIl9",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/d0dab7610a3f191b2f07b3ed8ad209d1cf744ff0",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/fc213d7efcde95a9da0e9ed97cffd2fa7af90dec",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/053871af8b2d4cf82282631051d77e5f4efbd558",
+          "width" : 64
+        } ],
+        "name" : "1000 Forms Of Fear",
+        "type" : "album",
+        "uri" : "spotify:album:3xFSl9lIRaYXIYkIn3OIl9"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5WUlDfRSoLAfcVSX1WnrxN"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5WUlDfRSoLAfcVSX1WnrxN",
+        "id" : "5WUlDfRSoLAfcVSX1WnrxN",
+        "name" : "Sia",
+        "type" : "artist",
+        "uri" : "spotify:artist:5WUlDfRSoLAfcVSX1WnrxN"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 216120,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USRC11400498"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4VrWlk8IQxevMvERoX08iC"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4VrWlk8IQxevMvERoX08iC",
+      "id" : "4VrWlk8IQxevMvERoX08iC",
+      "name" : "Chandelier",
+      "popularity" : 96,
+      "preview_url" : "https://p.scdn.co/mp3-preview/8552759c5f4228caea13e0106c4e79dfcb04e733",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:4VrWlk8IQxevMvERoX08iC"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Chandelier+Sia&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 129
+  }
+}

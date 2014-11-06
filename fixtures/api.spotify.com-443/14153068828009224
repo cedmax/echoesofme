@@ -1,0 +1,85 @@
+GET /v1/search?q=Come%20On%20Up%20To%20The%20House%20Tom%20Waits&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:01 GMT
+content-type: application/json; charset=utf-8
+content-length: 3066
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Come+On+Up+To+The+House+Tom+Waits&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3HbiZpp2QwPU1Y4eweEStW"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3HbiZpp2QwPU1Y4eweEStW",
+        "id" : "3HbiZpp2QwPU1Y4eweEStW",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/91c7b1dad26deb9bec0a852a85bdd971a656120d",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/5eaa92484751926a53646a59d467a5e8e009942c",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/f405d94985b3fa527a68ea404da06c6358e445ea",
+          "width" : 64
+        } ],
+        "name" : "Mule Variations",
+        "type" : "album",
+        "uri" : "spotify:album:3HbiZpp2QwPU1Y4eweEStW"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/7x83XhcMbOTl1UdYsPTuZM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/7x83XhcMbOTl1UdYsPTuZM",
+        "id" : "7x83XhcMbOTl1UdYsPTuZM",
+        "name" : "Tom Waits",
+        "type" : "artist",
+        "uri" : "spotify:artist:7x83XhcMbOTl1UdYsPTuZM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 276893,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USAI50301116"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6GJTapmJmNA9bZLyow7XPh"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6GJTapmJmNA9bZLyow7XPh",
+      "id" : "6GJTapmJmNA9bZLyow7XPh",
+      "name" : "Come On Up To The House",
+      "popularity" : 49,
+      "preview_url" : "https://p.scdn.co/mp3-preview/a34c31cd60507a8ea2fb26fabf35206c799db273",
+      "track_number" : 16,
+      "type" : "track",
+      "uri" : "spotify:track:6GJTapmJmNA9bZLyow7XPh"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Come+On+Up+To+The+House+Tom+Waits&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 2
+  }
+}

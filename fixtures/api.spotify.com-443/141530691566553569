@@ -1,0 +1,85 @@
+GET /v1/search?q=Spitfire%20The%20Prodigy&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:34 GMT
+content-type: application/json; charset=utf-8
+content-length: 3022
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Spitfire+The+Prodigy&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/1LpHOvZvE4tJpoMdx0S7Ub"
+        },
+        "href" : "https://api.spotify.com/v1/albums/1LpHOvZvE4tJpoMdx0S7Ub",
+        "id" : "1LpHOvZvE4tJpoMdx0S7Ub",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/033e04b64ee9a049d87ca430a5c6046a8d12d162",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/5b61a3f46120ce0997a78e2c78df0dc7e0aaec17",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/bb94e92ecabbec3944dbde639b493a8168dac374",
+          "width" : 64
+        } ],
+        "name" : "Always Outnumbered, Never Outgunned",
+        "type" : "album",
+        "uri" : "spotify:album:1LpHOvZvE4tJpoMdx0S7Ub"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4k1ELeJKT1ISyDv8JivPpB"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4k1ELeJKT1ISyDv8JivPpB",
+        "id" : "4k1ELeJKT1ISyDv8JivPpB",
+        "name" : "The Prodigy",
+        "type" : "artist",
+        "uri" : "spotify:artist:4k1ELeJKT1ISyDv8JivPpB"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 308360,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBBKS0461550"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/5hvegt2rnsuCMhDOXkPffC"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/5hvegt2rnsuCMhDOXkPffC",
+      "id" : "5hvegt2rnsuCMhDOXkPffC",
+      "name" : "Spitfire",
+      "popularity" : 54,
+      "preview_url" : "https://p.scdn.co/mp3-preview/7aa6dfe52398301a9be299607ce777749d00fbf4",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:5hvegt2rnsuCMhDOXkPffC"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Spitfire+The+Prodigy&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 5
+  }
+}

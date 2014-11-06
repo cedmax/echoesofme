@@ -1,0 +1,85 @@
+GET /v1/search?q=The%20Valley%20Okkervil%20River&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:32 GMT
+content-type: application/json; charset=utf-8
+content-length: 2878
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=The+Valley+Okkervil+River&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "NI", "NL", "NO", "NZ", "PA", "PE", "PL", "PT", "PY", "RO", "SE", "SI", "SK", "SV", "TR", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2p6LtNqgheV6FebQ458YbN"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2p6LtNqgheV6FebQ458YbN",
+        "id" : "2p6LtNqgheV6FebQ458YbN",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/2bf6c319246aa314eb5b11a1c872e4bb1b1af8f3",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/abca0134aaf78ab0e9d1902f84ff961e13e36e2f",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c864111d8a14071806671bf9948a5e22fd3a5e42",
+          "width" : 64
+        } ],
+        "name" : "I Am Very Far",
+        "type" : "album",
+        "uri" : "spotify:album:2p6LtNqgheV6FebQ458YbN"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5E7zSu46SqTmgKqsc0tFkY"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5E7zSu46SqTmgKqsc0tFkY",
+        "id" : "5E7zSu46SqTmgKqsc0tFkY",
+        "name" : "Okkervil River",
+        "type" : "artist",
+        "uri" : "spotify:artist:5E7zSu46SqTmgKqsc0tFkY"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "NI", "NL", "NO", "NZ", "PA", "PE", "PL", "PT", "PY", "RO", "SE", "SI", "SK", "SV", "TR", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 230426,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "US38Y1118501"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3mXejphEojtnbEXnnvsLkA"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3mXejphEojtnbEXnnvsLkA",
+      "id" : "3mXejphEojtnbEXnnvsLkA",
+      "name" : "The Valley",
+      "popularity" : 45,
+      "preview_url" : "https://p.scdn.co/mp3-preview/e499a4d48d9ac5e27f1bc623f62ecde6c15bcf69",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:3mXejphEojtnbEXnnvsLkA"
+    } ],
+    "limit" : 1,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 1
+  }
+}

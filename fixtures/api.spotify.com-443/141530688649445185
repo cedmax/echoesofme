@@ -1,0 +1,85 @@
+GET /v1/search?q=Stolen%20Dance%20Milky%20Chance&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:05 GMT
+content-type: application/json; charset=utf-8
+content-length: 2344
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Stolen+Dance+Milky+Chance&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "GB", "IE" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/1xgsASwaho4dYAepmJNOm3"
+        },
+        "href" : "https://api.spotify.com/v1/albums/1xgsASwaho4dYAepmJNOm3",
+        "id" : "1xgsASwaho4dYAepmJNOm3",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/0564769b026eec48cb449491679d4298564f1a23",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/fbdea5aa8f18ae5f12e899f84d050925c11df68a",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/b6077bc4be9eb3d4e861a2a6d7712e7182e5e3cd",
+          "width" : 64
+        } ],
+        "name" : "Sadnecessary",
+        "type" : "album",
+        "uri" : "spotify:album:1xgsASwaho4dYAepmJNOm3"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1hzfo8twXdOegF3xireCYs"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1hzfo8twXdOegF3xireCYs",
+        "id" : "1hzfo8twXdOegF3xireCYs",
+        "name" : "Milky Chance",
+        "type" : "artist",
+        "uri" : "spotify:artist:1hzfo8twXdOegF3xireCYs"
+      } ],
+      "available_markets" : [ "GB", "IE" ],
+      "disc_number" : 1,
+      "duration_ms" : 315920,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "DEL211300741"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1tvrQvPSxT4mdEY1zlBUN5"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1tvrQvPSxT4mdEY1zlBUN5",
+      "id" : "1tvrQvPSxT4mdEY1zlBUN5",
+      "name" : "Stolen Dance",
+      "popularity" : 75,
+      "preview_url" : "https://p.scdn.co/mp3-preview/c2e5744fea259c727f6e9360c0b6f59e8fdaf206",
+      "track_number" : 11,
+      "type" : "track",
+      "uri" : "spotify:track:1tvrQvPSxT4mdEY1zlBUN5"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Stolen+Dance+Milky+Chance&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 40
+  }
+}

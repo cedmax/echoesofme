@@ -1,0 +1,85 @@
+GET /v1/search?q=Can%27t%20Hold%20Us%20Macklemore%20&type=track&market=GB&limit=1
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 20:48:21 GMT
+content-type: application/json; charset=utf-8
+content-length: 3036
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: public, max-age=7200
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Can%27t+Hold+Us+Macklemore+&offset=0&limit=1&type=track&market=GB",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/76FXHQhTuT4QMIxfL09gX8"
+        },
+        "href" : "https://api.spotify.com/v1/albums/76FXHQhTuT4QMIxfL09gX8",
+        "id" : "76FXHQhTuT4QMIxfL09gX8",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/17bf689d7edfb141a404da1899890075f11ccad2",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/47e58dd834af7da2b86190202fe8c7c2a05df0d0",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/20cead3ed89956d951cdd8f62f82f02b30d0f115",
+          "width" : 64
+        } ],
+        "name" : "The Heist",
+        "type" : "album",
+        "uri" : "spotify:album:76FXHQhTuT4QMIxfL09gX8"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5BcAKTbp20cv7tC5VqPFoC"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5BcAKTbp20cv7tC5VqPFoC",
+        "id" : "5BcAKTbp20cv7tC5VqPFoC",
+        "name" : "Macklemore & Ryan Lewis",
+        "type" : "artist",
+        "uri" : "spotify:artist:5BcAKTbp20cv7tC5VqPFoC"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 258342,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GMM881200021"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3bidbhpOYeV4knp8AIu8Xn"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3bidbhpOYeV4knp8AIu8Xn",
+      "id" : "3bidbhpOYeV4knp8AIu8Xn",
+      "name" : "Can't Hold Us - feat. Ray Dalton",
+      "popularity" : 87,
+      "preview_url" : "https://p.scdn.co/mp3-preview/8a692b37e7a4dbee9967d156c5fa5c22bbaae719",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:3bidbhpOYeV4knp8AIu8Xn"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Can%27t+Hold+Us+Macklemore+&offset=1&limit=1&type=track&market=GB",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 131
+  }
+}
