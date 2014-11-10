@@ -1,0 +1,19 @@
+POST /v1/users/cedmax/playlists/54Kc6RuEdWREhTWZMST7Fw/tracks?uris=spotify%3Atrack%3A4k80K0b6KZ2QjAYkXON7q6%2Cspotify%3Atrack%3A4req8iQG0rn1eXe8AsIAlf%2Cspotify%3Atrack%3A5KeyVNymqfqac1wLDseK8v%2Cspotify%3Atrack%3A2xgzdaIHyPE99Kql9DX5SR%2Cspotify%3Atrack%3A5hvegt2rnsuCMhDOXkPffC%2Cspotify%3Atrack%3A6jrj5OCZ9mY6En8tp1Okpt%2Cspotify%3Atrack%3A14oVMOI4e83M2Rl83CJkTo%2Cspotify%3Atrack%3A3sbSsRBU9gYws1oeoExrNK%2Cspotify%3Atrack%3A7IWq874WL3ZLJJ9es7r52l%2Cspotify%3Atrack%3A1VS2WwN3H4SNWMIrAzYqUi%2Cspotify%3Atrack%3A62Yc8NPYXJkY1WXTamXtDV%2Cspotify%3Atrack%3A1n3xF2iC6OUvGjSuBaMpvF%2Cspotify%3Atrack%3A1HOjry8kvObcLsyOVMVCml%2Cspotify%3Atrack%3A3X38LVYT6pzSyLXzWu3moY%2Cspotify%3Atrack%3A3mXejphEojtnbEXnnvsLkA%2Cspotify%3Atrack%3A4fazeTpTqcao38J8Zro9Pg%2Cspotify%3Atrack%3A7AwvxYLlFmdoz0hQgyKtNU%2Cspotify%3Atrack%3A1pTsdo5wx00ZouQhcVzBcI%2Cspotify%3Atrack%3A6131Bx3nIwtMvTmJnwZXvl%2Cspotify%3Atrack%3A2swdhUn5vEmZkH1GMJi4Ez%2Cspotify%3Atrack%3A7vjuFghVBnt21yJXVRqzK2%2Cspotify%3Atrack%3A5HMsT7K9Pe2GQ69cxmLNpW%2Cspotify%3Atrack%3A6wLr2oR8eqUG5Beleh2Crm%2Cspotify%3Atrack%3A0MMWj8de7P5rm4OnsJzlMn%2Cspotify%3Atrack%3A6DXFVsLcEvOTSrkG9G1Cb1%2Cspotify%3Atrack%3A6HShLj7GuPA7CC2oeRPUNL%2Cspotify%3Atrack%3A41nlTl0wqHt4R9OBBjmwbf%2Cspotify%3Atrack%3A6W3e76D3myDYzc2oo1E9wx%2Cspotify%3Atrack%3A2gaBpwTpEBiUeU13E1XeAi%2Cspotify%3Atrack%3A1jdNcAD8Ir58RlsdGjJJdx
+authorization: Bearer BQDMFqmzen8xIWTV83e7q1X-_uNjtin1SqkwXs-NR0nlUrLFVvAD0d81ZGRdsijNinIRYlPlE2V1lbt02Xb-86663pbXsvOIROPMduVstBQGwjyHzL_7EMjE8Bc72aRlpKQcYrzXyXXGJsa5QqefCF4Rm0It7QXezWqp3e0CBFM06eY2LT442x1IrotITu4JTdYFLXJanIN6qtbnFkyvNi5u3Lic9isp_LRujQGtzxgWTg
+host: api.spotify.com
+accept: application/json
+
+400 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 21:11:35 GMT
+content-type: text/html
+content-length: 166
+connection: close
+
+<html>
+<head><title>400 Bad Request</title></head>
+<body bgcolor="white">
+<center><h1>400 Bad Request</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
