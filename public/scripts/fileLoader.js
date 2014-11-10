@@ -1,3 +1,5 @@
+/*global searchSongs*/
+
 function FileLoader( market, progressBar, callback ) {
 	'use strict';
 	var agent = ( function( ua ) {
@@ -20,26 +22,6 @@ function FileLoader( market, progressBar, callback ) {
 		};
 	} )( navigator.userAgent );
 
-	var spotifyUrls = [];
-
-	function fetchSongs( queue ) {
-		var song = queue.shift();
-		progressBar.update();
-		if ( song ) {
-			$.get( '/search?q=' + song.title + ' ' + song.artist + '&market=' + market, function( response ) {
-				var tracksRes = response.tracks;
-				var trackUri = tracksRes && tracksRes.items && tracksRes.items[ 0 ] && tracksRes.items[ 0 ].uri;
-				if ( trackUri ) {
-					spotifyUrls.push( trackUri );
-				}
-				fetchSongs( queue );
-			} );
-		} else {
-			progressBar.finish();
-			callback( spotifyUrls );
-		}
-	}
-
 	function handleLocalFile( file ) {
 		if ( file.type.match( /text.*/ ) ) {
 			var reader = new FileReader();
@@ -54,8 +36,7 @@ function FileLoader( market, progressBar, callback ) {
 						artist: $( songDetails[ 1 ] ).text()
 					} );
 				}
-				progressBar = progressBar( songs.length );
-				fetchSongs( songs );
+				searchSongs( songs, market, callback );
 			};
 			reader.readAsText( file );
 		}
