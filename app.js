@@ -8,7 +8,7 @@
  */
 ( function() {
 	'use strict';
-	var replay = require( 'replay' );
+	//var replay = require( 'replay' );
 
 	var express = require( 'express' ); // Express web server framework
 	var bodyParser = require( 'body-parser' );
@@ -21,15 +21,19 @@
 	app.use( express.static( __dirname + '/public' ) )
 		.use( cookieParser() );
 
-	app.get( '/login', require( './controller/login' )( client ) );
+	//user
 	app.get( '/me', require( './controller/me' )( client ) );
-
+	app.get( '/login', require( './controller/login' )( client ) );
 	app.get( '/callback', require( './controller/callback' )( client ) );
+	app.get( '/refresh_token', require( './controller/refresh_token' )( client ) );
 
+	//spotify
 	app.get( '/search', require( './controller/search' )( client ) );
 	app.post( '/playlist', require( './controller/playlist' )( client ) );
 
-	app.get( '/refresh_token', require( './controller/refresh_token' )( client ) );
+	//shazamcrawler
+	app.get( '/charts', require( './controller/charts' ) );
+	app.post( '/charts', require( './controller/charts' ) );
 	app.listen( 8888 );
 
 } )();

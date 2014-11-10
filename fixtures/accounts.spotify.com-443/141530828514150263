@@ -1,0 +1,23 @@
+POST /api/token
+authorization: Basic YmQzYzRiMTJlNjUyNGMwZGI5ZTE5OGZlN2Y0ZWNhMjQ6ZmQ4NTE2ZDJkZTc5NDU3Yjk3NTUxMWM0NTNkOGQ4MDY=
+host: accounts.spotify.com
+content-type: application/x-www-form-urlencoded; charset=utf-8
+accept: application/json
+body: code=AQAttyQopLpFmgLOzrHY1kYeSXMEYz3ODsQ-fyOrP5FczIbTY6GrWhXCxxoKHQFu009BrWUL7JB9z82qDjN5tUzB3YzNOs9LTHC2lx3Ps7n_J6izFBHr2iWZGVneY-mkLGiszhejUXXaZunPEAJbNf3qh6qxGYsHrNZLLGV-zPuv9QiQ79MZVORcAB8ISDHoAXAx3E9tIYUtQZc1CRunEzdGjkiKAZnA59VZoPE5B2HmTOoPnJItr4KkEyM-9OQL1EV79btj1MyKv7Ll4Q0HiJoKm03xD1oV1NnglXfD3rnUDa36FP60P5a9HDnqxGAQ9J3MWnJdm6KvP8IY8YbQKg&redirect_uri=http%3A%2F%2Flocalhost%3A8888%2Fcallback&grant_type=authorization_code
+
+200 HTTP/1.1
+server: nginx
+date: Thu, 06 Nov 2014 21:11:25 GMT
+content-type: application/json
+content-length: 447
+connection: keep-alive
+keep-alive: timeout=10
+vary: Accept-Encoding
+x-frame-options: deny
+content-security-policy: default-src 'self'; script-src 'self' https://d2d1dxiu3v1f2i.cloudfront.net https://www.google-analytics.com; img-src 'self' https://d2d1dxiu3v1f2i.cloudfront.net https://i.imgur.com https://d2mv8tnci56s9d.cloudfront.net https://graph.facebook.com https://fbcdn-profile-a.akamaihd.net https://www.google-analytics.com https://stats.g.doubleclick.net data: d2d1dxiu3v1f2i.cloudfront.net; font-src 'self' https://d2d1dxiu3v1f2i.cloudfront.net; style-src 'self' 'unsafe-inline' https://d2d1dxiu3v1f2i.cloudfront.net; frame-src 'self' https://www.spotify.com;
+cache-control: : no-cache, no-store, must-revalidate
+pragma: : no-cache
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{"access_token":"BQDMFqmzen8xIWTV83e7q1X-_uNjtin1SqkwXs-NR0nlUrLFVvAD0d81ZGRdsijNinIRYlPlE2V1lbt02Xb-86663pbXsvOIROPMduVstBQGwjyHzL_7EMjE8Bc72aRlpKQcYrzXyXXGJsa5QqefCF4Rm0It7QXezWqp3e0CBFM06eY2LT442x1IrotITu4JTdYFLXJanIN6qtbnFkyvNi5u3Lic9isp_LRujQGtzxgWTg","token_type":"Bearer","expires_in":3600,"refresh_token":"AQDPofn0HbtJt0Q1IfA5JNCiry9Zt21bSQZa4SXwAYo5YC1cG1CZoZ89Rap-NQNyGD0KfqFx-RbS2Pc729a-m0EHYSMHvy81--2qhMhZjhMgrE3py1bPHuz4JAsQpL02BsE"}
