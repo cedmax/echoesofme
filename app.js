@@ -34,6 +34,6 @@
 	//shazamcrawler
 	app.get( '/charts', require( './controller/charts' ) );
 	app.post( '/charts', require( './controller/charts' ) );
-	app.listen( 8888 );
+	app.listen( client.port );
 
 } )();
