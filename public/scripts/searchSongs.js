@@ -1,6 +1,6 @@
 /*global progressBar:true */
 
-function searchSongs(songs, market, callback){
+function searchSongs( songs, market, callback ) {
 	'use strict';
 	var spotifyUrls = [];
 
@@ -8,7 +8,7 @@ function searchSongs(songs, market, callback){
 		var song = queue.shift();
 		progressBar.update();
 		if ( song ) {
-			$.get( '/search?q=' + song.title + ' ' + song.artist + '&market=' + market, function( response ) {
+			$.get( '/search?q=' + song.title + ' artist:' + song.artist + '&market=' + market, function( response ) {
 				var tracksRes = response.tracks;
 				var trackUri = tracksRes && tracksRes.items && tracksRes.items[ 0 ] && tracksRes.items[ 0 ].uri;
 				if ( trackUri ) {
@@ -23,5 +23,5 @@ function searchSongs(songs, market, callback){
 	}
 
 	progressBar = progressBar( songs.length );
-	fetchSongs(songs);
+	fetchSongs( songs );
 }
