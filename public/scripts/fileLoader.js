@@ -1,4 +1,4 @@
-/*global searchSongs*/
+/*global findSongs*/
 
 function FileLoader( market, progressBar, callback ) {
 	'use strict';
@@ -36,7 +36,7 @@ function FileLoader( market, progressBar, callback ) {
 						artist: $( songDetails[ 1 ] ).text()
 					} );
 				}
-				searchSongs( songs, market, callback );
+				findSongs( songs, market, callback );
 			};
 			reader.readAsText( file );
 		}

@@ -1,6 +1,6 @@
 /*global progressBar:true */
 
-function searchSongs( songs, market, callback ) {
+function findSongs( songs, market, callback ) {
 	'use strict';
 	var spotifyUrls = [];
 
