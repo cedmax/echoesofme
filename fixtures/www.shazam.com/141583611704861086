@@ -1,0 +1,20 @@
+GET /charts
+host: www.shazam.com
+
+301 HTTP/1.1
+server: nginx/1.4.1
+location: /charts/uk_top_100
+set-cookie: wid=d26f47e6-81de-44da-b37b-d6cc29d311d5; Expires=Tue, 01 Dec 2082 03:02:43 GMT; Path=/
+x-ws: play1.ykz
+x-lcache: MISS
+content-length: 0
+accept-ranges: bytes
+date: Wed, 12 Nov 2014 23:48:36 GMT
+age: 0
+connection: keep-alive
+x-served-by: cache-lhr6329-LHR
+x-cache: MISS
+x-cache-hits: 0
+x-timer: S1415836116.785894,VS0,VE191
+vary: Accept-Language,Accept-Encoding
+
