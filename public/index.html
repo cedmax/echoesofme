@@ -1,78 +1,80 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Example of the Authorization Code flow with Spotify</title>
+		<title>SHSP - Shazam to Spotify</title>
 		<link rel="stylesheet" href="/css/bootstrap.min.css">
-		<style type="text/css">
-			#login, #loggedin {
-				display: none;
-			}
-			.text-overflow {
-				overflow: hidden;
-				text-overflow: ellipsis;
-				white-space: nowrap;
-				width: 500px;
-			}
-		</style>
+		<link rel="stylesheet" href="/css/style.css">
 	</head>
 
 	<body>
 		<div class="container">
-			<div id="login">
-				<h1>Create a Spotify playlist from Shazam data</h1>
+			<div id="loggedin" class="stretched">
+				<div id="user-profile">
+				</div>
+			</div>
+			<div id="shazam"><div class="stretched"></div></div>
+			<div id="spotify"><div class="stretched"></div></div>
+			<div id="login" class="dialog">
+				<h2 class="lead">Shazam to Spotify</h2>
 				<a href="/login" class="btn btn-primary">Log in with Spotify</a>
 			</div>
-			<div id="loggedin">
-				<div id="user-profile">
+			<div id="progressBarContainer" class="stretched" style="display:none;">
+				<div id="progressBar" class="dialog">
+					<div id="progressBarLoader"></div>
+					<div id="progressBarContent"></div>
+					<span>if the loader doesn't progress, please reload the page</span>
 				</div>
 			</div>
 		</div>
 
 		<script id="user-profile-template" type="text/x-handlebars-template">
-			<h2>Logged in as {{display_name}}</h2>
+			<div class="page-header"><h3>Welcome {{display_name}}</h3></div>
 
 			<div class="media">
-				<div class="pull-left">
+				<div class="media-left ">
 					<img class="media-object" width="100" src="{{images.0.url}}" />
 				</div>
-				<div class="media-body" style="line-height:28px">
-							 Hi {{display_name}},<br/>
-							 this app will allow you to create a Spotify playlist from Shazam data.<br/>
-							 <h4>You have 2 options</h4>
+				<div class="media-body media-middle lead" style="line-height:28px">
+							There are 2 ways to create a Spotify playlist from Shazam data:<br/>
+							<ul class="list-unstyled">
+								<li>
+									<a onclick="javascript:$('#myshazam').show();$('#chart').hide();return false;">From the songs you discovered</a>
+								</li>
+								<li>
+									<a onclick="javascript:$('#chart').show();$('#myshazam').hide();return false;">From Shazam's weekly charts</a>
+								</li>
+							</ul>
 				</div>
 			</div>	
-					
-			<br/><br/>
-				<div>	
-					<h3>Create a Playlist from MyShazam</h3>
-					<h5><i>you need to be Facebook connected both in Shazam and Spotify</i></h5>
-					<ol>
-						<li>
-							Go to <a href="http://www.shazam.com/myshazam" target="_blank">my shazam</a>
-						</li>
-						<li>
-							Login with Facebook
-						</li>
-						<li>
-							Find the "download history" link in the dropdown menu (top right)
-						</li>
-						<li>
-							Upload the downloaded file &nbsp;&nbsp;
-							<div id="viewport" style="overflow:hidden;line-height:28px;position:absolute; text-align:center;width:300px;height:30;display:inline-block;border:1px dashed #999">
-								<div style="z-index:-1;width:0;position:absolute;height:100%;background:url(http://cssdeck.com/uploads/media/items/7/7uo1osj.gif) no-repeat; background-size:cover" id="viewport_bk_img"></div>
-								<div id="viewport_bk">drag your shazam history here</div>
-								<input type="file" id="file-selector" accept="*">
-							</div>
-						</li>
-					</ol>
+			<hr/>					
+			<div id="myshazam" style="display:none">	
+				<h3>Create a Playlist from MyShazam</h3>
+				<h5><i>you need to be Facebook connected both in Shazam and Spotify</i></h5>
+				<ol>
+					<li>
+						Go to <a href="http://www.shazam.com/myshazam" target="_blank">my shazam</a>
+					</li>
+					<li>
+						Login with Facebook
+					</li>
+					<li>
+						Find the "download history" link in the dropdown menu (top right)
+					</li>
+					<li>
+						Upload the downloaded file &nbsp;&nbsp;
+						<div id="viewport" style="display:inline-block;border:1px dashed #999;line-height:30px;padding:0 10px">
+							drag your shazam history here
+							<input type="file" id="file-selector" accept="*">
+						</div>
+					</li>
+				</ol>
+			</div>
+			<div id="chart" style="display:none">
+				<h3>Create a Playlist from a weekly Chart</h3>
 
-					<br/><br/>
-					<h3>Create a Playlist from a weekly Chart</h3>
-
-					Choose a country chart on Shazam Website: &nbsp;&nbsp;
-					<select style="width:auto;display:inline-block" class="form-control" id="countries"></select> <input type="button" value="ok" class="btn" id="submit">
-					
-				</div>
+				Choose a country chart on Shazam Website: &nbsp;&nbsp;
+				<select style="width:auto;display:inline-block" class="form-control" id="countries"></select> <input type="button" value="ok" class="btn" id="submit">
+				
 			</div>
 		</script>
 

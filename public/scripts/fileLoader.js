@@ -1,26 +1,5 @@
-/*global findSongs*/
-
-function FileLoader( market, progressBar, callback ) {
+function FileLoader( market, findSongs, progressBar, callback ) {
 	'use strict';
-	var agent = ( function( ua ) {
-		ua = ua.toLowerCase();
-
-		var rwebkit = /(webkit)[ \/]([\w.]+)/;
-		var ropera = /(opera)(?:.*version)?[ \/]([\w.]+)/;
-		var rmsie = /(msie) ([\w.]+)/;
-		var rmozilla = /(mozilla)(?:.*? rv:([\w.]+))?/;
-
-		var match = rwebkit.exec( ua ) ||
-			ropera.exec( ua ) ||
-			rmsie.exec( ua ) ||
-			ua.indexOf( 'compatible' ) < 0 && rmozilla.exec( ua ) ||
-			[];
-
-		return {
-			browser: match[ 1 ] || '',
-			version: match[ 2 ] || '0'
-		};
-	} )( navigator.userAgent );
 
 	function handleLocalFile( file ) {
 		if ( file.type.match( /text.*/ ) ) {
@@ -36,7 +15,7 @@ function FileLoader( market, progressBar, callback ) {
 						artist: $( songDetails[ 1 ] ).text()
 					} );
 				}
-				findSongs( songs, market, callback );
+				findSongs( songs, market, progressBar, callback );
 			};
 			reader.readAsText( file );
 		}
@@ -48,18 +27,16 @@ function FileLoader( market, progressBar, callback ) {
 			e.preventDefault();
 		}, false );
 
-		if ( agent.browser === 'mozilla' ) {
-			document.getElementById( 'file-selector' ).style.display = 'none';
-			document.getElementById( 'file-selector' ).addEventListener( 'click', function( e ) {
-				e.stopPropagation();
-				e.preventDefault();
-			}, false );
-			document.getElementById( 'viewport' ).addEventListener( 'click', function( e ) {
-				e.stopPropagation();
-				e.preventDefault();
-				document.getElementById( 'file-selector' ).click();
-			}, false );
-		}
+		document.getElementById( 'file-selector' ).style.display = 'none';
+		document.getElementById( 'file-selector' ).addEventListener( 'click', function( e ) {
+			e.stopPropagation();
+			e.preventDefault();
+		}, false );
+		document.getElementById( 'viewport' ).addEventListener( 'click', function( e ) {
+			e.stopPropagation();
+			e.preventDefault();
+			document.getElementById( 'file-selector' ).click();
+		}, false );
 
 		document.getElementById( 'file-selector' ).addEventListener( 'change', function() {
 			var files = this.files;

@@ -1,0 +1,80 @@
+body {overflow: hidden;}
+
+.dialog {
+	position: absolute;
+	top:50%;left:50%;
+	transform:translateX(-50%) translateY(-50%);
+	text-align: center;
+}
+
+.stretched {
+	position: absolute;
+	top:0;left:0;right:0;bottom: 0;
+}
+
+.blurred #loggedin {
+	filter: blur(2px);
+	-webkit-filter: blur(2px);
+}
+#shazam, #spotify { 
+	position: absolute;
+}
+#shazam, #spotify {
+	transform: skew(-30deg);
+	width:100%;
+	height:100%;
+	overflow: hidden;
+}
+
+#loggedin {
+	padding:0 20%;
+	overflow-y: auto;
+}
+
+#user-profile {
+	padding: 3% 0 10%
+}
+
+#shazam {background: #1762A5; left:-50%;}
+#shazam div {
+	background:url('/img/shazam.jpg');
+ 	transform: skew(30deg)  translateX(30%);
+}
+
+#spotify {background: #8EBD05; right:-50%;}
+#spotify div {
+	background: url('/img/spotify.jpg') no-repeat;
+	background-size: cover;
+	transform: skew(30deg) translateX(-30%);
+	opacity: 0.3;
+}
+
+#login {
+	padding:30px 50px 50px;
+	background: rgba(0,0,0,0.4);
+	color:#fff;
+}
+
+#progressBarContainer {
+	background: rgba(0,0,0,0.5)
+}
+
+#progressBar {
+	width: 30%;
+	height: 25px;
+	border: dashed 1px #eee;
+	font-weight: bold;
+	line-height: 25px;
+}
+#progressBarContainer span {
+	color: #FFF;
+	line-height: 1
+}
+#progressBarLoader {
+	width:0;
+	z-index: -1;
+	position:absolute;
+	height:100%;
+	background:white url('/img/loader.gif') no-repeat; 
+	background-size:cover;
+}

@@ -1,22 +1,27 @@
 function progressBar( barLength ) {
 	'use strict';
 
+	$( '#progressBarContainer' ).show();
+	$( '#progressBar' ).show();
+	$( '#progressBarContent' ).html( 0 );
+	$( document.body ).addClass( 'blurred' );
+
 	function getCurrentValue( text ) {
-		var removedPercent = text.replace( '%', '' );
+		var removedPercent = text.replace( '%', '' ) || 0;
 		return ( isNaN( removedPercent ) ) ? 0 : parseFloat( removedPercent );
 	}
 
 	return {
 		update: function() {
-			var actual = getCurrentValue( document.getElementById( 'viewport_bk' ).innerHTML );
+			var actual = getCurrentValue( $( '#progressBarContent' ).html() );
 			var value = ( actual + 100 / barLength );
-			document.getElementById( 'viewport_bk' ).innerHTML = Math.floor( value * 10 ) / 10 + '%';
-			document.getElementById( 'viewport_bk_img' ).style.width = value + '%';
+			$( '#progressBarContent' ).html( Math.floor( value * 10 ) / 10 + '%' );
+			$( '#progressBarLoader' ).width( value + '%' );
 		},
 
 		finish: function() {
-			document.getElementById( 'viewport_bk' ).innerHTML = '100%';
-			document.getElementById( 'viewport_bk_img' ).style.width = '100%';
+			$( '#progressBarContent' ).html( '100%' );
+			$( '#progressBarLoader' ).width( '100%' );
 		}
 	};
 }
