@@ -1,0 +1,43 @@
+GET /v1/me
+authorization: Bearer BQAfUh07qY1dVIw5UNT_4Geng3ZhXSVCi9-MadGeUWgyBx12tYVyZi7QuTeaqkCClUYcpCMzkHfymOjFcdhs7vzDzuxtM3XH1ELBip9DypEJcNNZsWHaxFnZTDIi_4DfapVp64of-PYFLMQ3M1bXzI1zQ3By_gNjHBAffMP_cPJY4wBBRnhn9bBk-eqnvQV1jaH5CLjSmYV2SYZVeM-zFlHahxsOUbxp21R5CKDxaI3Img
+host: api.spotify.com
+
+200 HTTP/1.1
+server: nginx
+date: Wed, 12 Nov 2014 23:48:36 GMT
+content-type: application/json; charset=utf-8
+content-length: 678
+connection: keep-alive
+keep-alive: timeout=600
+vary: Accept-Encoding
+cache-control: private, max-age=0
+access-control-allow-headers: Accept, Authorization, Origin, Content-Type
+access-control-allow-origin: *
+access-control-max-age: 604800
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000;
+
+{
+  "country" : "GB",
+  "display_name" : "Marco Cedaro",
+  "email" : "marco.cedaro@gmail.com",
+  "external_urls" : {
+    "spotify" : "https://open.spotify.com/user/cedmax"
+  },
+  "followers" : {
+    "href" : null,
+    "total" : 74
+  },
+  "href" : "https://api.spotify.com/v1/users/cedmax",
+  "id" : "cedmax",
+  "images" : [ {
+    "height" : null,
+    "url" : "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/10409458_10152704600738126_7653964945639561864_n.jpg?oh=03ccad782aa0d6a89ee27043019ee023&oe=54E743F2&__gda__=1423959530_edd576040ee279b9cb0460e3be84a42d",
+    "width" : null
+  } ],
+  "product" : "open",
+  "type" : "user",
+  "uri" : "spotify:user:cedmax"
+}
