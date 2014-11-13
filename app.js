@@ -8,6 +8,7 @@
  */
 ( function() {
 	'use strict';
+	require('newrelic'); 
 	//var replay = require( 'replay' );
 
 	var express = require( 'express' ); // Express web server framework
