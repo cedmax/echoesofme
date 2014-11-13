@@ -16,6 +16,11 @@ body {overflow: hidden;}
 	filter: blur(2px);
 	-webkit-filter: blur(2px);
 }
+
+#myshazam {
+	line-height: 30px;
+}
+
 #shazam, #spotify { 
 	position: absolute;
 }
@@ -49,6 +54,10 @@ body {overflow: hidden;}
 	opacity: 0.3;
 }
 
+#countries {
+	vertical-align: middle
+}
+
 #login {
 	padding:30px 50px 50px;
 	background: rgba(0,0,0,0.4);
@@ -61,20 +70,24 @@ body {overflow: hidden;}
 
 #progressBar {
 	width: 30%;
-	height: 25px;
-	border: dashed 1px #eee;
+	height: 20px;
+	width:40%;
+	border: solid 1px #eee;
+	border-radius: 4px;
 	font-weight: bold;
-	line-height: 25px;
+	line-height: 20px;
+	background: #fff;
 }
+
 #progressBarContainer span {
 	color: #FFF;
 	line-height: 1
 }
+
 #progressBarLoader {
 	width:0;
 	z-index: -1;
 	position:absolute;
 	height:100%;
-	background:white url('/img/loader.gif') no-repeat; 
-	background-size:cover;
+	background: url('/img/loader.gif') repeat; 
 }
