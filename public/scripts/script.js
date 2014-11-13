@@ -4,6 +4,7 @@ function reset() {
 	'use strict';
 	$( '#end' ).remove();
 	$( '#progressBarContainer' ).hide();
+	$( '#submit' ).removeAttr('disabled');
 }
 
 ( function() {
@@ -37,7 +38,7 @@ function reset() {
 		}, 3000 );
 		$( '#login' ).animate( {
 			opacity: '0'
-		}, 3000, function() {
+		}, 2000, function() {
 			$( '#login' ).remove();
 		} );
 	}
@@ -76,6 +77,7 @@ function reset() {
 							}
 
 							$( '#submit' ).on( 'click', function() {
+								$( '#submit' ).attr('disabled', 'disabled');
 								$.ajax( {
 									url: '/charts',
 									type: 'POST',
