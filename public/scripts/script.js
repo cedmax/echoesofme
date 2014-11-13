@@ -5,6 +5,7 @@ function reset() {
 	$( '#end' ).remove();
 	$( '#progressBarContainer' ).hide();
 	$( '#submit' ).removeAttr('disabled');
+	$( document.body ).removeClass('blurred');
 }
 
 ( function() {
