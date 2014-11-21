@@ -22,7 +22,7 @@ var youtubeLogin = ( function() {
 							image: resp.image.url
 						} );
 						showLoggedIn();
-						new FileLoader( userResponse.country, findSongs, progressBar, function( songs ) {
+						new FileLoader( null, findSongs, progressBar, function( songs ) {
 							createPlaylist( songs, 'My Shazams', {
 								success: function( plID ) {
 									showPlaylist( 'https://www.youtube.com/playlist?list=' + plID );
