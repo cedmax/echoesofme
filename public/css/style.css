@@ -12,36 +12,36 @@ body {overflow: hidden;}
 	top:0;left:0;right:0;bottom: 0;
 }
 
-.blurred #loggedin {
-	filter: blur(2px);
-	-webkit-filter: blur(2px);
-}
-
 #myshazam {
 	line-height: 30px;
 }
 
-#shazam, #service { 
+.shazam, .service { 
 	position: absolute;
 }
-#shazam, #service {
+.shazam, .service {
 	transform: skew(-30deg);
 	width:100%;
 	height:100%;
 	overflow: hidden;
 }
 
-#loggedin {
+.loggedin {
 	padding:0 20%;
 	overflow-y: auto;
+}
+
+.blurred .loggedin {
+	filter: blur(2px);
+	-webkit-filter: blur(2px);
 }
 
 #user-profile {
 	padding: 3% 0 10%
 }
 
-#shazam {background: #1762A5; left:-50%;}
-#shazam div {
+.shazam {background: #1762A5; left:-50%;}
+.shazam div {
 	background:url('/img/shazam.jpg');
  	transform: skew(30deg)  translateX(30%);
 }
@@ -60,6 +60,10 @@ body {overflow: hidden;}
 	background-size: cover;
 	transform: skew(30deg) translateX(-30%);
 	opacity: 0.3;
+}
+
+.instructions {
+	line-height: 28px;
 }
 
 #countries {

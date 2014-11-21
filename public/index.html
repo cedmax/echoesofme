@@ -1,91 +1,39 @@
 <!doctype html>
 <html>
 	<head>
-		<title>SHAZAMTO - Shazam to Spotify</title>
+		<title>ShazamTo - Spotify</title>
 		<link rel="stylesheet" href="/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/css/style.css">
 	</head>
 
 	<body>
 		<div class="container">
-			<div id="loggedin" class="stretched">
-				<div id="user-profile">
-				</div>
+			<div class="loggedin stretched">
+				<div id="user-profile"></div>
 			</div>
-			<div id="shazam"><div class="stretched"></div></div>
-			<div id="service" class="spotify"><div class="stretched"></div></div>
+
+			<div class="shazam"><div class="stretched"></div></div>
+			<div class="service spotify"><div class="stretched"></div></div>
 			<div id="login" class="dialog">
 				<h2 class="lead">Shazam to Spotify</h2>
-				<a href="/login" class="btn btn-primary">Log in with Spotify</a>
-			</div>
-			<div id="progressBarContainer" class="stretched" style="display:none;">
-				<div id="progressBar" class="dialog">
-					<div id="progressBarLoader"></div>
-					<div id="progressBarContent"></div>
-					<span>if the loader doesn't progress, please reload the page</span>
-				</div>
+				<a id="auth" href="/login" class="btn btn-primary">Log in with Spotify</a>
 			</div>
 		</div>
 
-		<script id="user-profile-template" type="text/x-handlebars-template">
-			<div class="page-header"><h3>Welcome {{display_name}}</h3></div>
+		<script id="instructions" type="text/x-handlebars-partial" src="/tpls/myshazam.html"></script>
+		<script id="progressbar" type="text/x-handlebars-template" src="/tpls/progressbar.html"></script>
+		<script id="user" type="text/x-handlebars-template" src="/tpls/spotify.html"></script>
 
-			<div class="media">
-				<div class="media-left ">
-					<img class="media-object" width="100" src="{{images.0.url}}" />
-				</div>
-				<div class="media-body media-middle lead" style="line-height:28px">
-							There are 2 ways to create a Spotify playlist from Shazam data:<br/>
-							<ul class="list-unstyled">
-								<li>
-									<a onclick="javascript:$('#myshazam').show();$('#chart').hide();return false;">From the songs you discovered</a>
-								</li>
-								<li>
-									<a onclick="javascript:$('#chart').show();$('#myshazam').hide();return false;">From Shazam's weekly charts</a>
-								</li>
-							</ul>
-				</div>
-			</div>	
-			<hr/>					
-			<div id="myshazam" style="display:none">	
-				<h3>Create a Playlist from MyShazam</h3>
-				<h5><i>you need to be Facebook connected both in Shazam and Spotify</i></h5>
-				<ol>
-					<li>
-						Go to <a href="http://www.shazam.com/myshazam" target="_blank">my shazam</a>
-					</li>
-					<li>
-						Login with Facebook
-					</li>
-					<li>
-						Find the "download history" link in the dropdown menu (top right)
-					</li>
-					<li>
-						Upload the downloaded file &nbsp;&nbsp;
-						<div id="viewport" style="display:inline-block;border:1px dashed #999;line-height:30px;padding:0 10px">
-							drag your shazam history here
-							<input type="file" id="file-selector" accept="*">
-						</div>
-					</li>
-				</ol>
-			</div>
-			<div id="chart" style="display:none">
-				<h3>Create a Playlist from a weekly Chart</h3>
-
-				Choose a country chart on Shazam Website: &nbsp;&nbsp;
-				<select style="width:auto;display:inline-block" class="form-control" id="countries"></select> <input type="button" value="ok" class="btn" id="submit">
-				
-			</div>
-		</script>
-
-
-		<script src="/scripts/handlebars.min.js"></script>
-		<script src="/scripts/jquery-1.10.1.min.js"></script>
+		<script src="/scripts/vendors/handlebars.min.js"></script>
+		<script src="/scripts/vendors/jquery-1.10.1.min.js"></script>
+		<script src="/scripts/vendors/jquery.autobars.js"></script>
 		<script src="/scripts/utils.js"></script>
+		<script src="/scripts/fetchCharts.js"></script>
 		<script src="/scripts/progressBar.js"></script>
 		<script src="/scripts/fileLoader.js"></script>
-		<script src="/scripts/findsongs.js"></script>
-		<script src="/scripts/createplaylist.js"></script>
+		<script src="/scripts/spotify/findSongs.js"></script>
+		<script src="/scripts/spotify/createPlaylist.js"></script>
 		<script src="/scripts/spotify.js"></script>
+	</body>
 </html>
 
