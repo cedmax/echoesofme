@@ -1,6 +1,10 @@
 function progressBar( barLength ) {
 	'use strict';
 
+	if ( !$( '#progressBar' ).length ) {
+		$( $.handlebarTemplates.progressbar() ).appendTo( $( '.container' ) );
+	}
+
 	$( '#progressBarContainer' ).show();
 	$( '#progressBar' ).show();
 	$( '#progressBarContent' ).html( 0 );

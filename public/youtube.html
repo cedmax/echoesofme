@@ -1,74 +1,40 @@
 <!doctype html>
 <html>
 	<head>
-		<title>SHAZAMTO - Shazam to Youtube</title>
+		<title>ShazamTo - Youtube</title>
 		<link rel="stylesheet" href="/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/css/style.css">
 	</head>
 
 	<body>
 		<div class="container">
-			<div id="loggedin" class="stretched">
-				<div id="user-profile">
-				</div>
+			<div class="loggedin stretched">
+				<div id="user-profile"></div>
 			</div>
-			<div id="shazam"><div class="stretched"></div></div>
-			<div id="service" class="youtube"><div class="stretched"></div></div>
+
+			<div class="shazam"><div class="stretched"></div></div>
+			<div class="service youtube"><div class="stretched"></div></div>
 			<div id="login" class="dialog">
 				<h2 class="lead">Shazam to Youtube</h2>
-				<a id="youtube-auth" class="btn btn-primary">Log in with Youtube</a>
-			</div>
-			<div id="progressBarContainer" class="stretched" style="display:none;">
-				<div id="progressBar" class="dialog">
-					<div id="progressBarLoader"></div>
-					<div id="progressBarContent"></div>
-					<span>if the loader doesn't progress, please reload the page</span>
-				</div>
+				<a id="auth" class="btn btn-primary">Log in with Youtube</a>
 			</div>
 		</div>
 
-		<script id="user-profile-template" type="text/x-handlebars-template">
-			<div class="page-header">
-				<div class="media-left">
-					<img class="media-object" width="50" src="{{images.0.url}}" />
-				</div>
-				<div class="media-body media-middle">
-					<h3>Welcome {{display_name}}</h3>
-				</div>
-			</div>
+		<script id="instructions" type="text/x-handlebars-partial" src="/tpls/myshazam.html"></script>
+		<script id="progressbar" type="text/x-handlebars-template" src="/tpls/progressbar.html"></script>
+		<script id="user" type="text/x-handlebars-template" src="/tpls/youtube.html"></script>
 
-			<div style="line-height:28px">
-				<h3>Create a youtube playlist from MyShazam</h3>
-				<h5><i>you need to be Facebook connected in Shazam; due to the nature of Youtube api this might be slow, be patient</i></h5>
-				<ol>
-					<li>
-						Go to <a href="http://www.shazam.com/myshazam" target="_blank">my shazam</a>
-					</li>
-					<li>
-						Login with Facebook
-					</li>
-					<li>
-						Find the "download history" link in the dropdown menu (top right)
-					</li>
-					<li>
-						Upload the downloaded file &nbsp;&nbsp;
-						<div id="viewport" style="display:inline-block;border:1px dashed #999;line-height:30px;padding:0 10px">
-							drag your shazam history here
-							<input type="file" id="file-selector" accept="*">
-						</div>
-					</li>
-				</ol>
-			</div>
-		</script>
-
-		<script src="/scripts/handlebars.min.js"></script>
-		<script src="/scripts/jquery-1.10.1.min.js"></script>
+		<script src="/scripts/vendors/handlebars.min.js"></script>
+		<script src="/scripts/vendors/jquery-1.10.1.min.js"></script>
+		<script src="/scripts/vendors/jquery.autobars.js"></script>
 		<script src="/scripts/utils.js"></script>
+		<script src="/scripts/fetchCharts.js"></script>
 		<script src="/scripts/progressBar.js"></script>
 		<script src="/scripts/fileLoader.js"></script>
-		<script src="/scripts/youtube.createplaylist.js"></script>
-		<script src="/scripts/youtube.findsongs.js"></script>
+		<script src="/scripts/youtube/findSongs.js"></script>
+		<script src="/scripts/youtube/createPlaylist.js"></script>
 		<script src="/scripts/youtube.js"></script>
-		<script src="https://apis.google.com/js/client.js?onload=youtubeLogin"></script>
+        <script src="https://apis.google.com/js/client.js?onload=youtubeLogin"></script>
+    </body>
 </html>
 
