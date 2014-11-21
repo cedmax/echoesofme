@@ -6,7 +6,7 @@ function findSongs( songs, market, progressBar, callback ) {
 		var song = queue.shift();
 		progressBar.update();
 		if ( song ) {
-			$.get( '/search?q=' + song.title + ' artist:' + song.artist + '&market=' + market, function( response ) {
+			$.get( '/search?q=' + encodeURIComponent( song.title ) + ' artist:' + encodeURIComponent( song.artist ) + '&market=' + market, function( response ) {
 				var tracksRes = response.tracks;
 				var trackUri = tracksRes && tracksRes.items && tracksRes.items[ 0 ] && tracksRes.items[ 0 ].uri;
 				if ( trackUri ) {

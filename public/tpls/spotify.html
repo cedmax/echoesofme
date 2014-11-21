@@ -1,0 +1,34 @@
+<div class="page-header"><h3>Welcome {{display_name}}</h3></div>
+
+<div class="media">
+	<div class="media-left ">
+		<img class="media-object" width="100" src="{{image}}" />
+	</div>
+	<div class="media-body media-middle lead instructions">
+		There are 2 ways to create a Spotify playlist from Shazam data:<br/>
+		<ul class="list-unstyled">
+			<li>
+				<a onclick="javascript:$('#myshazam').show();$('#chart').hide();return false;">From the songs you discovered</a>
+			</li>
+			<li>
+				<a onclick="javascript:$('#chart').show();$('#myshazam').hide();return false;">From Shazam's weekly charts</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<hr/>					
+
+<div id="myshazam" style="display:none">	
+	<h3>Create a Playlist from MyShazam</h3>
+	<h5><i>you need to be Facebook connected both in Shazam and Spotify</i></h5>
+	
+	{{> myshazam}}
+</div>
+
+<div id="chart" style="display:none">
+	<h3>Create a Playlist from a weekly Chart</h3>
+
+	Choose a country chart on Shazam Website: &nbsp;&nbsp;
+	<select style="width:auto;display:inline-block" class="form-control" id="countries"></select> <input type="button" value="ok" class="btn" id="submit">	
+</div>
