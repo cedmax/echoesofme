@@ -1,14 +1,7 @@
 /*global Handlebars, FileLoader, console, progressBar,createPlaylist, findSongs */
 
-function reset() {
-	'use strict';
-	$( '#end' ).remove();
-	$( '#progressBarContainer' ).hide();
-	$( '#submit' ).removeAttr('disabled');
-	$( document.body ).removeClass('blurred');
-}
 
-( function() {
+(function() {
 	'use strict';
 	/**
 	 * Obtains parameters from the hash of the URL
@@ -27,28 +20,6 @@ function reset() {
 	function getWeek() {
 		var onejan = new Date( ( new Date() ).getFullYear(), 0, 1 );
 		return Math.ceil( ( ( ( new Date() - onejan ) / 86400000 ) + onejan.getDay() + 1 ) / 7 );
-	}
-
-	function showLoggedIn() {
-		$( '#loggedin' ).show();
-		$( '#shazam' ).animate( {
-			left: '-100%'
-		}, 3000 );
-		$( '#spotify' ).animate( {
-			right: '-100%'
-		}, 3000 );
-		$( '#login' ).animate( {
-			opacity: '0'
-		}, 2000, function() {
-			$( '#login' ).remove();
-		} );
-	}
-
-	function showPlaylist( uri ) {
-		$( '#progressBar' ).hide();
-		$( '#progressBar' ).after(
-			'<div id="end" class="dialog"><a class="btn btn-primary" onclick="window.open(\'' + uri + '\');return false;">See your playlist</a><br/><br/><span>or</span><br/><br/><a class="btn btn-primary" onclick="reset();">Create a new one</a></div'
-		);
 	}
 
 	var userProfileSource = document.getElementById( 'user-profile-template' ).innerHTML,
@@ -114,4 +85,4 @@ function reset() {
 			} );
 		}
 	}
-} )();
+})();
