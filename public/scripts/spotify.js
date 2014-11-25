@@ -19,7 +19,7 @@ $( document ).autoBars( function() {
 		if ( access_token ) {
 
 			$.ajax( {
-				url: '/me?at=' + access_token,
+				url: '/spotify/me?at=' + access_token,
 				success: function( userResponse ) {
 					userProfilePlaceholder.innerHTML = $.handlebarTemplates.spotify( {
 						display_name: userResponse.display_name,

@@ -21,11 +21,11 @@ module.exports = function( client ) {
 				url: 'https://accounts.spotify.com/api/token',
 				form: {
 					code: code,
-					redirect_uri: client.redirectUri,
+					redirect_uri: client.spotify.redirectUri,
 					grant_type: 'authorization_code'
 				},
 				headers: {
-					'Authorization': 'Basic ' + ( new Buffer( client.appId + ':' + client.secret ).toString( 'base64' ) )
+					'Authorization': 'Basic ' + ( new Buffer( client.spotify.appId + ':' + client.spotify.secret ).toString( 'base64' ) )
 				},
 				json: true
 			};
@@ -36,19 +36,6 @@ module.exports = function( client ) {
 					var access_token = body.access_token,
 						refresh_token = body.refresh_token;
 
-					/*var options = {
-						url: 'https://api.spotify.com/v1/me',
-						headers: {
-							'Authorization': 'Bearer ' + access_token
-						},
-						json: true
-					};
-
-					// use the access token to access the Spotify Web API
-					request.get( options, function( error, response, body ) {
-						console.log( body );
-					} );
-*/
 					// we can also pass the token to the browser to make requests from there
 					res.redirect( '/#' +
 						querystring.stringify( {
