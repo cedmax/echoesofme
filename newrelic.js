@@ -4,15 +4,17 @@
  * See lib/config.defaults.js in the agent distribution for a more complete
  * description of configuration variables and their potential values.
  */
+var client = require( './settings.json' ).newrelic;
+
 exports.config = {
   /**
    * Array of application names.
    */
-  app_name : ['ShazamSpotify'],
+  app_name : client.app_name,
   /**
    * Your New Relic license key.
    */
-  license_key : '071e81ca402a881164b1adcbfde99e5ccd68af76',
+  license_key: client.license_key,
   logging : {
     /**
      * Level at which to log. 'trace' is most useful to New Relic when diagnosing

@@ -8,7 +8,7 @@
  */
 ( function() {
 	'use strict';
-	require('newrelic'); 
+	require( 'newrelic' );
 	//var replay = require( 'replay' );
 
 	var express = require( 'express' ); // Express web server framework
@@ -22,15 +22,16 @@
 	app.use( express.static( __dirname + '/public' ) )
 		.use( cookieParser() );
 
-	//user
-	app.get( '/me', require( './controller/me' )( client ) );
-	app.get( '/login', require( './controller/login' )( client ) );
-	app.get( '/callback', require( './controller/callback' )( client ) );
-	app.get( '/refresh_token', require( './controller/refresh_token' )( client ) );
-
 	//spotify
-	app.get( '/search', require( './controller/search' )( client ) );
-	app.post( '/playlist', require( './controller/playlist' )( client ) );
+	app.get( '/spotify/callback', require( './controller/callback' )( client ) );
+	app.get( '/spotify/me', require( './controller/me' )( client ) );
+	app.get( '/spotify/login', require( './controller/login' )( client ) );
+	app.get( '/spotify/search', require( './controller/spotifySearch' )( client ) );
+	app.post( '/spotify/playlist', require( './controller/playlist' )( client ) );
+	//app.get( '/refresh_token', require( './controller/refresh_token' )( client ) );
+
+	//youtube
+	app.get( '/youtube/search', require( './controller/youtubeSearch' )( client ) );
 
 	//shazamcrawler
 	app.get( '/charts', require( './controller/charts' ) );

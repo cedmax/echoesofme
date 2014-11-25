@@ -1,0 +1,34 @@
+{"name":"newrelic","hostname":"cedbook.local","pid":49525,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2014-11-25T20:33:10.986Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49525,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2014-11-25T20:33:12.718Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49525,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 1428226183.","time":"2014-11-25T20:33:12.718Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49603,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2014-11-25T20:39:09.237Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49603,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2014-11-25T20:39:10.821Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49603,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 1428247714.","time":"2014-11-25T20:39:10.821Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49652,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2014-11-25T20:42:44.065Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49652,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2014-11-25T20:42:45.946Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49652,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 1428261200.","time":"2014-11-25T20:42:45.947Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49668,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2014-11-25T20:43:14.528Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49668,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2014-11-25T20:43:16.902Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49668,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 1428262560.","time":"2014-11-25T20:43:16.903Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49786,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2014-11-25T20:54:07.846Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49786,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2014-11-25T20:54:09.596Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49786,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 1428302763.","time":"2014-11-25T20:54:09.597Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49798,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2014-11-25T20:54:29.379Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49798,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2014-11-25T20:54:31.478Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49798,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 1428304197.","time":"2014-11-25T20:54:31.479Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49814,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2014-11-25T20:54:57.349Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49814,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2014-11-25T20:54:59.088Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49814,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 1428305361.","time":"2014-11-25T20:54:59.088Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49827,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2014-11-25T20:55:08.971Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49827,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2014-11-25T20:55:11.014Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49827,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 1428306996.","time":"2014-11-25T20:55:11.014Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49838,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2014-11-25T20:55:18.607Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49851,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2014-11-25T20:55:36.070Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49851,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2014-11-25T20:55:38.144Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49851,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 1428308279.","time":"2014-11-25T20:55:38.145Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49955,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2014-11-25T21:05:27.206Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49955,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2014-11-25T21:05:29.331Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":49955,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 1428344718.","time":"2014-11-25T21:05:29.331Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":50774,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2014-11-25T21:16:08.039Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":50774,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2014-11-25T21:16:10.755Z","v":0}
+{"name":"newrelic","hostname":"cedbook.local","pid":50774,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 1428383611.","time":"2014-11-25T21:16:10.756Z","v":0}

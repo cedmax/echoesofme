@@ -23,9 +23,9 @@ module.exports = function( client ) {
 		res.redirect( 'https://accounts.spotify.com/authorize?' +
 			querystring.stringify( {
 				response_type: 'code',
-				client_id: client.appId,
+				client_id: client.spotify.appId,
 				scope: scope,
-				redirect_uri: client.redirectUri,
+				redirect_uri: client.spotify.redirectUri,
 				state: state
 			} ) );
 	};

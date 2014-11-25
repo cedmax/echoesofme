@@ -10,7 +10,7 @@ module.exports = function( client ) {
 		var authOptions = {
 			url: 'https://accounts.spotify.com/api/token',
 			headers: {
-				'Authorization': 'Basic ' + ( new Buffer( client.appId + ':' + client.secret ).toString( 'base64' ) )
+				'Authorization': 'Basic ' + ( new Buffer( client.spotify.appId + ':' + client.spotify.secret ).toString( 'base64' ) )
 			},
 			form: {
 				grant_type: 'refresh_token',
