@@ -11,9 +11,9 @@ module.exports = function( req, res ) {
 
 			var result = {};
 
-			$( 'select option' ).each( function( i, option ) {
-				option = $( option );
-				result[ option.text() ] = option.attr( 'value' );
+			$( '.chrt-nav__select a' ).each( function( i, anchor ) {
+				anchor = $( anchor );
+				result[ anchor.text() ] = anchor.attr( 'href' );
 			} );
 
 			res.json( result );
