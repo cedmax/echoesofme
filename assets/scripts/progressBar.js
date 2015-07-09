@@ -5,7 +5,7 @@ function progressBar( barLength ) {
 		$( $.handlebarTemplates.progressbar() ).appendTo( $( '.container' ) );
 	}
 
-	$( '#progressBarContainer' ).show();
+	$( '#progressBarOverlay' ).show();
 	$( '#progressBar' ).show();
 	$( '#progressBarContent' ).html( 0 );
 	$( document.body ).addClass( 'blurred' );
