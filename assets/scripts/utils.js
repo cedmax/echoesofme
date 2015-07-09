@@ -16,7 +16,7 @@ function showLoggedIn() {
 function reset() {
 	'use strict';
 	$( '#end' ).remove();
-	$( '#progressBarContainer' ).hide();
+	$( '#progressBarOverlay' ).hide();
 	$( '#submit' ).removeAttr( 'disabled' );
 	$( document.body ).removeClass( 'blurred' );
 }
@@ -24,7 +24,7 @@ function reset() {
 function showPlaylist( uri ) {
 	$( '#progressBar' ).hide();
 	$( '#progressBar' ).after(
-		'<div id="end" class="dialog"><a class="btn btn-primary" onclick="window.open(\'' + uri + '\');return false;">See your playlist</a><br/><br/><span>or</span><br/><br/><a class="btn btn-primary" onclick="reset();">Create a new one</a></div'
+		'<div id="end" class="dialog"><a class="btn btn-primary" onclick="window.open(\'' + uri + '\');return false;">See your playlist</a> <span>or</span> <a class="btn btn-primary" onclick="reset();">Create a new one</a></div'
 	);
 }
 
