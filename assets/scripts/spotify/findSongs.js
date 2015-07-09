@@ -21,5 +21,5 @@ function findSongs( songs, market, progressBar, callback ) {
 	}
 
 	progressBar = progressBar( songs.length );
-	fetchSongs( songs );
+	//fetchSongs( songs );
 }

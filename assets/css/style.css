@@ -1,5 +1,7 @@
 body {overflow: hidden;}
 
+a {cursor: pointer}
+
 .dialog {
 	position: absolute;
 	top:50%;left:50%;
@@ -10,6 +12,21 @@ body {overflow: hidden;}
 .stretched {
 	position: absolute;
 	top:0;left:0;right:0;bottom: 0;
+}
+
+.footer {
+	bottom:0;
+	left:0;
+	right:0;
+	height:100px;
+	position: absolute;
+}
+
+#viewport {
+	display: inline-block; line-height: 30px; padding: 0px 10px; border: 2px dashed #999;
+}
+#viewport.active {
+	border: 2px solid #0cc;
 }
 
 #myshazam {
@@ -76,8 +93,9 @@ body {overflow: hidden;}
 	color:#fff;
 }
 
-#progressBarContainer {
-	background: rgba(0,0,0,0.5)
+
+#progressBarOverlay, #progressBarContainer {
+	background: rgba(0,0,0,0.5);
 }
 
 #progressBar {
