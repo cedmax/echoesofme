@@ -35,9 +35,7 @@ $( document ).autoBars( function() {
 					fetchCharts( userResponse.country, config );
 
 					new FileLoader( userResponse.country, findSongs, progressBar, function( songs ) {
-						createPlaylist( songs, 'MyShazams', $.extend( config, {
-							reverse: true
-						} ) );
+						createPlaylist( songs, 'Shazam To Spotify', config );
 					} );
 
 					showLoggedIn();

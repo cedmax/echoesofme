@@ -1,0 +1,145 @@
+{"name":"newrelic","hostname":"CedBook","pid":70115,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T11:38:33.094Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":70115,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T11:38:34.547Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":70115,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123625858.","time":"2015-07-09T11:38:34.548Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":71886,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T11:48:52.411Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":71886,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T11:48:53.795Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":71886,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123653528.","time":"2015-07-09T11:48:53.796Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":71896,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T11:48:57.245Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":71896,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T11:48:58.519Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":71896,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123653711.","time":"2015-07-09T11:48:58.520Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72008,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T11:52:22.021Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72008,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T11:52:23.583Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72008,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123663691.","time":"2015-07-09T11:52:23.584Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72026,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T11:53:24.203Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72026,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T11:53:25.625Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72026,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123666207.","time":"2015-07-09T11:53:25.626Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72052,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T11:53:33.108Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72052,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T11:53:34.466Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72052,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123666580.","time":"2015-07-09T11:53:34.467Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72120,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T11:56:00.768Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72120,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T11:56:02.235Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72120,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123672954.","time":"2015-07-09T11:56:02.236Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72154,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T11:56:28.658Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72154,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T11:56:30.071Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72154,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123674661.","time":"2015-07-09T11:56:30.072Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72163,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T11:56:32.679Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72163,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T11:56:34.075Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72163,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123674866.","time":"2015-07-09T11:56:34.076Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72186,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T11:57:00.788Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72186,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T11:57:02.174Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72186,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123675770.","time":"2015-07-09T11:57:02.175Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72199,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T11:57:36.924Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72199,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T11:57:38.427Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72199,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123677273.","time":"2015-07-09T11:57:38.429Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72229,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T11:58:12.224Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72229,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T11:58:13.741Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72229,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123679016.","time":"2015-07-09T11:58:13.742Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72994,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T11:58:36.047Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72994,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T11:58:38.399Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":72994,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123679968.","time":"2015-07-09T11:58:38.402Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":73018,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T11:58:57.248Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":73018,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T11:58:58.728Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":73018,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123680628.","time":"2015-07-09T11:58:58.730Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":73044,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T11:59:09.186Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":73044,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T11:59:10.725Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":73044,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123681163.","time":"2015-07-09T11:59:10.726Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":73105,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:01:01.543Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":73105,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T12:01:03.014Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":73105,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123689234.","time":"2015-07-09T12:01:03.014Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":73884,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:01:40.080Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":73884,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T12:01:41.470Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":73884,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123691052.","time":"2015-07-09T12:01:41.472Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":73891,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:01:48.121Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":73891,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T12:01:50.151Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":73891,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123691398.","time":"2015-07-09T12:01:50.152Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":73941,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:02:58.425Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":73941,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T12:02:59.856Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":73941,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123694743.","time":"2015-07-09T12:02:59.858Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74220,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:05:53.001Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74222,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:05:53.786Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74222,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T12:05:55.171Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74222,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123702718.","time":"2015-07-09T12:05:55.172Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74274,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:06:51.095Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74274,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T12:06:52.476Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74274,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123705424.","time":"2015-07-09T12:06:52.477Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74286,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:07:47.169Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74286,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T12:07:48.600Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74286,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123707615.","time":"2015-07-09T12:07:48.601Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74306,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:08:15.224Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74306,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T12:08:16.550Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74306,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123709183.","time":"2015-07-09T12:08:16.551Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74318,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:08:31.260Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74318,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T12:08:32.623Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74318,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123709882.","time":"2015-07-09T12:08:32.624Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74340,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:08:47.278Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74340,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T12:08:48.569Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74340,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123710460.","time":"2015-07-09T12:08:48.570Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74380,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:10:15.784Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74380,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T12:10:17.371Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74380,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123714975.","time":"2015-07-09T12:10:17.374Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74396,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:10:25.637Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74396,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T12:10:26.955Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74396,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123715351.","time":"2015-07-09T12:10:26.955Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74406,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:10:29.637Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74406,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T12:10:31.024Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74406,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123715514.","time":"2015-07-09T12:10:31.024Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74487,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:12:04.973Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74487,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T12:12:06.411Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74487,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123719434.","time":"2015-07-09T12:12:06.412Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74571,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:14:22.376Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74571,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T12:14:23.856Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74571,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123725560.","time":"2015-07-09T12:14:23.858Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74598,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:15:17.620Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74598,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T12:15:19.003Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74598,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123728307.","time":"2015-07-09T12:15:19.005Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74627,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:15:41.621Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74627,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T12:15:43.056Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74627,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123729220.","time":"2015-07-09T12:15:43.059Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74642,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:15:52.552Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74642,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T12:15:56.800Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74642,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123729668.","time":"2015-07-09T12:15:56.801Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74744,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:20:42.476Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74744,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T12:20:43.986Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74744,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123743992.","time":"2015-07-09T12:20:43.987Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74805,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:26:48.565Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74805,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T12:26:49.982Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74805,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123760071.","time":"2015-07-09T12:26:49.983Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74814,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:26:51.481Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74814,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T12:26:52.788Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74814,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123760163.","time":"2015-07-09T12:26:52.789Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74816,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:26:59.469Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74816,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T12:27:00.939Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74816,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123760418.","time":"2015-07-09T12:27:00.940Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74838,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:27:37.590Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74838,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T12:27:39.074Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74838,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123761992.","time":"2015-07-09T12:27:39.075Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74860,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:28:39.817Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74863,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:28:40.708Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74863,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T12:28:42.101Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74863,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 123764930.","time":"2015-07-09T12:28:42.102Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74900,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:29:37.924Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74908,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:29:45.083Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74924,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:30:15.358Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74933,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:30:18.706Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":74950,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T12:30:37.436Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":78996,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T15:40:33.608Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":78996,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T15:40:35.607Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":78996,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 124329403.","time":"2015-07-09T15:40:35.608Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":79004,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T15:40:36.536Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":79004,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T15:40:37.797Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":79004,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 124329502.","time":"2015-07-09T15:40:37.798Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":79010,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T15:40:44.596Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":79010,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T15:40:45.936Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":79010,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 124329905.","time":"2015-07-09T15:40:45.936Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":79027,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T15:40:50.605Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":79027,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T15:40:51.962Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":79027,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 124330231.","time":"2015-07-09T15:40:51.963Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":79037,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T15:40:56.593Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":79037,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T15:40:57.929Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":79037,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 124330478.","time":"2015-07-09T15:40:57.929Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":79077,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T15:41:18.739Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":79077,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T15:41:20.151Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":79077,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 124331718.","time":"2015-07-09T15:41:20.152Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":79100,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2015-07-09T15:41:39.869Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":79100,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/457405/applications/5377107","time":"2015-07-09T15:41:41.622Z","v":0}
+{"name":"newrelic","hostname":"CedBook","pid":79100,"component":"collector_api","level":30,"msg":"Connected to collector-152.newrelic.com:443 with agent run ID 124332561.","time":"2015-07-09T15:41:41.623Z","v":0}
