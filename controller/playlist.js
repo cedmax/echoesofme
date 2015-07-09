@@ -65,7 +65,7 @@ module.exports = function( client ) {
 			request.get( existingPlaylistOptions, function( error, response, body ) {	
 				var lastSong = body && body.items && body.items[0] && body.items[0].track.uri;
 				if ( lastSong ) {
-					songs = songs.slice( songs.indexOf( body.items[0].track.uri ) );
+					songs = songs.slice( songs.indexOf( body.items[0].track.uri ) + 1 );
 				}
 
 				if ( songs.length ){
