@@ -18,22 +18,24 @@ function fetchCharts( market, config ) {
 						$( '#' + id ).append( '<option value="' + chartResponse[key][ nation ] + '">' + nation + '</option>' );
 					}
 
-					$( '#submit-' + id ).on( 'click', function() {
-						$( '#submit' + id ).attr( 'disabled', 'disabled' );
-						$.ajax( {
-							url: '/charts',
-							type: 'POST',
-							contentType: 'application/json',
-							data: JSON.stringify( {
-								uri: $( '#' + id ).val()
-							} ),
-							success: function( songs ) {
-								findSongs( songs, market, progressBar, function( songResult ) {
-									createPlaylist( songResult, $( '#'+ id + ' option:selected' ).text() + ' ' + key  +' Chart - week #' + getWeek(), config );
-								} );
-							}
-						} );
-					} );
+					$( '#submit-' + id ).on( 'click', (function(id, key) {
+						return function(){
+							$( '#submit' + id ).attr( 'disabled', 'disabled' );
+							$.ajax( {
+								url: '/charts',
+								type: 'POST',
+								contentType: 'application/json',
+								data: JSON.stringify( {
+									uri: $( '#' + id ).val()
+								} ),
+								success: function( songs ) {
+									findSongs( songs, market, progressBar, function( songResult ) {
+										createPlaylist( songResult, $( '#'+ id + ' option:selected' ).text() + ' ' + key +' chart - week #' + getWeek(), config );
+									} );
+								}
+							} );
+						};
+					})(id, key) );
 				}
 			};
 		}
