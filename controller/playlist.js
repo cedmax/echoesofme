@@ -86,7 +86,7 @@ module.exports = function( client ) {
 			request.get( getUserPlaylistsOptions, function( error, response, body ) {
 				if ( body && body.items && body.items.length ) {
 					var shazamPlaylist = body.items.filter( function(playlist){
-						return playlist.name === title;
+						return playlist.name === title && playlist.owner.id === req.query.user;
 					} );
 
 					if ( shazamPlaylist.length ) {
