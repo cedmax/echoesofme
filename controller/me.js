@@ -1,4 +1,4 @@
-module.exports = function( client ) {
+module.exports = function() {
 	'use strict';
 
 	var request = require( 'request' );

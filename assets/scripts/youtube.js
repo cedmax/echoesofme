@@ -1,7 +1,8 @@
-/*global gapi, handleClientLoad: true*/
+/*global gapi, console, showLoggedIn, FileLoader, findSongs, progressBar, createPlaylist, showPlaylist */
 
 var youtubeLogin = ( function() {
 	'use strict';
+
 	var clientId = '475278007107-ngh79hvjc4k5l5ti6iduveihhjqmc7re.apps.googleusercontent.com';
 	var apiKey = 'AIzaSyDpK9rXjoUSavQF2oo1TyRq3-XkDtRkQ3k';
 	var scopes = 'https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/plus.me https://www.googleapis.com/auth/youtubepartner';
@@ -37,6 +38,7 @@ var youtubeLogin = ( function() {
 
 	function handleAuthResult( authResult ) {
 		var authorizeButton = document.getElementById( 'auth' );
+
 		if ( authResult && !authResult.error ) {
 			makeApiCall();
 		} else {
@@ -50,6 +52,7 @@ var youtubeLogin = ( function() {
 			scope: scopes,
 			immediate: false
 		}, handleAuthResult );
+
 		return false;
 	}
 
