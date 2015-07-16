@@ -1,3 +1,5 @@
+/*global gapi, progressBar: true */
+
 function createPlaylist( songs, title, config ) {
 	'use strict';
 
@@ -19,7 +21,7 @@ function createPlaylist( songs, title, config ) {
 						}
 					}
 				} );
-				request.execute( function( response ) {
+				request.execute( function() {
 					fillPlaylist( playlistId, queue );
 				} );
 			} else {
@@ -41,6 +43,7 @@ function createPlaylist( songs, title, config ) {
 		} );
 		request.execute( function( response ) {
 			var result = response.result;
+
 			if ( result ) {
 				var playlistId = result.id;
 				progressBar = progressBar( songs.length );

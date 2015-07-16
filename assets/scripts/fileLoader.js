@@ -8,7 +8,8 @@ function FileLoader( market, findSongs, progressBar, callback ) {
 				var $newDom = $( e.target.result );
 				var songListTr = $newDom.find( 'tr' );
 				var songs = [];
-				for ( var i = 1; i < songListTr.length; i++ ) {
+
+				for ( var i = 1; i < songListTr.length; i ++ ) {
 					var songDetails = $( songListTr[ i ] ).find( 'td' );
 					songs.push( {
 						title: $( songDetails[ 0 ] ).text(),
@@ -40,6 +41,7 @@ function FileLoader( market, findSongs, progressBar, callback ) {
 
 	document.getElementById( 'file-selector' ).addEventListener( 'change', function() {
 		var files = this.files;
+
 		if ( files.length ) {
 			handleLocalFile( files[ 0 ] );
 		}

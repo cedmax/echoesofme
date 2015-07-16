@@ -15,6 +15,7 @@ function showLoggedIn() {
 
 function reset() {
 	'use strict';
+
 	$( '#end' ).remove();
 	$( '#progressBarOverlay' ).hide();
 	$( '#submit' ).removeAttr( 'disabled' );
@@ -30,15 +31,19 @@ function showPlaylist( uri ) {
 
 function getHashParams() {
 	var hashParams = {};
+
 	var e, r = /([^&;=]+)=?([^&;]*)/g,
 		q = window.location.hash.substring( 1 );
+
 	while ( e = r.exec( q ) ) {
 		hashParams[ e[ 1 ] ] = decodeURIComponent( e[ 2 ] );
 	}
+
 	return hashParams;
 }
 
 function getWeek() {
 	var onejan = new Date( ( new Date() ).getFullYear(), 0, 1 );
+
 	return Math.ceil( ( ( ( new Date() - onejan ) / 86400000 ) + onejan.getDay() + 1 ) / 7 );
 }

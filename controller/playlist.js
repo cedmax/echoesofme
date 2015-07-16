@@ -1,4 +1,4 @@
-module.exports = function( client ) {
+module.exports = function() {
 	'use strict';
 
 	var request = require( 'request' );
@@ -11,12 +11,12 @@ module.exports = function( client ) {
 
 		songs = songs.reverse();
 
-		function config(config) {
-			config.headers = {
+		function config(confObj) {
+			confObj.headers = {
 				'Authorization': 'Bearer ' + req.query.at
 			};
-			config.json = true;
-			return config;
+			confObj.json = true;
+			return confObj;
 		}
 
 
@@ -30,7 +30,7 @@ module.exports = function( client ) {
 				} )
 			});
 
-			request.post( fillPlaylistOptions, function(err, response, body) {
+			request.post( fillPlaylistOptions, function() {
 				if ( queue.length ) {
 					addToPlaylist( tracksUrl, queue, callback );
 				} else {
@@ -39,7 +39,7 @@ module.exports = function( client ) {
 			} );
 		}
 
-		function createNewPlaylist(){
+		function createNewPlaylist() {
 			var newPlayListOptions = config( {
 				url: 'https://api.spotify.com/v1/users/' + req.query.user + '/playlists',
 				body: {
@@ -57,9 +57,9 @@ module.exports = function( client ) {
 			} );
 		} 
 
-		function addSongsToExistingPlaylist(shazamPlaylist){
+		function addSongsToExistingPlaylist(shazamPlaylist) {
 			var existingPlaylistOptions = config( {
-				url: shazamPlaylist.tracks.href +'?limit=1'
+				url: shazamPlaylist.tracks.href + '?limit=1'
 			} );
 
 			request.get( existingPlaylistOptions, function( error, response, body ) {	
@@ -68,7 +68,7 @@ module.exports = function( client ) {
 					songs = songs.slice( songs.indexOf( body.items[0].track.uri ) + 1 );
 				}
 
-				if ( songs.length ){
+				if ( songs.length ) {
 					addToPlaylist( shazamPlaylist.tracks.href, songs, function() {
 						res.send( shazamPlaylist.external_urls.spotify );
 					}, true );
@@ -78,14 +78,14 @@ module.exports = function( client ) {
 			} );
 		}
 
-		function getUserPlaylists( url ){
+		function getUserPlaylists( url ) {
 			var getUserPlaylistsOptions = config( {
 				url: url || 'https://api.spotify.com/v1/users/' + req.query.user + '/playlists'
 			} );
 
 			request.get( getUserPlaylistsOptions, function( error, response, body ) {
 				if ( body && body.items && body.items.length ) {
-					var shazamPlaylist = body.items.filter( function(playlist){
+					var shazamPlaylist = body.items.filter( function(playlist) {
 						return playlist.name === title && playlist.owner.id === req.query.user;
 					} );
 
