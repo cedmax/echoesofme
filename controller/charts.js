@@ -7,9 +7,9 @@ module.exports = function( req, res ) {
 	var request = require( 'request' );
 	var map = require('lodash.map');
 	
-	var fetch = function(page, cb){
+	var fetch = function(page, cb) {
 		request( domain + page.path, function( err, response, body ) { 
-			if ( err ){
+			if ( err ) {
 				cb(err);
 			} else {
 
@@ -27,16 +27,16 @@ module.exports = function( req, res ) {
 
 			var returnObj = {};
 
-			var array = map( $( '.chrt-header__links a' ), function( a ){ 
+			var array = map( $( '.chrt-header__links a' ), function( a ) { 
 				return {
 					name: $(a).text(),
 					path: $(a).attr('href')
 				};
 			} );
 
-			async.map(array, fetch, function(err, results){
-				if ( !err ){
-					results.forEach(function(result){
+			async.map(array, fetch, function(err, results) {
+				if ( !err ) {
+					results.forEach(function(result) {
 						var $ = cheerio.load( result.data );
 						var obj = {};
 						$( '.chrt-nav__select a' ).each( function( i, anchor ) {

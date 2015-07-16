@@ -1,11 +1,7 @@
-/*global Handlebars, FileLoader, console, progressBar,createPlaylist, findSongs */
+/*global showLoggedIn, FileLoader, console, progressBar, createPlaylist, findSongs, getHashParams, showPlaylist, fetchCharts */
 
 $( document ).autoBars( function() {
 	'use strict';
-	/**
-	 * Obtains parameters from the hash of the URL
-	 * @return Object
-	 */
 
 	var params = getHashParams(),
 		userProfilePlaceholder = document.getElementById( 'user-profile' );
