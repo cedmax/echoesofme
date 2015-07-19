@@ -11,12 +11,21 @@ function FileLoader( market, findSongs, progressBar, callback ) {
 
 				for ( var i = 1; i < songListTr.length; i ++ ) {
 					var songDetails = $( songListTr[ i ] ).find( 'td' );
-					songs.push( {
+					var song = {
+						id: $( songDetails[ 0 ] ).find('a').attr('href').replace('http://shz.am/t', ''),
 						title: $( songDetails[ 0 ] ).text(),
-						artist: $( songDetails[ 1 ] ).text()
-					} );
+						artist: $( songDetails[ 1 ] ).text(),
+					};
+
+					var geoData = $( songDetails[ 3 ] ).find('a');
+					if (geoData.length){
+						song.geo = geoData.attr('href').replace('https://google.com/maps/?q=', '').split(',');
+					}
+
+					songs.push( song );
 				}
 				findSongs( songs, market, progressBar, callback );
+				showMap(songs);
 			};
 			reader.readAsText( file );
 		}
