@@ -9,6 +9,31 @@ a {cursor: pointer}
 	text-align: center;
 }
 
+.marker {
+	overflow:hidden;
+	text-align:left;
+	font-size:14px;
+	min-width:300px;
+}
+
+.marker img {
+	float:left;
+	width:50px;
+	height:50px;
+	margin-right:7px;
+}
+
+.marker small {
+	display: block;
+	font-size:12px;
+}
+
+.popup {
+	width:80%;
+	height: calc(90% - 100px);
+	top: calc(50% - 50px);
+}
+
 .stretched {
 	position: absolute;
 	top:0;left:0;right:0;bottom: 0;
