@@ -1,3 +1,5 @@
+/*global moment, showMap*/
+
 function FileLoader( market, findSongs, progressBar, callback ) {
 	'use strict';
 
@@ -15,6 +17,7 @@ function FileLoader( market, findSongs, progressBar, callback ) {
 						id: $( songDetails[ 0 ] ).find('a').attr('href').replace('http://shz.am/t', ''),
 						title: $( songDetails[ 0 ] ).text(),
 						artist: $( songDetails[ 1 ] ).text(),
+						date: moment($( songDetails[ 2 ] ).text(), 'DD-MMM-YYYY hh:mm').format('DD MMMM YYYY')
 					};
 
 					var geoData = $( songDetails[ 3 ] ).find('a');
