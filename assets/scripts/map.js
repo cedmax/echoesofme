@@ -3,7 +3,7 @@
 function showMap( res ) {
 	var html = '<div class="marker"><img src="{{imgsrc}}" style=""/>{{title}}<small>by {{artist}}</small><small>{{date}}</small></div><br/>';
 
-	smoke.alert("Meanwhile your playlist is being created (look at the bottom),<br/> enjoy the map of your Shazams", function(){
+	smoke.alert( "Meanwhile your playlist is being created (look at the bottom),<br/> enjoy the map of your Shazams", function() {
 	
 		function generateContent( tag ) {
 			return html
@@ -48,6 +48,6 @@ function showMap( res ) {
 		map.fitZoom();
 	}, {
 		ok: "Awesome"
-	});
+	} );
 
 }
