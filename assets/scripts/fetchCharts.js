@@ -2,7 +2,7 @@
 
 function fetchCharts( market, config ) {
 
-	function submitHandler(id, key) {
+	function submitHandler( id, key ) {
 		return function() {
 			$( '#submit' + id ).attr( 'disabled', 'disabled' );
 			$.ajax( {
@@ -24,23 +24,23 @@ function fetchCharts( market, config ) {
 	$.ajax( {
 		url: '/charts',
 		success: function( chartResponse ) {
-			$('#chart span').hide();
+			$( '#chart span' ).hide();
 			for ( var key in chartResponse ) {
-				if (chartResponse.hasOwnProperty(key)) {
-					var id = key.replace(/ +?/g, '');
+				if ( chartResponse.hasOwnProperty( key ) ) {
+					var id = key.replace( / +?/g, '' );
 					
-					$('#chart').append(
-						$.handlebarTemplates.charts({
+					$( '#chart' ).append(
+						$.handlebarTemplates.charts( {
 							title: key,
 							id: id
-						})
+						} )
 					);
 
 					for ( var nation in chartResponse[key] ) {
 						$( '#' + id ).append( '<option value="' + chartResponse[key][ nation ] + '">' + nation + '</option>' );
 					}
 
-					$( '#submit-' + id ).on( 'click',  submitHandler(id, key));
+					$( '#submit-' + id ).on( 'click',  submitHandler( id, key ) );
 				}
 			}
 		}
