@@ -2,5 +2,6 @@
 	"preset": "mdcs",
 	"requirePaddingNewlinesInBlocks": null,
 	"requireLineFeedAtFileEnd": null,
-	"requirePaddingNewLinesAfterUseStrict": true
+	"requirePaddingNewLinesAfterUseStrict": true,
+	"requireSpacesInsideParentheses": "allButNested"
 }
