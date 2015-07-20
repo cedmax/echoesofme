@@ -1,13 +1,14 @@
 /*global GMaps */
 	
 function showMap(res){
-	var html = '<div class="marker"><img src="{{imgsrc}}" style=""/>{{title}}<small>by {{artist}}</small></div><br/>';
+	var html = '<div class="marker"><img src="{{imgsrc}}" style=""/>{{title}}<small>by {{artist}}</small><small>{{date}}</small></div><br/>';
 
 	function generateContent(tag){
 		return html
 				.replace('{{imgsrc}}', 'http://images.shazam.com/ios/webtid/' +  tag.id + '/size/50')
 				.replace('{{title}}', tag.title)
-				.replace('{{artist}}', tag.artist);
+				.replace('{{artist}}', tag.artist)
+				.replace('{{date}}', tag.date);
 	}
 
 	var map = new GMaps({
