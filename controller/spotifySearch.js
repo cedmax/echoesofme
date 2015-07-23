@@ -1,5 +1,7 @@
 var querystring = require( 'querystring' );
 var request = require( 'request' );
+var cachedRequest = require('cached-request')(request);
+cachedRequest.setCacheDirectory("./tmp");
 
 module.exports = function(req, res ) {
 	var searchOptions = {
@@ -9,10 +11,11 @@ module.exports = function(req, res ) {
 				type: 'track',
 				market: req.query.market,
 				limit: 1
-			} )
+			} ),
+		ttl: global.client.cache.songs
 	};
 
-	request.get( searchOptions, function( error, response, body ) {
+	cachedRequest.get( searchOptions, function( error, response, body ) {
 		if ( !error && response.statusCode === 200 ) {
 			res.json( JSON.parse( body ) );
 		} else {
