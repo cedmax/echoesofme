@@ -9,7 +9,7 @@ var map = require('lodash.map');
 var fetch = function(page, cb) {
 	cachedRequest( {
 		url: domain + page.path,
-		ttl: 7200000
+		ttl: global.client.cache.charts
 	}, function( err, response, body ) { 
 		if ( err ) {
 			cb(err);
@@ -26,7 +26,7 @@ var fetch = function(page, cb) {
 function list(res) {
 	cachedRequest( {
 		url: domain + '/charts',
-		ttl: 7200000
+		ttl: global.client.cache.charts
 	}, function( err, response, body ) {
 		var $ = cheerio.load( body );
 		
