@@ -14,7 +14,8 @@
     "lodash.map": "^3.1.4",
     "newrelic": "^1.13.0",
     "querystring": "~0.2.0",
-    "request": "~2.34.0"
+    "request": "~2.34.0",
+    "cached-request": "^0.1.4"
   },
   "devDependencies": {
     "replay": "^1.11.0"
