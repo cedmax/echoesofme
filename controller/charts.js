@@ -5,10 +5,10 @@ module.exports = function( req, res ) {
 	var cheerio = require( 'cheerio' );
 	var async = require( 'async' );
 	var map = require( 'lodash.map' );
-	var request = require('request');
-	var cachedRequest = require('cached-request')(request);
-	var cacheDirectory = __dirname +'/../tmp';
- 	cachedRequest.setCacheDirectory(cacheDirectory);
+	var request = require( 'request' );
+	var cachedRequest = require( 'cached-request' )( request );
+	var cacheDirectory = __dirname + '/../tmp';
+	cachedRequest.setCacheDirectory( cacheDirectory );
 
 	var client = require( __dirname + '/../settings.json' );
 

@@ -18,6 +18,7 @@ function reset() {
 
 	$( '#end' ).remove();
 	$( '#progressBarOverlay' ).hide();
+	$( '#map' ).empty();
 	$( '#submit' ).removeAttr( 'disabled' );
 	$( document.body ).removeClass( 'blurred' );
 }
