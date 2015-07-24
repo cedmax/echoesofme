@@ -1,5 +1,5 @@
 var querystring = require( 'querystring' );
-var client = require( '../settings.json' );
+var client = require( __dirname + '/../settings.json' );
 
 function randomString( length ) {
 	var text = '';
