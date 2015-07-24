@@ -2,7 +2,7 @@ var request = require( 'request' );
 var querystring = require( 'querystring' );
 var config;
 
-function addToPlaylist( tracksUrl, queue, callback) {
+function addToPlaylist( tracksUrl, queue, callback ) {
 	var set = queue.splice( 0, 5 );
 	set = set.reverse();
 
@@ -10,7 +10,7 @@ function addToPlaylist( tracksUrl, queue, callback) {
 		url: tracksUrl + '?position=0&' + querystring.stringify( {
 			uris: set.join( ',' )
 		} )
-	});
+	} );
 
 	request.post( fillPlaylistOptions, function() {
 		if ( queue.length ) {
@@ -21,7 +21,7 @@ function addToPlaylist( tracksUrl, queue, callback) {
 	} );
 }
 
-function createNewPlaylist(user, title, songs, res) {
+function createNewPlaylist( user, title, songs, res ) {
 	var newPlayListOptions = config( {
 		url: 'https://api.spotify.com/v1/users/' + user + '/playlists',
 		body: {
@@ -40,7 +40,7 @@ function createNewPlaylist(user, title, songs, res) {
 } 
 
 
-function addSongsToExistingPlaylist(shazamPlaylist, songs, res) {
+function addSongsToExistingPlaylist( shazamPlaylist, songs, res ) {
 	var existingPlaylistOptions = config( {
 		url: shazamPlaylist.tracks.href + '?limit=1'
 	} );
@@ -61,11 +61,11 @@ function addSongsToExistingPlaylist(shazamPlaylist, songs, res) {
 	} );
 }
 
-function addSongToPlaylist(playlist, user, title, songs, res){
-	if (playlist){
+function addSongToPlaylist( playlist, user, title, songs, res ) {
+	if ( playlist ) {
 		addSongsToExistingPlaylist( playlist, songs, res );
 	} else {
-		createNewPlaylist(user, title, songs, res);
+		createNewPlaylist( user, title, songs, res );
 	}
 }
 
@@ -76,7 +76,7 @@ function getUserPlaylists( user, title, url ) {
 
 	request.get( getUserPlaylistsOptions, function( error, response, body ) {
 		if ( body && body.items && body.items.length ) {
-			var shazamPlaylist = body.items.filter( function(playlist) {
+			var shazamPlaylist = body.items.filter( function( playlist ) {
 				return playlist.name === title && playlist.owner.id === user;
 			} );
 
@@ -90,7 +90,7 @@ function getUserPlaylists( user, title, url ) {
 		} else {
 			return null;
 		}
-	});
+	} );
 }
 
 
@@ -102,7 +102,7 @@ module.exports = function( req, res ) {
 
 	songs = songs.reverse();
 
-	config = function(confObj) {
+	config = function( confObj ) {
 		confObj.headers = {
 			'Authorization': 'Bearer ' + req.query.at
 		};
@@ -110,5 +110,5 @@ module.exports = function( req, res ) {
 		return confObj;
 	};
 	
-	addSongToPlaylist( getUserPlaylists( req.query.user, title ), req.query.user, title, songs, res);
+	addSongToPlaylist( getUserPlaylists( req.query.user, title ), req.query.user, title, songs, res );
 };

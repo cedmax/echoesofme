@@ -1,5 +1,6 @@
 ( function() {
 	'use strict';
+
 	//require('v8-profiler');
 	//require( 'newrelic' );
 	//var replay = require( 'replay' );
