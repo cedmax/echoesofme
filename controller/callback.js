@@ -1,10 +1,11 @@
-var querystring = require( 'querystring' );
-var request = require( 'request' ); 
-var client = require( __dirname + '/../settings.json' );
 
 module.exports = function( req, res ) {
 	'use strict';
 
+	var querystring = require( 'querystring' );
+	var request = require( 'request' ); 
+	var client = require( __dirname + '/../settings.json' );
+	
 	var code = req.query.code || null;
 	var state = req.query.state || null;
 	var storedState = req.cookies ? req.cookies[ 'spotify_auth_state' ] : null;
