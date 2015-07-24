@@ -1,8 +1,9 @@
-var google = require( 'googleapis' );
-var youtube = google.youtube( 'v3' );
-var client = require( __dirname + '/../settings.json' );
 
 module.exports = function( req, res ) {
+	var google = require( 'googleapis' );
+	var youtube = google.youtube( 'v3' );
+	var client = require( __dirname + '/../settings.json' );
+	
 	var searchOptions = {
 		q: req.query.q,
 		part: 'snippet',
