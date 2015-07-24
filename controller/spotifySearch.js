@@ -24,5 +24,6 @@ module.exports = function( req, res ) {
 		} else {
 			res.status( 500 ).end();
 		}
+		request = cachedRequest = querystring = client = response = body = null;
 	} );
 };
