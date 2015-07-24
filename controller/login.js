@@ -2,7 +2,7 @@
 module.exports = function( req, res ) {
 	'use strict';
 	
-	var randomstring = require("randomstring");
+	var randomstring = require( "randomstring" );
 	var querystring = require( 'querystring' );
 	var client = require( __dirname + '/../settings.json' );
 

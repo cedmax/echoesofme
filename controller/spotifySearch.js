@@ -1,9 +1,9 @@
 
 module.exports = function( req, res ) {
-	var request = require('request');
-	var cachedRequest = require('cached-request')(request);
-	var cacheDirectory = __dirname +'/../tmp';
-	cachedRequest.setCacheDirectory(cacheDirectory);
+	var request = require( 'request' );
+	var cachedRequest = require( 'cached-request' )( request );
+	var cacheDirectory = __dirname + '/../tmp';
+	cachedRequest.setCacheDirectory( cacheDirectory );
 	var querystring = require( 'querystring' );
 	var client = require( __dirname + '/../settings.json' );
 
@@ -15,7 +15,7 @@ module.exports = function( req, res ) {
 				limit: 1
 			} );
 
-	cachedRequest({
+	cachedRequest( {
 		url: searchUrl,
 		ttl: client.cache.songs
 	}, function( error, response, body ) {
