@@ -38,6 +38,7 @@ module.exports = function( req, res ) {
 
 			addToPlaylist( tracksUrl, songs, function() {
 				res.send( body.external_urls.spotify );
+				request = response = body = null;
 			} );
 		} );
 	} 
@@ -57,9 +58,11 @@ module.exports = function( req, res ) {
 			if ( songs.length ) {
 				addToPlaylist( shazamPlaylist.tracks.href, songs, function() {
 					res.send( shazamPlaylist.external_urls.spotify );
+					request = response = body = null;
 				}, true );
 			} else {
 				res.send( shazamPlaylist.external_urls.spotify );
+				request = response = body = null;
 			}
 		} );
 	}
@@ -93,6 +96,7 @@ module.exports = function( req, res ) {
 			} else {
 				return null;
 			}
+			response = body = null;
 		} );
 	}
 
