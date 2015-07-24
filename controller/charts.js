@@ -9,13 +9,13 @@ var MedeaStore = require('eu-medea-store');
 
 var db = medea();
 var store = new MedeaStore(db);
-var cache = new Eu.Cache(store, 'charts', null, function(){ return global.client.cache.charts;});
+var cache = new Eu.Cache(store, null, null, function(){ return global.client.cache.charts;});
 
 var eu = new Eu(cache);
 
 
 var fetch = function(page, cb) {
-	db.open(function() {
+	db.open(__dirname + '/../medea/' + page.path.replace(/\//g, ''), function() {
 	    eu.get( domain + page.path, function( err, response, body ) { 
 			if ( err ) {
 				cb(err);
@@ -31,7 +31,7 @@ var fetch = function(page, cb) {
 };
 
 function list(res) {
-	db.open(function() {
+	db.open(__dirname + '/../medea/charts', function() {
 	    eu.get(domain + '/charts', function( err, response, body ) {
 			var $ = cheerio.load( body );
 			
@@ -63,7 +63,7 @@ function list(res) {
 }
 
 function parse(uri, res) {
-	db.open(function() {
+	db.open(__dirname + '/../medea/charts', function() {
 	    eu.get( domain + uri, function( err, response, body ) {
 			var $ = cheerio.load( body );
 			var songs = [];
