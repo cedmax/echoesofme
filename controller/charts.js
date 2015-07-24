@@ -58,6 +58,7 @@ module.exports = function( req, res ) {
 					} );
 				}
 				res.json( returnObj );
+				request = cachedRequest = client = response = body = $ = null;
 			} );
 		} );	
 	}
@@ -76,6 +77,7 @@ module.exports = function( req, res ) {
 				} );
 			} );
 			res.json( songs );
+			request = cachedRequest = client = response = body = $ = null;
 		} );	
 	}
 
