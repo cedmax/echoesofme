@@ -1,7 +1,8 @@
-var request = require( 'request' ); // "Request" library
-var client = require( __dirname + '/../settings.json' );
+
 
 module.exports = function( req, res ) {
+	var request = require( 'request' ); // "Request" library
+	var client = require( __dirname + '/../settings.json' );
 
 	var refresh_token = req.query.refresh_token;
 	var authOptions = {

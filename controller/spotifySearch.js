@@ -1,14 +1,11 @@
-var Eu = require( 'eu' );
-var medea = require( 'medea' );
-var MedeaStore = require( 'eu-medea-store' );
-var client = require( __dirname + '/../settings.json' );
-var db = medea();
-var store = new MedeaStore( db );
-var cache = new Eu.Cache( store, null, null, function() { return client.cache.songs; } );
-var eu = new Eu( cache );
-var querystring = require( 'querystring' );
 
 module.exports = function( req, res ) {
+	var request = require('request');
+	var cachedRequest = require('cached-request')(request);
+	var cacheDirectory = __dirname +'/../tmp';
+	cachedRequest.setCacheDirectory(cacheDirectory);
+	var querystring = require( 'querystring' );
+	var client = require( __dirname + '/../settings.json' );
 
 	var searchUrl = 'https://api.spotify.com/v1/search?' +
 			querystring.stringify( {
@@ -18,13 +15,14 @@ module.exports = function( req, res ) {
 				limit: 1
 			} );
 
-	db.open( __dirname + '/../medea/songs', function() {
-		eu.get( searchUrl, function( error, response, body ) {
-			if ( !error && response.statusCode === 200 ) {
-				res.json( JSON.parse( body ) );
-			} else {
-				res.status( 500 ).end();
-			}
-		} );
+	cachedRequest({
+		url: searchUrl,
+		ttl: client.cache.songs
+	}, function( error, response, body ) {
+		if ( !error && response.statusCode === 200 ) {
+			res.json( JSON.parse( body ) );
+		} else {
+			res.status( 500 ).end();
+		}
 	} );
 };
