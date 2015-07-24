@@ -1,4 +1,5 @@
 var request = require( 'request' ); // "Request" library
+var client = require( '../settings.json' );
 
 module.exports = function( req, res ) {
 
@@ -6,7 +7,7 @@ module.exports = function( req, res ) {
 	var authOptions = {
 		url: 'https://accounts.spotify.com/api/token',
 		headers: {
-			'Authorization': 'Basic ' + ( new Buffer( global.client.spotify.appId + ':' + global.client.spotify.secret ).toString( 'base64' ) )
+			'Authorization': 'Basic ' + ( new Buffer( client.spotify.appId + ':' + client.spotify.secret ).toString( 'base64' ) )
 		},
 		form: {
 			grant_type: 'refresh_token',

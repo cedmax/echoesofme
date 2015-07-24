@@ -2,14 +2,14 @@ var domain = 'http://www.shazam.com';
 var cheerio = require( 'cheerio' );
 var async = require( 'async' );
 var map = require( 'lodash.map' );
-
+var client = require( '../settings.json' );
 var Eu = require( 'eu' );
 var medea = require( 'medea' );
 var MedeaStore = require( 'eu-medea-store' );
 
 var db = medea();
 var store = new MedeaStore( db );
-var cache = new Eu.Cache( store, null, null, function() { return global.client.cache.charts;} );
+var cache = new Eu.Cache( store, null, null, function() { return client.cache.charts; } );
 
 var eu = new Eu( cache );
 

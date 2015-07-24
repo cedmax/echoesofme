@@ -1,5 +1,6 @@
 var querystring = require( 'querystring' );
 var request = require( 'request' ); 
+var client = require( '../settings.json' );
 
 module.exports = function( req, res ) {
 	'use strict';
@@ -19,11 +20,11 @@ module.exports = function( req, res ) {
 			url: 'https://accounts.spotify.com/api/token',
 			form: {
 				code: code,
-				redirect_uri: global.client.spotify.redirectUri,
+				redirect_uri: client.spotify.redirectUri,
 				grant_type: 'authorization_code'
 			},
 			headers: {
-				'Authorization': 'Basic ' + ( new Buffer( global.client.spotify.appId + ':' + global.client.spotify.secret ).toString( 'base64' ) )
+				'Authorization': 'Basic ' + ( new Buffer( client.spotify.appId + ':' + client.spotify.secret ).toString( 'base64' ) )
 			},
 			json: true
 		};
