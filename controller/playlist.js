@@ -75,7 +75,7 @@ module.exports = function( req, res ) {
 		}
 	}
 
-	function getUserPlaylists( user, title, url ) {
+	function getUserPlaylists( user, title, cb, url ) {
 		var getUserPlaylistsOptions = config( {
 			url: url || 'https://api.spotify.com/v1/users/' + user + '/playlists'
 		} );
@@ -87,14 +87,14 @@ module.exports = function( req, res ) {
 				} );
 
 				if ( shazamPlaylist.length ) {
-					return shazamPlaylist[0];
+					cb(shazamPlaylist[0]);
 				} else if ( response.body.next ) {
-					getUserPlaylists( user, title, response.body.next );
+					getUserPlaylists( user, title, cb, response.body.next );
 				} else {
-					return null;
+					cb();
 				}
 			} else {
-				return null;
+				cb();
 			}
 			response = body = null;
 		} );
@@ -112,6 +112,8 @@ module.exports = function( req, res ) {
 		confObj.json = true;
 		return confObj;
 	};
-	
-	addSongToPlaylist( getUserPlaylists( req.query.user, title ), req.query.user, title, songs, res );
+
+	getUserPlaylists( req.query.user, title, function(playlist){
+		addSongToPlaylist(playlist, req.query.user, title, songs, res );	
+	} );
 };
