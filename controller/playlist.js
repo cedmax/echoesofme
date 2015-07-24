@@ -87,7 +87,7 @@ module.exports = function( req, res ) {
 				} );
 
 				if ( shazamPlaylist.length ) {
-					cb(shazamPlaylist[0]);
+					cb( shazamPlaylist[0] );
 				} else if ( response.body.next ) {
 					getUserPlaylists( user, title, cb, response.body.next );
 				} else {
@@ -113,7 +113,7 @@ module.exports = function( req, res ) {
 		return confObj;
 	};
 
-	getUserPlaylists( req.query.user, title, function(playlist){
-		addSongToPlaylist(playlist, req.query.user, title, songs, res );	
+	getUserPlaylists( req.query.user, title, function( playlist ) {
+		addSongToPlaylist( playlist, req.query.user, title, songs, res );	
 	} );
 };
