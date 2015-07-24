@@ -1,4 +1,5 @@
 var querystring = require( 'querystring' );
+var client = require( '../settings.json' );
 
 function randomString( length ) {
 	var text = '';
@@ -20,9 +21,9 @@ module.exports = function( req, res ) {
 	res.redirect( 'https://accounts.spotify.com/authorize?' +
 		querystring.stringify( {
 			response_type: 'code',
-			client_id: global.client.spotify.appId,
+			client_id: client.spotify.appId,
 			scope: scope,
-			redirect_uri: global.client.spotify.redirectUri,
+			redirect_uri: client.spotify.redirectUri,
 			state: state
 		} ) );
 };
