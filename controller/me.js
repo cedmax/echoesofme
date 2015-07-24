@@ -1,6 +1,6 @@
 var request = require( 'request' );
 
-module.exports = function(req, res) {
+module.exports = function( req, res ) {
 	'use strict';
 
 	var meOpt = {

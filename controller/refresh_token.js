@@ -1,6 +1,6 @@
 var request = require( 'request' ); // "Request" library
 
-module.exports = function(req, res) {
+module.exports = function( req, res ) {
 
 	var refresh_token = req.query.refresh_token;
 	var authOptions = {
@@ -22,7 +22,7 @@ module.exports = function(req, res) {
 				'access_token': access_token
 			} );
 		} else {
-			res.status(500).end();
+			res.status( 500 ).end();
 		}
 	} );
 };
