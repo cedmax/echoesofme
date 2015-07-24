@@ -3,3 +3,4 @@ settings.json
 fixtures/
 newrelic_agent.log
 tmp/
+medea
