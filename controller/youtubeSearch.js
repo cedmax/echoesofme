@@ -1,5 +1,6 @@
 var google = require( 'googleapis' );
 var youtube = google.youtube( 'v3' );
+var client = require( '../settings.json' );
 
 module.exports = function( req, res ) {
 	var searchOptions = {
@@ -8,7 +9,7 @@ module.exports = function( req, res ) {
 		maxResults: 1,
 		type: 'video',
 		videoCategoryId: 10,
-		auth: global.client.apiKey
+		auth: client.youtube.apiKey
 	};
 
 	youtube.search.list( searchOptions, function( error, response ) {

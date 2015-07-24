@@ -1,11 +1,10 @@
 var Eu = require( 'eu' );
 var medea = require( 'medea' );
 var MedeaStore = require( 'eu-medea-store' );
-
+var client = require( '../settings.json' );
 var db = medea();
 var store = new MedeaStore( db );
-var cache = new Eu.Cache( store, null, null, function() { return global.client.cache.songs;} );
-
+var cache = new Eu.Cache( store, null, null, function() { return client.cache.songs; } );
 var eu = new Eu( cache );
 var querystring = require( 'querystring' );
 
