@@ -1,5 +1,5 @@
 var request = require( 'request' ); // "Request" library
-var client = require( '../settings.json' );
+var client = require( __dirname + '/../settings.json' );
 
 module.exports = function( req, res ) {
 

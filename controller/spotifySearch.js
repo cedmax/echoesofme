@@ -1,7 +1,7 @@
 var Eu = require( 'eu' );
 var medea = require( 'medea' );
 var MedeaStore = require( 'eu-medea-store' );
-var client = require( '../settings.json' );
+var client = require( __dirname + '/../settings.json' );
 var db = medea();
 var store = new MedeaStore( db );
 var cache = new Eu.Cache( store, null, null, function() { return client.cache.songs; } );
@@ -9,6 +9,7 @@ var eu = new Eu( cache );
 var querystring = require( 'querystring' );
 
 module.exports = function( req, res ) {
+
 	var searchUrl = 'https://api.spotify.com/v1/search?' +
 			querystring.stringify( {
 				q: req.query.q,
