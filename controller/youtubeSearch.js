@@ -15,7 +15,7 @@ module.exports = function( req, res ) {
 		if ( !error && response ) {
 			res.json( response );
 		} else {
-			res.status(500).end();
+			res.status( 500 ).end();
 		}
 	} );
 };
