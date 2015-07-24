@@ -1,6 +1,6 @@
 var google = require( 'googleapis' );
 var youtube = google.youtube( 'v3' );
-var client = require( '../settings.json' );
+var client = require( __dirname + '/../settings.json' );
 
 module.exports = function( req, res ) {
 	var searchOptions = {

@@ -1,6 +1,6 @@
 var querystring = require( 'querystring' );
 var request = require( 'request' ); 
-var client = require( '../settings.json' );
+var client = require( __dirname + '/../settings.json' );
 
 module.exports = function( req, res ) {
 	'use strict';

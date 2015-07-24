@@ -1,13 +1,13 @@
 'use strict';
 
 //require('v8-profiler');
-require( 'newrelic' );
+//require( 'newrelic' );
 //var replay = require( 'replay' );
 
 var express = require( 'express' ); // Express web server framework
 var bodyParser = require( 'body-parser' );
 var cookieParser = require( 'cookie-parser' );
-var client = require( './settings.json' );
+var client = require( __dirname + '/settings.json' );
 
 var app = express();
 app.use( bodyParser.json() );
