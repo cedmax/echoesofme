@@ -1,14 +1,14 @@
 function showLoggedIn() {
 	$( '.loggedin' ).show();
-	$( '.shazam' ).animate( {
-		left: '-100%'
-	}, 3000 );
-	$( '.service' ).animate( {
-		right: '-100%'
-	}, 3000 );
+	$( '.shazam' ).css( {
+		left:  'calc(-100% + ' + ( $( '.shazam' ).height()/Math.tan(30) )  + 'px)'
+	} );
+	$( '.service' ).css( {
+		right: 'calc(-100% + ' + ( $( '.shazam' ).height()/Math.tan(30) )  + 'px)'
+	} );
 	$( '#login' ).animate( {
 		opacity: '0'
-	}, 2000, function() {
+	}, 1000, function() {
 		$( '#login' ).remove();
 	} );
 }
