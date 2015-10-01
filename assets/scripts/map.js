@@ -19,7 +19,7 @@ function showMap( res ) {
 
 		var geolocated = {};
 		$( res ).each( function( i, tag ) {
-			if ( tag.geo ) {
+			if ( tag.geo && ( tag.geo[0] !== '0.0' || tag.geo[1] !== '0.0' ) ) {
 				var lat = Math.round( tag.geo[0] * 100 ) / 100;
 				var lng = Math.round( tag.geo[1] * 100 ) / 100;
 				var key = lat + "/" + lng;
