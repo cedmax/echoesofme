@@ -28,15 +28,16 @@ function fetchCharts( market, config ) {
 			for ( var key in chartResponse ) {
 				if ( chartResponse.hasOwnProperty( key ) ) {
 					var id = key.replace( / +?/g, '' );
-					
+
 					$( '#chart' ).append(
 						$.handlebarTemplates.charts( {
 							title: key,
-							id: id
+							id: id,
+							href: chartResponse[key].url
 						} )
 					);
 
-					for ( var nation in chartResponse[key] ) {
+					for ( var nation in chartResponse[key].data ) {
 						$( '#' + id ).append( '<option value="' + chartResponse[key][ nation ] + '">' + nation + '</option>' );
 					}
 

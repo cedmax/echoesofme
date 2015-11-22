@@ -13,15 +13,16 @@ module.exports = function( req, res ) {
 	var client = require( __dirname + '/../settings.json' );
 
 	var fetch = function( page, cb ) {
+		var url = domain + page.path;
 		cachedRequest( {
-			url: domain + page.path, 
+			url: url, 
 			ttl: client.cache.charts
 		}, function( err, response, body ) { 
 			if ( err ) {
 				cb( err );
 			} else {
-
 				cb( null, {
+					url: url,
 					page: page.name,
 					data: body
 				} );
@@ -54,7 +55,10 @@ module.exports = function( req, res ) {
 							anchor = $( anchor );
 							obj[ anchor.text() ] = anchor.attr( 'href' );
 						} );
-						returnObj[result.page] = obj;
+						returnObj[result.page] = {
+							url: result.url,
+							data: obj
+						};
 					} );
 				}
 				res.json( returnObj );
