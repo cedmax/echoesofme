@@ -7,7 +7,7 @@ function showMap( res ) {
 	
 		function generateContent( tag ) {
 			return html
-					.replace( '{{imgsrc}}', 'http://images.shazam.com/ios/webtid/' +  tag.id + '/size/50' )
+					.replace( '{{imgsrc}}', 'https://images.shazam.com/ios/webtid/' +  tag.id + '/size/50' )
 					.replace( '{{title}}', tag.title )
 					.replace( '{{artist}}', tag.artist )
 					.replace( '{{date}}', tag.date );
