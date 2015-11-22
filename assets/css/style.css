@@ -119,6 +119,7 @@ a {cursor: pointer}
 	color:#fff;
 }
 
+#login a {color:#fff;}
 
 #progressBarOverlay, #progressBarContainer {
 	background: rgba(0,0,0,0.5);
