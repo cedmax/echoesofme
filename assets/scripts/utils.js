@@ -1,10 +1,10 @@
 function showLoggedIn() {
 	$( '.loggedin' ).show();
 	$( '.shazam' ).css( {
-		left:  'calc(-100% + ' + ( $( '.shazam' ).height()/Math.tan(30) )  + 'px)'
+		left:  'calc(-100% + ' + ( $( '.shazam' ).height() / Math.tan( 30 ) )  + 'px)'
 	} );
 	$( '.service' ).css( {
-		right: 'calc(-100% + ' + ( $( '.shazam' ).height()/Math.tan(30) )  + 'px)'
+		right: 'calc(-100% + ' + ( $( '.shazam' ).height() / Math.tan( 30 ) )  + 'px)'
 	} );
 	$( '#login' ).animate( {
 		opacity: '0'
