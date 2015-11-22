@@ -1,4 +1,13 @@
-body {overflow: hidden;}
+body, html {
+	height:100%;
+}
+
+.container {
+	overflow: hidden;
+	width:100%;
+	height: 100%;
+	position: relative;
+}
 
 a {cursor: pointer}
 
@@ -152,3 +161,17 @@ a {cursor: pointer}
 .gm-style-iw {
 	padding-top:20px;
 }
+
+.smoke-base {
+	position: absolute;
+}
+
+.smoke-base .dialog {
+  top: 50%;
+  transform:translate3d(-50%,-50%,0);
+  width: 60%;
+  left: 50%;
+  margin-left: 0;
+}
+
+#end { white-space: pre;}

@@ -40,11 +40,8 @@ function FileLoader( market, findSongs, progressBar, callback ) {
 		e.preventDefault();
 	}, false );
 
-	document.getElementById( 'file-selector' ).style.display = 'none';
-	document.getElementById( 'file-selector' ).addEventListener( 'click', function( e ) {
-		e.stopPropagation();
-		e.preventDefault();
-	}, false );
+	document.getElementById( 'file-selector' ).style.visibility = 'hidden';
+
 	document.getElementById( 'viewport' ).addEventListener( 'click', function( e ) {
 		e.stopPropagation();
 		e.preventDefault();
