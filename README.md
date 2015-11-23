@@ -1,5 +1,5 @@
 # Echoes of me
-[Echoesof.me](http://echoesof.me) is a website that enables [Shazam](http://www.shazam.com) to create playlists with their data.
+[Echoesof.me](http://echoesof.me) is a website that enables [Shazam](http://www.shazam.com) users to create playlists with their data.
 
 At the moment it works pretty well with [Spotify](http://www.spotify.com), and there's an alpha of an [youtube integration](http://echoesof.me/youtube.html).
 
