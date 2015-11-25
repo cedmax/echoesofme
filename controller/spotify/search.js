@@ -2,10 +2,10 @@
 module.exports = function( req, res ) {
 	var request = require( 'request' );
 	var cachedRequest = require( 'cached-request' )( request );
-	var cacheDirectory = __dirname + '/../tmp';
+	var cacheDirectory = __dirname + '/../../tmp';
 	cachedRequest.setCacheDirectory( cacheDirectory );
 	var querystring = require( 'querystring' );
-	var client = require( __dirname + '/../settings.json' );
+	var client = require( __dirname + '/../../settings.json' );
 
 	var searchUrl = 'https://api.spotify.com/v1/search?' +
 			querystring.stringify( {
