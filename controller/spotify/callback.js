@@ -4,7 +4,7 @@ module.exports = function( req, res ) {
 
 	var querystring = require( 'querystring' );
 	var request = require( 'request' ); 
-	var client = require( __dirname + '/../settings.json' );
+	var client = require( __dirname + '/../../settings.json' );
 	
 	var code = req.query.code || null;
 	var state = req.query.state || null;

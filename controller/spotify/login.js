@@ -4,7 +4,7 @@ module.exports = function( req, res ) {
 	
 	var randomstring = require( "randomstring" );
 	var querystring = require( 'querystring' );
-	var client = require( __dirname + '/../settings.json' );
+	var client = require( __dirname + '/../../settings.json' );
 
 	var stateKey = 'spotify_auth_state';
 	var state = randomstring.generate( 16 );
