@@ -90,6 +90,14 @@ a {cursor: pointer}
 	opacity: 0.3;
 }
 
+.deezer {background: #0e0e0e; right:-50%;}
+.deezer div {
+	background: url('/img/deezer.png') no-repeat;
+	background-size: cover;
+	transform: skew(30deg) translateX(-30%);
+	opacity: 0.3;
+}
+
 .youtube {background: #fff; right:-50%;}
 .youtube div {
 	background: url('/img/youtube.jpg') no-repeat;

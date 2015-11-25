@@ -16,15 +16,21 @@ app.use( express.static( __dirname + '/assets' ) )
 	.use( cookieParser() );
 
 //spotify
-app.get( '/spotify/callback', require( './controller/callback' ) );
-app.get( '/spotify/me', require( './controller/me' ) );
-app.get( '/spotify/login', require( './controller/login' ) );
-app.get( '/spotify/search', require( './controller/spotifySearch' ) );
-app.post( '/spotify/playlist', require( './controller/playlist' ) );
-//app.get( '/refresh_token', require( './controller/refresh_token' ) );
+app.get( '/spotify/callback', require( './controller/spotify/callback' ) );
+app.get( '/spotify/me', require( './controller/spotify/me' ) );
+app.get( '/spotify/login', require( './controller/spotify/login' ) );
+app.get( '/spotify/search', require( './controller/spotify/search' ) );
+app.post( '/spotify/playlist', require( './controller/spotify/playlist' ) );
+
+//deezer
+app.get( '/deezer/callback', require( './controller/deezer/callback' ) );
+app.get( '/deezer/me', require( './controller/deezer/me' ) );
+app.get( '/deezer/login', require( './controller/deezer/login' ) );
+app.get( '/deezer/search', require( './controller/deezer/search' ) );
+app.post( '/deezer/playlist', require( './controller/deezer/playlist' ) );
 
 //youtube
-app.get( '/youtube/search', require( './controller/youtubeSearch' ) );
+app.get( '/youtube/search', require( './controller/youtube/search' ) );
 
 //shazamcrawler
 app.get( '/charts', require( './controller/charts' ) );
