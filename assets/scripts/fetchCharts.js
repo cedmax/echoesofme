@@ -38,7 +38,7 @@ function fetchCharts( market, config ) {
 					);
 
 					for ( var nation in chartResponse[key].data ) {
-						$( '#' + id ).append( '<option value="' + chartResponse[key][ nation ] + '">' + nation + '</option>' );
+						$( '#' + id ).append( '<option value="' + chartResponse[key].data[ nation ] + '">' + nation + '</option>' );
 					}
 
 					$( '#submit-' + id ).on( 'click',  submitHandler( id, key ) );
