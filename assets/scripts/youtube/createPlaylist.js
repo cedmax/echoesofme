@@ -52,7 +52,7 @@ function createPlaylist( songs, title, config ) {
 					
 					request.execute( function( response ) {
 						var result = response.result;
-						console.log(result)
+
 						if ( result ) {
 							var playlistId = result.id;
 							progressBar = progressBar( songs.length );
