@@ -1,16 +1,34 @@
-<div class="page-header">
-	<div class="media-left">
-		<img class="media-object" width="50" src="{{image}}" />
+<div class="page-header"><h3>Welcome {{display_name}}</h3></div>
+
+<div class="media">
+	<div class="media-left ">
+		<img class="media-object" width="100" src="{{image}}" />
 	</div>
-	<div class="media-body media-middle">
-		<h3>Welcome {{display_name}}</h3>
+	<div class="media-body media-middle lead instructions">
+		There are 2 ways to create a Youtube playlist from Shazam data:<br/>
+		<ul class="list-unstyled">
+			<li>
+				<a onclick="javascript:$('#myshazam').show();$('#chart').hide();return false;">From the songs you discovered</a>
+			</li>
+			<li>
+				<a onclick="javascript:$('#chart').show();$('#myshazam').hide();return false;">From Shazam's weekly charts</a>
+			</li>
+		</ul>
 	</div>
 </div>
 
-<div class="instructions">
+<hr/>	
+
+<div id="myshazam" style="display:none">	
 	<h3>Create a youtube playlist from MyShazam</h3>
-	<h5>You need to have both a Shazam and a Youtube account</h5><p><em>Echoesof.me</em> youtube playlist is still in alpha and it will <strong>create a new private playlist every time</strong>. It might be slow too, please be patient</p>
+	<h5>You need to have both a Shazam and a Youtube account</h5><p> It might be slow too, please be patient.</p>
 	
 	{{>myshazam}}
 
+</div>
+
+<div id="chart" style="display:none">
+	<h3>Create a Playlist from a weekly Chart</h3>
+
+	<span>Wait for it...</span>
 </div>

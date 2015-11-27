@@ -1,14 +1,17 @@
+/*global getHashParams */
+
 function findSongs( songs, market, progressBar, callback ) {
 	'use strict';
 
 	var youtubeIds = [];
+	var params = getHashParams();
 
 	function fetchSongs( queue ) {
 		var song = queue.shift();
 		progressBar.update();
 
 		if ( song ) {
-			$.get( '/youtube/search?q=' + encodeURIComponent( song.title ) + ' ' + encodeURIComponent( song.artist ), function( response ) {
+			$.get( '/youtube/search?at=' + params.access_token + '&q=' + encodeURIComponent( song.title + ' ' + song.artist ), function( response ) {
 				var videoRes = response && response.items && response.items[ 0 ];
 
 				var videoId = videoRes && videoRes.id && videoRes.id.videoId;

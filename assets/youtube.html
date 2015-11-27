@@ -26,28 +26,33 @@
 			<div class="shazam"><div class="stretched"></div></div>
 			<div class="service youtube"><div class="stretched"></div></div>
 			<div id="login" class="shdialog">
-				<h2 class="lead">Shazam to Youtube</h2>
+				<h2 class="lead">Echoes of Me<br/>Shazam to Youtube</h2>
 				<a id="auth" class="btn btn-primary">Log in with Youtube</a><br/><br/>
-				<small><a href="/">Looking for Spotify?</a></small>
+				<small>Looking for <a href="/">Spotify</a> or <a href="/deezer.html">Deezer</a>?</small>
 			</div>
 		</div>
 
 		<script id="instructions" type="text/x-handlebars-partial" src="/tpls/myshazam.html"></script>
 		<script id="progressbar" type="text/x-handlebars-template" src="/tpls/progressbar.html"></script>
 		<script id="user" type="text/x-handlebars-template" src="/tpls/youtube.html"></script>
+		<script id="charts" type="text/x-handlebars-template" src="/tpls/charts.html"></script>
 
+		<script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+		<script src="/vendors/gmaps.js"></script>
+		<script src="/vendors/smoke.js"></script>
+		<script src="/vendors/moment.js"></script>
 		<script src="/vendors/handlebars.min.js"></script>
 		<script src="/vendors/jquery-1.10.1.min.js"></script>
 		<script src="/vendors/jquery.autobars.js"></script>
-		<script src="/vendors/moment.js"></script>
 		<script src="/scripts/utils.js"></script>
 		<script src="/scripts/fetchCharts.js"></script>
 		<script src="/scripts/progressBar.js"></script>
+		<script src="/scripts/map.js"></script>
 		<script src="/scripts/fileLoader.js"></script>
 		<script src="/scripts/youtube/findSongs.js"></script>
 		<script src="/scripts/youtube/createPlaylist.js"></script>
-		<script src="/scripts/youtube.js"></script>
-        <script src="https://apis.google.com/js/client.js?onload=youtubeLogin"></script>
+		<script src="/scripts/youtube/main.js"></script>
+		<script src="https://apis.google.com/js/client.js?onload=youtubeLogin"></script>
     </body>
 </html>
 
