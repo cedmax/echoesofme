@@ -23,12 +23,17 @@ var youtubeLogin = ( function() {
 							image: resp.image.url
 						} );
 						showLoggedIn();
+
+						var config = {
+							success: function( plID ) {
+								showPlaylist( 'https://www.youtube.com/playlist?list=' + plID );
+							}
+						}
+
+						fetchCharts( '', config );
+
 						new FileLoader( null, findSongs, progressBar, function( songs ) {
-							createPlaylist( songs, 'My Shazams', {
-								success: function( plID ) {
-									showPlaylist( 'https://www.youtube.com/playlist?list=' + plID );
-								}
-							} );
+							createPlaylist( songs, 'Shazam to Youtube', config );
 						} );
 					}
 				} );
@@ -39,7 +44,9 @@ var youtubeLogin = ( function() {
 	function handleAuthResult( authResult ) {
 		var authorizeButton = document.getElementById( 'auth' );
 
+
 		if ( authResult && !authResult.error ) {
+			document.location.hash = 'access_token=' + authResult.access_token;
 			makeApiCall();
 		} else {
 			authorizeButton.onclick = handleAuthClick;

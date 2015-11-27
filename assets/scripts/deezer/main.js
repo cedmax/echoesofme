@@ -18,7 +18,6 @@ $( document ).autoBars( function() {
 				url: '/deezer/me?at=' + access_token,
 				success: function( userResponse ) {
 					if ( !userResponse.error ) {
-						console.log( userResponse )
 						userProfilePlaceholder.innerHTML = $.handlebarTemplates.deezer( {
 							display_name: userResponse.firstname,
 							image: userResponse.picture_medium
