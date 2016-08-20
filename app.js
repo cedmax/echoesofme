@@ -33,7 +33,4 @@ app.post( '/deezer/playlist', require( './controller/deezer/playlist' ) );
 app.get( '/youtube/search', require( './controller/youtube/search' ) );
 app.get( '/youtube/playlist', require( './controller/youtube/playlist' ) );
 
-//shazamcrawler
-app.get( '/charts', require( './controller/charts' ) );
-app.post( '/charts', require( './controller/charts' ) );
 app.listen( client.port );
