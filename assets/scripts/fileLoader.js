@@ -28,7 +28,7 @@ function FileLoader( market, findSongs, progressBar, callback ) {
 					songs.push( song );
 				}
 				findSongs( songs, market, progressBar, callback );
-				showMap( songs );
+				showMap( songs.slice(0) );
 			};
 			reader.readAsText( file );
 		}
