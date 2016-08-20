@@ -10,24 +10,15 @@
 			<li>
 				<a onclick="javascript:$('#myshazam').show();$('#chart').hide();return false;">From the songs you discovered</a>
 			</li>
-			<li>
-				<a onclick="javascript:$('#chart').show();$('#myshazam').hide();return false;">From Shazam's weekly charts</a>
-			</li>
 		</ul>
 	</div>
 </div>
 
-<hr/>					
+<hr/>
 
-<div id="myshazam" style="display:none">	
+<div id="myshazam" style="display:none">
 	<h3>Create a Playlist from MyShazam</h3>
 	<h5>you need to have both a Shazam and a Deezer account</h5>
 	<p><em>Echoesof.me</em> will create a private playlist <strong><em>Shazam to Deezer</em></strong> and will <strong>add new dicoveries to it</strong> if you come back.</p>
 	{{> myshazam}}
-</div>
-
-<div id="chart" style="display:none">
-	<h3>Create a Playlist from a weekly Chart</h3>
-
-	<span>Wait for it...</span>
 </div>

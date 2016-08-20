@@ -1,4 +1,4 @@
-/*global showLoggedIn, FileLoader, console, progressBar, createPlaylist, findSongs, getHashParams, showPlaylist, fetchCharts */
+/*global showLoggedIn, FileLoader, console, progressBar, createPlaylist, findSongs, getHashParams, showPlaylist */
 
 $( document ).autoBars( function() {
 	'use strict';
@@ -27,8 +27,6 @@ $( document ).autoBars( function() {
 						userId: userResponse.id,
 						success: showPlaylist
 					};
-
-					fetchCharts( userResponse.country, config );
 
 					new FileLoader( userResponse.country, findSongs, progressBar, function( songs ) {
 						createPlaylist( songs, 'Shazam To Spotify', config );

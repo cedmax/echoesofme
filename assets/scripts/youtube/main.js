@@ -30,8 +30,6 @@ var youtubeLogin = ( function() {
 							}
 						}
 
-						fetchCharts( '', config );
-
 						new FileLoader( null, findSongs, progressBar, function( songs ) {
 							createPlaylist( songs, 'Shazam to Youtube', config );
 						} );
