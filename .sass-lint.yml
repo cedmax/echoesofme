@@ -1,0 +1,85 @@
+files:
+  include: 'assets/styles/*.scss'
+
+options:
+  formatter: stylish
+  merge-default-rules: true
+rules:
+  no-color-literals: 2
+  extends-before-declarations: 2
+  extends-before-mixins: 2
+  placeholder-in-extend: 2
+  no-trailing-whitespace: 2
+  clean-import-paths: 2
+  mixins-before-declarations: 2
+
+  single-line-per-selector: 0
+  empty-line-between-blocks:
+    - 0
+    - ignore-single-line-rulesets: true
+
+  no-color-keywords: 2
+  no-css-comments: 0
+  no-debug: 2
+  no-duplicate-properties:
+    - 2
+    - exclude:
+        - font-size
+        - max-height
+        - src
+        - background
+        - display
+        - color
+  no-empty-rulesets: 0
+  no-invalid-hex: 2
+  no-mergeable-selectors: 0
+  no-misspelled-properties:
+    - 2
+    - extra-properties:
+        - overflow-scrolling
+        - osx-font-smoothing
+  no-trailing-zero: 2
+  no-url-protocols: 0
+  function-name-format: 0
+  mixin-name-format: 0
+  placeholder-name-format: 0
+  variable-name-format: 0
+  border-zero: 2
+  final-newline:
+    - 2
+    - include: true
+  hex-length:
+    - 2
+    - style: shorthand
+  hex-notation:
+    - 2
+    - style: uppercase
+  indentation:
+    - 2
+    - size: 2
+  leading-zero:
+    - 2
+    - include: false
+  property-sort-order:
+    - 2
+    - order: 'alphabetical'
+  quotes:
+    - 2
+    - style: single
+  shorthand-values: 2
+  space-after-colon: 2
+  space-after-comma: 2
+  space-before-brace: 2
+  space-before-colon: 2
+  space-between-parens:
+    - 2
+    - include: false
+  url-quotes: 0
+  zero-unit: 0
+  nesting-depth:
+    - 2
+    - max-depth: 2
+  force-element-nesting: 2
+  no-vendor-prefixes: 2
+  class-name-format: 2
+  trailing-semicolon: 2
