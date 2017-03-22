@@ -18,7 +18,7 @@ function frontEndServer (port) {
       console.log(err)
     }
 
-    console.log(`Listening at http://${webpackConfig.host}:${port-1}`)
+    console.log(`Listening at http://${webpackConfig.host}:${port - 1}`)
   })
 }
 

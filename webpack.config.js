@@ -2,9 +2,10 @@ const path = require('path')
 const webpack = require('webpack')
 const combineLoaders = require('webpack-combine-loaders')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const config = require('./settings')
 
 const isProd = (process.env.NODE_ENV === 'production')
-const port = 3000
+const port = config.port - 1
 const host = 'localhost'
 const devtool = (isProd) ? 'source-map' : 'eval'
 const plugins = [

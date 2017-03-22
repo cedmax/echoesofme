@@ -1,22 +1,42 @@
 import React from 'react'
-import globalStyles from 'styles/global.scss'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
 import style from 'styles/splash.scss'
 import cx from 'classnames'
+import actions from 'store/actions'
 
-export default function () {
+const Home = (props) => {
+  const shazamStyle = {}
+  const spotifyStyle = {}
+  const dialogStyle = {}
+  if (props.splash.visible) {
+    shazamStyle.left = '-100%'
+    spotifyStyle.right = '-100%'
+    dialogStyle.opacity = '0'
+  }
+  console.log(props)
   return (
     <div className={style.container}>
-      <div className={cx(style.service, style.shazam)}><div className={style.stretched} /></div>
-      <div className={cx(style.service, style.spotify)}><div className={style.stretched} /></div>
-      <div className={style.dialog}>
+      <div style={shazamStyle} className={cx(style.service, style.shazam)}><div className={style.stretched} /></div>
+      <div style={spotifyStyle} className={cx(style.service, style.spotify)}><div className={style.stretched} /></div>
+      <div style={dialogStyle} className={style.dialog}>
         <h2 className={style.lead}>Echoes of Me</h2>
         <div className={style.instructions}>
-          Drag this button to your bookmarks <br /><br /><a className={style.bookmark} href="javascript:(function(){window.location.href='https://echoesof.me/?shazam='+shz.app.cookies.get('inid')+'&codever='+document.cookie.replace(/(?:(?:^|.*;\s*)codever\s*\=\s*([^;]*).*$)|^.*$/, '$1');})()">Echoes of Me</a><br /><br />
+          Create playlists on Spotify, Youtube and Deezer from your Shazam data.
 
-          Navigate to <a href="https://shazam.com/myshazam">My Shazam</a> and login<br /><br />
-          Click the bookmark and enjoy the magic
+          <button onClick={props.actions.showSplash}>continue</button>
         </div>
       </div>
     </div>
   )
 }
+
+const state = (state) => ({
+  splash: state.splash
+})
+
+const mapDispatchToProps = (dispatch) => ({
+  actions: bindActionCreators(actions, dispatch)
+})
+
+export default connect(state, mapDispatchToProps)(Home)
