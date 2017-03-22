@@ -1,6 +1,6 @@
 'use strict'
 
-const express = require('express') // Express web server framework
+const express = require('express')
 const bodyParser = require('body-parser')
 
 module.exports = (port) => {
@@ -10,7 +10,7 @@ module.exports = (port) => {
   app.use('/dist', express.static(`${__dirname}/dist`))
 
   // spotify
-  app.get('/api/prova', (req, res) => { res.send('no') })
+  app.get('/api/shazam/:id', require('./api/fetch-shazam-history'))
   // app.get( '/spotify/callback', require( './controller/spotify/callback' ) );
   // app.get( '/spotify/me', require( './controller/spotify/me' ) );
   // app.get( '/spotify/login', require( './controller/spotify/login' ) );
@@ -28,5 +28,6 @@ module.exports = (port) => {
   // app.get( '/youtube/search', require( './controller/youtube/search' ) );
   // app.get( '/youtube/playlist', require( './controller/youtube/playlist' ) );
 
-  app.listen(port)
+  app.listen(8889)
 }
+
