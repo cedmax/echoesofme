@@ -1,7 +1,7 @@
 export default function () {
   return {
     splash: {
-      visible: false
+      visible: true
     }
   }
 }

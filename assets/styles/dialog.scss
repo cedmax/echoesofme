@@ -1,0 +1,22 @@
+.dialog {
+  background: rgba(0, 0, 0, .4);
+  color: #fff;
+  left: 50%;
+  padding: 30px 50px 50px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  transition: opacity 1.5s ease-out;
+}
+
+.lead {
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.instructions {
+  font-size: 16px;
+}
