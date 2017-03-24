@@ -11,6 +11,8 @@ module.exports = (port) => {
 
   // spotify
   app.get('/api/shazam/:id', require('./api/fetch-shazam-history'))
+  app.use(/^(.*)$/, express.static(`${__dirname}/assets/index.html`))
+
   // app.get( '/spotify/callback', require( './controller/spotify/callback' ) );
   // app.get( '/spotify/me', require( './controller/spotify/me' ) );
   // app.get( '/spotify/login', require( './controller/spotify/login' ) );
