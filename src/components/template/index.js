@@ -6,7 +6,7 @@ export default function Template (props) {
   const shazamStyle = {}
   const spotifyStyle = {}
 
-  if (props.open) {
+  if (!props.closed) {
     shazamStyle.left = '-100%'
     spotifyStyle.right = '-100%'
   }

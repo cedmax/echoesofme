@@ -4,7 +4,7 @@ import style from 'styles/dialog.scss'
 export default function Dialog (props) {
   const dialogStyle = {}
 
-  if (props.visible) {
+  if (!props.visible) {
     dialogStyle.opacity = 0
   }
 
