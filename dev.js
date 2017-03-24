@@ -13,7 +13,7 @@ function frontEndServer (port) {
     publicPath: webpackConfig.output.publicPath,
     hot: true,
     historyApiFallback: true
-  }).listen(port - 1, webpackConfig.host, (err, result) => {
+  }).listen(port - 1, webpackConfig.host, (err) => {
     if (err) {
       console.log(err)
     }
