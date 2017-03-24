@@ -1,12 +1,15 @@
 import constants from 'store/constants'
-import defaultState from 'store/default-state'
+import {
+  updateState,
+  performActionCreator
+} from 'store/helpers'
+
+const performAction = performActionCreator({
+  [constants.HIDE_SPLASH]: (state) => updateState(state, {
+    visible: false
+  })
+})
 
 module.exports = function (state, action) {
-  const newstate = Object.assign({}, state)
-  switch (action.type) {
-    case constants.HIDE_SPLASH:
-      newstate.visible = false
-      return newstate
-    default: return state || defaultState().splash
-  }
+  return performAction(state, action.type)
 }
