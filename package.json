@@ -36,6 +36,7 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-1": "^6.5.0",
     "css-loader": "^0.26.2",
+    "deep-freeze": "^0.0.1",
     "enzyme": "^2.7.1",
     "enzyme-to-json": "^1.5.0",
     "eslint": "^3.17.1",
