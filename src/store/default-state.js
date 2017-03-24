@@ -1,7 +1,5 @@
-export default function () {
-  return {
-    splash: {
-      visible: true
-    }
+export default {
+  splash: {
+    visible: true
   }
 }
