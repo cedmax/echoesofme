@@ -1,10 +1,15 @@
 import React from 'react'
-import Dialog from 'components/modules/dialog'
 
 export default function ListAndActions (props) {
   return (
-    <Dialog visible title="Querystring is Here">
-     WHATTT
-    </Dialog>
+    <ul style={{overflow: 'scroll', height: '95%'}}>
+      {
+        props.shazam && props.shazam.history.map(historyItem => (
+          <li key={historyItem.tagid}>
+            <strong>{historyItem.track.heading.title}</strong> by <em>{historyItem.track.heading.subtitle}</em>
+          </li>
+        ))
+      }
+    </ul>
   )
 }
