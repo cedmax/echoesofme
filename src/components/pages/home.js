@@ -7,8 +7,25 @@ import actionsCreator from 'store/actions-creator'
 
 class Home extends Component {
   componentWillMount () {
-    if (this.props.shazam && this.props.codever) {
-      this.props.actions.fetchShazam(this.props)
+    const {
+      shazam,
+      codever
+    } = this.props
+    if (shazam && codever) {
+      this.props.actions.fetchShazam({shazam, codever})
+    }
+  }
+
+  componentWillReceiveProps (nextProps) {
+    const {
+      token
+    } = nextProps.myshazam || {}
+    if (token) {
+      const {
+        shazam, 
+        codever
+      } = nextProps
+      this.props.actions.fetchShazam({token, shazam, codever})
     }
   }
 
@@ -26,7 +43,7 @@ class Home extends Component {
 }
 
 const state = (state) => ({
-  myshazam: state.shazam
+  myshazam: state.myshazam
 })
 
 const mapDispatchToProps = (dispatch) => ({
