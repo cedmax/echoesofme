@@ -3,15 +3,15 @@ import defaultState from 'store/default-state'
 
 import {
   updateState,
-  performAction
+  setActions
 } from 'store/helpers'
 
-const actions = {
+const performAction = setActions({
   [constants.HIDE_SPLASH]: (state) => updateState(state, {
     visible: false
   })
-}
+})
 
 module.exports = function (state = defaultState.splash, action) {
-  return performAction(state, actions, action.type)
+  return performAction(state, action)
 }
