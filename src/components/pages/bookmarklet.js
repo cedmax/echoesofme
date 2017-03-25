@@ -1,7 +1,7 @@
 import React from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import actions from 'store/actions'
+import actionsCreator from 'store/actions-creator'
 import Dialog from 'components/modules/dialog'
 
 function Bookmarklet (props) {
@@ -19,7 +19,7 @@ const state = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
-  actions: bindActionCreators(actions, dispatch)
+  actions: bindActionCreators(actionsCreator, dispatch)
 })
 
 export default connect(state, mapDispatchToProps)(Bookmarklet)
