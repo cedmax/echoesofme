@@ -12,15 +12,18 @@ function fetchShazam (id, query, callback) {
     },
     url
   }, (error, response, body) => {
-    callback(error, body)
+    callback(error, response.statusCode, body)
   })
 }
 
-module.exports = function (request, response, next) {
-  if (request.params.id && request.query) {
-    fetchShazam(request.params.id, request.query, (err, body) => {
-      if (err) response.send('failure')
-      response.json(JSON.parse(body))
+module.exports = function (req, res, next) {
+  if (req.params.id && req.query) {
+    fetchShazam(req.params.id, req.query, (err, status, body) => {
+      if (!err && status === 200) {
+        res.json(JSON.parse(body))
+      }
+
+      res.status(500).end()
     })
   }
 }
