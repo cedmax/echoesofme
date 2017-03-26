@@ -5,6 +5,7 @@
     "stage-1"
   ],
   "plugins": [
+    "lodash",
     "transform-object-assign", 
     "transform-decorators-legacy", 
     "react-hot-loader/babel"

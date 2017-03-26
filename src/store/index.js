@@ -1,4 +1,5 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux'
+import { save, load } from 'redux-localstorage-simple'
 import promiseMiddleware from 'redux-promise'
 
 import splash from 'store/reducers/splash'
@@ -9,4 +10,8 @@ const rootReducer = combineReducers({
   myshazam
 })
 
-export default createStore(rootReducer, applyMiddleware(promiseMiddleware))
+const createStoreWithMiddlewares = applyMiddleware(
+    promiseMiddleware, save()
+)(createStore)
+
+export default createStoreWithMiddlewares(rootReducer, load())

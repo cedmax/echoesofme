@@ -36,7 +36,7 @@ class Home extends Component {
       myshazam
     } = this.props
 
-    return (shazam && codever)
+    return ((shazam && codever) || myshazam)
       ? <ListAndActions {...myshazam} />
       : <Bookmarklet />
   }
