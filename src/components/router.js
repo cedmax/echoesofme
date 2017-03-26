@@ -1,6 +1,6 @@
 import React from 'react'
 import { RouterMixin } from 'react-mini-router'
-import Home from 'components/pages/home';
+import Home from 'components/pages/home'
 
 const Router = React.createClass({
   mixins: [ RouterMixin ],

@@ -22,7 +22,7 @@ class Home extends Component {
     } = nextProps.myshazam || {}
     if (token) {
       const {
-        shazam, 
+        shazam,
         codever
       } = nextProps
       this.props.actions.fetchShazam({token, shazam, codever})

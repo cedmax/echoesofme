@@ -1,18 +1,24 @@
 'use strict'
 
+require('app-root-dir').set(__dirname)
 const express = require('express')
 const bodyParser = require('body-parser')
+const cookieParser = require('cookie-parser')
+
+const app = express()
+app.use(bodyParser.json())
+app.use(cookieParser())
+app.use(express.static(`${__dirname}/assets`))
+app.use('/dist', express.static(`${__dirname}/dist`))
+
+// spotify
+app.get('/spotify/callback', require('./api/spotify-login-callback'))
+app.get('/spotify/login', require('./api/spotify-login'))
+app.get('/api/shazam/:id', require('./api/fetch-shazam-history'))
+app.get('/api/spotify/search', require('./api/fetch-spotify-song'))
+app.use(/^(.*)$/, express.static(`${__dirname}/assets/index.html`))
 
 module.exports = (port) => {
-  const app = express()
-  app.use(bodyParser.json())
-  app.use(express.static(`${__dirname}/assets`))
-  app.use('/dist', express.static(`${__dirname}/dist`))
-
-  // spotify
-  app.get('/api/shazam/:id', require('./api/fetch-shazam-history'))
-  app.get('/api/spotify/search', require('./api/fetch-spotify-song'))
-  app.use(/^(.*)$/, express.static(`${__dirname}/assets/index.html`))
 
   // app.get( '/spotify/callback', require( './controller/spotify/callback' ) );
   // app.get( '/spotify/me', require( './controller/spotify/me' ) );
